@@ -1,25 +1,71 @@
 from dotenv import load_dotenv
 from composio import Composio
-from ollama import chat
+from openai import OpenAI, RateLimitError
+from urllib.parse import urlparse
 import json
+import os
+import re
+import time
 
 load_dotenv()
 
-MODEL = "qwen2.5:3b"
+MODEL_FALLBACKS = ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.6-27b"]
+_model_index = 0
+
+client = OpenAI(
+    api_key=os.environ["GROQ_API_KEY"],
+    base_url="https://api.groq.com/openai/v1"
+)
 
 VALID_BREADTH = {"broad", "moderate", "limited", "unknown"}
 VALID_VERDICT = {"easy", "moderate", "difficult", "not_feasible", "unknown"}
 VALID_MCP = {True, False, "unknown"}
 
 
+def current_model():
+    return MODEL_FALLBACKS[_model_index]
+
+
+def call_groq(messages, response_format=None):
+    global _model_index
+    max_attempts = 6
+    for attempt in range(1, max_attempts + 1):
+        try:
+            kwargs = {"model": current_model(), "messages": messages, "temperature": 0, "max_tokens": 4000}
+            if response_format:
+                kwargs["response_format"] = response_format
+            response = client.chat.completions.create(**kwargs)
+            return response.choices[0].message.content.strip()
+        except RateLimitError as error:
+            msg = str(error)
+            if "tokens per day" in msg or "TPD" in msg:
+                if _model_index < len(MODEL_FALLBACKS) - 1:
+                    _model_index += 1
+                    print(f"  {current_model()} was exhausted for {MODEL_FALLBACKS[_model_index - 1]} - "
+                          f"switching to {current_model()} and retrying...")
+                    continue
+                raise RuntimeError(
+                    f"All fallback models exhausted for today: {MODEL_FALLBACKS}. "
+                    f"Wait for daily reset or add another model to MODEL_FALLBACKS. Raw: {msg}"
+                )
+            print(f"  RAW RATE LIMIT ERROR: {error}")
+            min_sec = re.search(r"try again in (?:(\d+)m)?([\d.]+)s", msg)
+            if min_sec:
+                minutes = int(min_sec.group(1)) if min_sec.group(1) else 0
+                seconds = float(min_sec.group(2))
+                wait = minutes * 60 + seconds + 1
+            else:
+                wait = 10 * attempt
+            print(f"  Rate limited, waiting {wait:.1f}s (attempt {attempt}/{max_attempts})...")
+            time.sleep(wait)
+    raise RuntimeError("Rate limit persisted after retries.")
+
+
 def call_qwen(prompt, schema):
-    response = chat(
-        model=MODEL,
-        messages=[{"role": "user", "content": prompt}],
-        format=schema,
-        options={"temperature": 0, "num_ctx": 8192}
+    content = call_groq(
+        [{"role": "user", "content": prompt + "\n\nRespond with a single JSON object only."}],
+        response_format={"type": "json_object"}
     )
-    content = response.message.content.strip()
     if not content:
         raise RuntimeError("Empty model response.")
     try:
@@ -63,9 +109,20 @@ Extract ONLY explicitly stated authentication facts about {app_name} from the
 excerpts below. Do not guess or use prior knowledge.
 
 methods: authentication mechanisms (OAuth 2.0, API Key, Basic Auth, Bearer Token, JWT, Other)
-flows: auth flows (Authorization Code, Client Credentials, Device Authorization, PKCE, Refresh Token)
+flows: the specific OAuth flow name(s), ONLY if the source describes how authorization is obtained (Authorization Code, Client Credentials, Device Authorization, PKCE, Refresh Token). If methods includes "OAuth 2.0" and a flow is described anywhere in the text (e.g. "exchange the code for an access token", "client credentials grant"), flows must NOT be empty.
 token_types: credential/token forms (access token, bearer token, API key, JWT)
 evidence: list of {{claim, url}}, url must be one of the URLs below
+
+Example: if a source says "Authenticate using OAuth 2.0. After the user
+authorizes your app, exchange the authorization code for an access token",
+the correct output includes:
+methods: ["OAuth 2.0"]
+flows: ["Authorization Code"]
+This is wrong: methods: ["OAuth 2.0"], flows: [] - do not leave flows empty
+when the source describes how the OAuth authorization actually happens.
+
+If authentication is Basic Auth or a plain API key with no OAuth involved,
+flows correctly stays empty - only OAuth-based auth has a flow.
 
 If nothing is stated for a field, return an empty list. Return only the JSON object.
 
@@ -121,9 +178,9 @@ use "unknown" ONLY when nothing at all is said about that field.
 
 developer_signup: how a developer gets an account (short phrase, e.g. "free developer account", "paid account required", "contact sales")
 credential_access: how the actual API key/token is obtained (short phrase)
-plan_requirement: "none" or "paid plan required"
-admin_requirement: "none" or "admin approval required"
-partner_requirement: "none" or "partnership required"
+plan_requirement: "none" ONLY if a source explicitly states no paid plan is needed for API access. "paid plan required" if explicitly stated. Otherwise "unknown" - do NOT default to "none" just because pricing isn't mentioned.
+admin_requirement: "none" ONLY if explicitly stated no special permission is needed. "admin approval required" if explicitly stated. Otherwise "unknown".
+partner_requirement: "none" ONLY if explicitly stated no partnership is needed. "partnership required" if explicitly stated. Otherwise "unknown".
 evidence: list of {{claim, url}}, url must be one of the URLs below
 
 Example: if a source says "Start building on Salesforce for free with a
@@ -157,6 +214,8 @@ SOURCES:
         value = str(result.get(field, "")).strip()
         if value.lower().startswith("http") or len(value.split()) > 8:
             result[field] = "unknown"
+    if str(result.get("credential_access", "")).strip().lower() == "none":
+        result["credential_access"] = "unknown"
     return result
 
 
@@ -234,6 +293,10 @@ def reconcile_mcp_available(mcp):
     return mcp
 
 
+def call_text(prompt):
+    return call_groq([{"role": "user", "content": prompt}])
+
+
 def extract_description(app_name, evidence_pack):
     combined = []
     for topic in ["api", "access"]:
@@ -243,16 +306,15 @@ def extract_description(app_name, evidence_pack):
     prompt = f"""
 Write exactly one concise sentence describing what {app_name} is and does,
 based only on the excerpts below. Do not mention authentication or API details.
+Output ONLY the sentence itself, no preamble, no quotes, no JSON.
 
 SOURCES:
 {evidence_text(combined)}
 """
-    schema = {
-        "type": "object",
-        "required": ["description"],
-        "properties": {"description": {"type": "string"}}
-    }
-    return call_qwen(prompt, schema).get("description", "").strip()
+    description = call_text(prompt).strip().strip('"')
+    if not description:
+        description = f"{app_name} is a software platform researched for API/agent buildability."
+    return description
 
 
 def classify_breadth(api_result):
@@ -281,6 +343,11 @@ def classify_buildability(auth, api, access, mcp):
         return "moderate", "Requires admin approval to obtain credentials."
     if "required" in plan:
         return "moderate", "Requires a paid plan for API access."
+
+    access_resolved = access.get("developer_signup", "unknown") != "unknown"
+
+    if not access_resolved:
+        return "moderate", "Developer signup / access process is undocumented in the sources reviewed."
     if mcp.get("available") is True or auth.get("methods"):
         return "easy", ""
     return "unknown", "Insufficient evidence to classify buildability."
@@ -290,16 +357,29 @@ def compute_confidence(auth, api, access, mcp):
     topics = [auth, api, access, mcp]
     topics_with_evidence = sum(1 for t in topics if t.get("evidence"))
     coverage = topics_with_evidence / 4
-    total_evidence = sum(len(t.get("evidence", [])) for t in topics)
-    density = min(1.0, total_evidence / 8)
-    return round(0.5 * coverage + 0.5 * density, 2)
+
+    unique_urls = set()
+    for t in topics:
+        for item in t.get("evidence", []):
+            unique_urls.add(item.get("url", ""))
+    density = min(1.0, len(unique_urls) / 8)
+
+    access_fields = ["developer_signup", "plan_requirement", "admin_requirement", "partner_requirement"]
+    access_known = sum(1 for f in access_fields if access.get(f, "unknown") != "unknown")
+    access_completeness = access_known / len(access_fields)
+
+    return round(0.4 * coverage + 0.4 * density + 0.2 * access_completeness, 2)
 
 
 def build_record(app_name, category, evidence_pack):
     auth = enforce_auth_grounding(extract_auth(app_name, evidence_pack.get("authentication", [])))
+    time.sleep(2)
     api = extract_api(app_name, evidence_pack.get("api", []))
+    time.sleep(2)
     access = enforce_access_grounding(extract_access(app_name, evidence_pack.get("access", [])))
+    time.sleep(2)
     mcp = reconcile_mcp_available(extract_mcp(app_name, evidence_pack.get("mcp", [])))
+    time.sleep(2)
     description = extract_description(app_name, evidence_pack)
 
     breadth = classify_breadth(api)
@@ -350,7 +430,8 @@ def build_record(app_name, category, evidence_pack):
         },
         "evidence": all_evidence,
         "confidence": confidence,
-        "notes": ""
+        "notes": "",
+        "model_used": current_model()
     }
     validate_result(record)
     return record
@@ -410,7 +491,7 @@ class AppResearcher:
             return []
         result = self.session.execute(
             "COMPOSIO_SEARCH_FETCH_URL_CONTENT",
-            arguments={"urls": urls, "text": True, "max_characters": 3500}
+            arguments={"urls": urls, "text": True, "max_characters": 2500}
         )
         if result.error:
             raise RuntimeError(result.error)
@@ -442,14 +523,44 @@ class AppResearcher:
                 text = text.replace(marker, " ")
             text = " ".join(text.split())
 
-            cleaned.append({"url": url, "title": title, "content": text[:2500]})
+            first_sentence_end = text.find(". ")
+            if first_sentence_end > 350:
+                text = text[first_sentence_end + 2:]
+
+            cleaned.append({"url": url, "title": title, "content": text[:2000]})
         return cleaned
+
+    def root_domain(self, url):
+        netloc = urlparse(url).netloc.lower()
+        parts = netloc.split(".")
+        return ".".join(parts[-2:]) if len(parts) >= 2 else netloc
 
     def build_evidence_pack(self, fetched_sources):
         evidence_pack = {}
         for topic, fetched_data in fetched_sources.items():
-            cleaned = self.clean_evidence(fetched_data)
-            evidence_pack[topic] = cleaned[:3]
+            evidence_pack[topic] = self.clean_evidence(fetched_data)
+
+        domain_counts = {}
+        for sources in evidence_pack.values():
+            for s in sources:
+                domain = self.root_domain(s["url"])
+                domain_counts[domain] = domain_counts.get(domain, 0) + 1
+
+        if domain_counts:
+            trusted = {d for d, c in domain_counts.items() if c >= 2}
+            if not trusted:
+                trusted = set(domain_counts.keys())
+
+            for topic, sources in evidence_pack.items():
+                kept = []
+                for s in sources:
+                    domain = self.root_domain(s["url"])
+                    if domain in trusted:
+                        kept.append(s)
+                    else:
+                        print(f"  DROPPED untrusted domain in {topic}: {s['url']}")
+                evidence_pack[topic] = kept[:2]
+
         return evidence_pack
 
     def research_app(self, app_name):
