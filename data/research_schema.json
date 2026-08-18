@@ -1,0 +1,40 @@
+{
+  "app": "",
+  "category": "",
+  "description": "",
+  "authentication": {
+    "methods": [],
+    "flows": [],
+    "token_types": []
+  },
+  "access": {
+    "developer_signup": "",
+    "credential_access": "",
+    "plan_requirement": "",
+    "admin_requirement": "",
+    "partner_requirement": ""
+  },
+  "api": {
+    "available": false,
+    "types": [],
+    "breadth": "unknown"
+  },
+  "mcp": {
+    "available": false,
+    "details": "",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "unknown",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "",
+      "claim": "",
+      "url": ""
+    }
+  ],
+  "confidence": 0.0,
+  "notes": ""
+}
