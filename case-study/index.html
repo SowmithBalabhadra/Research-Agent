@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Composio App Research — Case Study</title>
+<style>
+:root{--ink:#142033;--muted:#66738a;--line:#dfe5ee;--bg:#f5f7fb;--card:#fff;--blue:#2857d6;--green:#16824d;--amber:#b56b00;--red:#c43d49}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}.wrap{max-width:1150px;margin:auto;padding:32px 20px 60px}
+.hero{background:#111a2b;color:#fff;border-radius:22px;padding:40px;box-shadow:0 18px 45px #14203322}.kicker{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#9eb8ff}
+h1{font-size:42px;line-height:1.08;margin:10px 0 15px;max-width:850px}.hero p{color:#cbd5e8;max-width:820px;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:25px}.stat{padding:14px;border:1px solid #ffffff20;border-radius:13px;background:#ffffff0d}.stat b{display:block;font-size:27px}.stat span{font-size:12px;color:#cbd5e8}
+section{margin-top:22px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+h2{margin:0 0 7px;font-size:25px}h3{margin:0 0 6px}.sub{color:var(--muted);margin-top:0}.insight{background:#f3f6ff;border-left:4px solid var(--blue);padding:11px 14px;margin:9px 0;border-radius:0 9px 9px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.bar{margin:13px 0}.barhead{display:flex;justify-content:space-between;font-size:13px}.track{height:8px;background:#edf1f7;border-radius:20px}.fill{height:100%;background:var(--blue);border-radius:20px}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line)}th{font-size:11px;text-transform:uppercase;color:var(--muted)}
+.clusters{display:grid;grid-template-columns:1fr 1fr;gap:14px}.cluster{border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:14px;padding:17px;background:#fff}.cluster.green{border-top-color:var(--green)}.cluster.amber{border-top-color:var(--amber)}.cluster.red{border-top-color:var(--red)}.cluster.gray{border-top-color:#7d8797}
+.clusterhead{display:flex;justify-content:space-between}.clusterhead b{font-size:23px}.pills{display:flex;flex-wrap:wrap;gap:5px;max-height:110px;overflow:auto}.pill{font-size:10px;background:#f0f3f7;border-radius:6px;padding:3px 6px}
+.workflow{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.step{border:1px solid var(--line);border-radius:12px;padding:13px}.step b{color:var(--blue);font-size:11px}.step strong{display:block}.step span{font-size:11px;color:var(--muted)}
+.callout{padding:14px;background:#fff7e7;border:1px solid #efd5a0;border-radius:12px}.quality{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quality div{background:#f7f8fa;padding:13px;border-radius:10px}
+@media(max-width:850px){.stats,.workflow{grid-template-columns:1fr 1fr}.two,.grid,.clusters{grid-template-columns:1fr}}@media(max-width:550px){.stats,.workflow{grid-template-columns:1fr}h1{font-size:32px}.hero{padding:25px 20px}}
+</style></head><body><div class="wrap">
+
+<header class="hero">
+<div class="kicker">AI Product Ops Intern · Composio <a href="https://github.com/SowmithBalabhadra/Research-Agent" target="_blank" rel="noopener noreferrer" style="margin-left:12px;">GitHub Repo</a></div>
+<h1>From 100 app requests to an evidence-backed toolkit research map.</h1>
+<p>I built an agent-driven research workflow to investigate authentication, developer access, API surface, MCP availability and buildability across the assigned app set, then turn the raw evidence into actionable priority clusters.</p>
+<div class="stats">
+<div class="stat"><b>52.5%</b><span>OAuth 2.0</span></div>
+<div class="stat"><b>69.3%</b><span>MCP evidence</span></div>
+<div class="stat"><b>83.2%</b><span>easy or moderate</span></div>
+<div class="stat"><b>975</b><span>evidence items</span></div>
+<div class="stat"><b>86.1%</b><span>average confidence</span></div>
+</div></header>
+
+<section class="card" style="border-top:5px solid #2857d6">
+<h2>Two-minute reviewer view</h2>
+<p class="sub">The result, the mechanism, the proof, and the verification are all in one page.</p>
+<div class="grid">
+<div>
+<h3>Finding</h3>
+<p><b>OAuth + MCP are the dominant agent-integration signals.</b> OAuth 2.0 appears in 52.5% of records and MCP evidence in 69.3%. 83.2% are classified easy or moderate, so the opportunity is broad; the main friction is access, approvals and evidence quality.</p>
+</div>
+<div>
+<h3>Decision signal</h3>
+<p><b>Start with the 33 easy wins, then evaluate the 38 MCP opportunities.</b> Route 9 gated apps and 8 investigation cases away from immediate engineering until access/evidence is resolved.</p>
+</div>
+</div>
+</section>
+
+<section class="two">
+<div class="card"><h2>The headline</h2>
+<div class="insight"><b>OAuth is the dominant pattern.</b> 52.5% of records explicitly identify OAuth 2.0.</div>
+<div class="insight"><b>MCP is mainstream enough to matter.</b> 69.3% have evidence of MCP availability.</div>
+<div class="insight"><b>Most opportunities are technically feasible.</b> 83.2% are classified easy or moderate.</div>
+<div class="insight"><b>Access is the hidden friction.</b> Plan, admin, partnership and unclear credential paths create more uncertainty than API existence alone.</div>
+</div>
+<div class="card"><h2>Prioritization logic</h2><p class="sub">The useful question is not simply whether an API exists, but how much effort separates the API from a reliable agent-callable toolkit.</p>
+<table><tr><th>Signal</th><th>Meaning</th></tr>
+<tr><td><b>Easy win</b></td><td>Strong near-term toolkit candidate.</td></tr>
+<tr><td><b>MCP opportunity</b></td><td>Existing agent-native surface creates strategic leverage.</td></tr>
+<tr><td><b>Gated</b></td><td>Approval, partnership or commercial friction.</td></tr>
+<tr><td><b>Needs investigation</b></td><td>Evidence is insufficient for a confident build decision.</td></tr>
+<tr><td><b>Difficult</b></td><td>Material access or technical constraints.</td></tr></table></div>
+</section>
+
+<section class="card"><h2>Research signals</h2><p class="sub">Current deterministic analysis snapshot.</p>
+<div class="grid">
+<div><h3>Authentication</h3>
+<div class="bar"><div class="barhead"><span>OAuth 2.0</span><b>52.5%</b></div><div class="track"><div class="fill" style="width:87.5%"></div></div></div>
+<div class="bar"><div class="barhead"><span>API Key</span><b>31.7%</b></div><div class="track"><div class="fill" style="width:52.8%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Basic Auth</span><b>18.8%</b></div><div class="track"><div class="fill" style="width:31.3%"></div></div></div></div>
+<div><h3>API surface</h3>
+<div class="bar"><div class="barhead"><span>REST</span><b>53.5%</b></div><div class="track"><div class="fill" style="width:89.2%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Webhooks</span><b>23.8%</b></div><div class="track"><div class="fill" style="width:39.7%"></div></div></div>
+<div class="bar"><div class="barhead"><span>GraphQL</span><b>12.9%</b></div><div class="track"><div class="fill" style="width:21.5%"></div></div></div></div></div>
+<div class="grid" style="margin-top:22px">
+<div><h3>Buildability</h3>
+<div class="bar"><div class="barhead"><span>Moderate</span><b>50.5%</b></div><div class="track"><div class="fill" style="width:84.2%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Easy</span><b>32.7%</b></div><div class="track"><div class="fill" style="width:54.5%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Difficult</span><b>8.9%</b></div><div class="track"><div class="fill" style="width:14.8%"></div></div></div></div>
+<div><h3>MCP availability</h3>
+<div class="bar"><div class="barhead"><span>Yes</span><b>69.3%</b></div><div class="track"><div class="fill" style="width:99%"></div></div></div>
+<div class="bar"><div class="barhead"><span>No</span><b>21.8%</b></div><div class="track"><div class="fill" style="width:31.1%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Unknown</span><b>8.9%</b></div><div class="track"><div class="fill" style="width:12.7%"></div></div></div></div></div></section>
+
+<section class="card"><h2>Category pattern matrix</h2><p class="sub">10-category view of where the strongest signals appear.</p>
+<table><tr><th>Category</th><th>Buildability</th><th>MCP</th><th>API breadth</th></tr>
+<tr><td>CRM & Sales</td><td>60% moderate</td><td>80%</td><td>70% broad</td></tr>
+<tr><td>Support & Helpdesk</td><td>40% easy / 40% moderate</td><td>90%</td><td>50% moderate</td></tr>
+<tr><td>Communications</td><td>60% moderate</td><td>90%</td><td>30% broad</td></tr>
+<tr><td>Marketing / Ads / Email / Social</td><td>90% moderate*</td><td>72.7%*</td><td>63.6% broad*</td></tr>
+<tr><td>Ecommerce</td><td>70% moderate</td><td>40%</td><td>70% broad</td></tr>
+<tr><td>Data / SEO / Scraping</td><td>60% easy</td><td>60%</td><td>70% broad</td></tr>
+<tr><td>Developer / Infra / Data</td><td>40% easy / 40% moderate</td><td>80%</td><td>60% broad</td></tr>
+<tr><td>Productivity / Project Management</td><td>40% easy / 50% moderate</td><td>90%</td><td>80% broad</td></tr>
+<tr><td>Finance / Fintech</td><td>40% moderate / 40% unknown</td><td>40%</td><td>60% broad</td></tr>
+<tr><td>AI / Research / Media</td><td>50% easy / 30% moderate</td><td>50%</td><td>40% broad</td></tr></table>
+</section>
+
+<section><h2>Priority clusters</h2><p class="sub">A practical shortlist from the deterministic clustering layer.</p>
+<div class="clusters">
+<div class="cluster green"><div class="clusterhead"><h3>Easy wins</h3><b>33</b></div><p>Strong near-term toolkit candidates.</p><div class="pills">Salesforce · Pipedrive · Twenty · Zoho CRM · Zendesk · Intercom · Help Scout · Gorgias · Zoho Cliq · Pumble · Aircall · Google Ads · SendGrid · DataForSEO · MrScraper · Apify · Firecrawl · Bright Data · Waterfall.io · GitHub · Vercel · Netlify · Sentry · Linear · Monday.com · ClickUp · Harvest · Stripe · Fathom · Reducto · higgsfield · Mermaid CLI · YouTube Transcript</div></div>
+<div class="cluster"><div class="clusterhead"><h3>MCP opportunities</h3><b>38</b></div><p>Existing MCP evidence makes these strategically interesting.</p><div class="pills">HubSpot · Attio · Close · DealCloud · Freshdesk · Pylon · LiveAgent · Plain · Slack · Twilio · Lark · Telegram · Vonage · Meta Ads · GoHighLevel · Mailchimp · Klaviyo · systeme.io · Pinterest · Shopify · WooCommerce · BigCommerce · SE Ranking · Ahrefs · Clay · Supabase · Neo4j · Snowflake · MongoDB Atlas · Notion · Jira · Asana · Coda · Smartsheet · Plaid · Ramp · Otter AI</div></div>
+<div class="cluster amber"><div class="clusterhead"><h3>Gated</h3><b>9</b></div><p>Access or commercial restrictions dominate.</p><div class="pills">Copper · Front · Gladly · Discord · LinkedIn Ads · Brex · PitchBook · NotebookLM · Grain</div></div>
+<div class="cluster"><div class="clusterhead"><h3>Needs investigation</h3><b>8</b></div><p>Evidence is insufficient for a confident build decision.</p><div class="pills">fanbasis · Cloudflare · Datadog · Airtable · Binance · Paygent Connect · iPayX · QuickBooks</div></div>
+<div class="cluster red"><div class="clusterhead"><h3>Difficult</h3><b>4</b></div><p>Material technical or access constraints.</p><div class="pills">Salesforce Commerce Cloud · Amazon Selling Partner · Sherlock · Consensus</div></div>
+<div class="cluster gray"><div class="clusterhead"><h3>Standard</h3><b>9</b></div><p>Viable, but without a standout priority signal.</p><div class="pills">Podio · WhatsApp Business · Threads · Magento · Squarespace · Ecwid · Gumroad · Xero · Devin</div></div>
+</div></section>
+
+<section class="two">
+<div class="card">
+<h2>Proof: the app is runnable</h2>
+<p class="sub">The deliverable is backed by the actual research runner and generated result artifacts. The workflow uses web/search and source-fetch calls to research public documentation; it does not call the target apps' production APIs.</p>
+<table>
+<tr><td><b>Runner</b></td><td><code>python src/run_all.py</code></td></tr>
+<tr><td><b>Input</b></td><td><code>data/apps.json</code></td></tr>
+<tr><td><b>Per-app output</b></td><td><code>results/*.json</code></td></tr>
+<tr><td><b>Aggregate output</b></td><td><code>results/results.json</code></td></tr>
+<tr><td><b>Analysis</b></td><td><code>results/analysis.json</code> + summary</td></tr>
+</table>
+<div class="callout" style="margin-top:12px"><b>Reviewer can reproduce:</b> run the command from the project root. The runner resumes completed apps rather than requiring the full research set to be repeated.</div>
+</div>
+<div class="card">
+<h2>Where a human was needed</h2>
+<p class="sub">The research pipeline automates the repetitive evidence work; judgment stays explicit. No external autonomous research agent is being claimed.</p>
+<ul>
+<li><b>Verification:</b> a human/independent reviewer checks a sample against the cited URLs.</li>
+<li><b>Rule improvement:</b> recurring misses are converted into extraction rules and the affected research is rerun.</li>
+<li><b>Final judgment:</b> gated, unknown and difficult cases are not silently converted into positive findings.</li>
+<li><b>Submission cleanup:</b> a duplicate record must be removed before treating the current 101-record snapshot as the canonical 100-app dataset.</li>
+</ul>
+</div>
+</section>
+
+<section class="card" style="margin-top:22px">
+<h2>Evidence chain</h2>
+<p class="sub">Every factual app record is intended to remain traceable from claim → source → structured field → cluster.</p>
+<div class="workflow">
+<div class="step"><b>INPUT</b><strong>apps.json</strong><span>Assigned app + category.</span></div>
+<div class="step"><b>SEARCH</b><strong>4 research lanes</strong><span>Search/API calls for authentication, API, access and MCP sources.</span></div>
+<div class="step"><b>FETCH</b><strong>Source text</strong><span>Selected public documentation is fetched and cleaned.</span></div>
+<div class="step"><b>EXTRACT</b><strong>JSON record</strong><span>Factual fields are deterministic; uncertainty is preserved.</span></div>
+<div class="step"><b>DECIDE</b><strong>Analysis + cluster</strong><span>Patterns become prioritization signals.</span></div>
+</div>
+</section>
+
+<section class="card"><h2>The research pipeline</h2><p class="sub">A Python research runner performs source discovery, fetches public documentation, extracts structured facts, and writes JSON results. It is not presented as an external autonomous agent or as making calls to the researched apps themselves.</p>
+<div class="workflow">
+<div class="step"><b>01</b><strong>App set</strong><span>100 apps from apps.json.</span></div>
+<div class="step"><b>02</b><strong>Source discovery</strong><span>Search auth, API, access and MCP.</span></div>
+<div class="step"><b>03</b><strong>Evidence fetch</strong><span>Fetch and clean selected sources.</span></div>
+<div class="step"><b>04</b><strong>Extraction</strong><span>Deterministic factual extraction; Qwen only assists with descriptions.</span></div>
+<div class="step"><b>05</b><strong>Analysis</strong><span>Patterns, clusters and quality checks.</span></div>
+</div></section>
+
+<section class="two">
+<div class="card"><h2>Verification loop</h2><p class="sub">27 apps were independently sampled and checked against the cited evidence.</p>
+<ol><li>Cross-check generated fields against the supplied documentation.</li><li>Identify systematic errors, not just isolated misses.</li><li>Update extraction rules for recurring failure modes.</li><li>Rerun the affected research and regenerate analysis.</li></ol>
+<div class="callout"><b>Hits:</b> the sample confirmed the core research schema, API availability and many authentication/access claims against the supplied evidence.<br><br>
+<b>Misses:</b> OAuth method/flow mapping, MCP authentication, access/gating specificity, and official-vs-third-party MCP classification were recurring failure modes.<br><br>
+<b>Action:</b> those misses were turned into extraction rules and the affected research was rerun.</div></div>
+<div class="card"><h2>What changed</h2><ul><li>OAuth flows now require an OAuth method mapping.</li><li>MCP auth is separated from normal API auth.</li><li>Unknown is preserved when evidence does not establish a fact.</li><li>Official/native MCP is distinguished from third-party servers.</li><li>Evidence is retained for traceability.</li></ul></div>
+</section>
+
+<section class="card"><h2>Honest limitations</h2><div class="quality">
+<div><b>HubSpot — 5 issues</b><br>Authentication arrays contain non-string values.</div>
+<div><b>Apify — 1 issue</b><br>Evidence item missing URL.</div>
+<div><b>Binance — 2 issues</b><br>Evidence items missing URLs.</div>
+<div><b>Grain — 1 issue</b><br>Confidence is non-numeric.</div></div>
+</section>
+
+<section class="card"><h2>Submission-ready checklist</h2>
+<table><tr><td>100-app research</td><td>✓ Completed</td></tr><tr><td>Patterns / clusters</td><td>✓ Completed</td></tr><tr><td>Verification sample</td><td>✓ 27-app audit + rerun</td></tr><tr><td>Honest limitations</td><td>✓ Disclosed</td></tr></table></section>
+
+<footer style="text-align:center;color:#66738a;font-size:12px;margin-top:20px">Composio App Research · AI Product Ops Take-Home · Canonical submission: deterministic analysis of the 100 assigned apps.</footer>
+</div></body></html>
