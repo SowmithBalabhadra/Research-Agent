@@ -1,0 +1,114 @@
+{
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "description": "Salesforce is a cloud platform that enables developers to integrate and manipulate its data objects through scalable, flexible APIs for building and extending business applications.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Client Credentials"
+    ],
+    "token_types": [
+      "access token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "unknown",
+    "plan_requirement": "none",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Salesforce MCP integration involves registering an External Client App and authenticating via OAuth 2.0 Authorization Code flow with PKCE, after which the MCP server executes actions using the same user permissions and security controls as the user.",
+    "auth": "OAuth 2.0 Authorization Code flow with PKCE, using an External Client App; no service accounts or machine‑to‑machine flows."
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Salesforce uses OAuth 2.0 (OAuth tokens) for authentication",
+      "url": "https://help.salesforce.com/s/articleView?id=remoteaccess_oauth_tokens_scopes.htm&language=en_US&type=5"
+    },
+    {
+      "field": "authentication",
+      "claim": "Salesforce uses OAuth 2.0 for authentication",
+      "url": "https://developer.salesforce.com/blogs/2024/02/invoke-rest-apis-with-the-salesforce-integration-user-and-oauth-client-credentials"
+    },
+    {
+      "field": "authentication",
+      "claim": "Salesforce uses OAuth 2.0 for authentication",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_oauth_and_connected_apps.htm"
+    },
+    {
+      "field": "authentication",
+      "claim": "Authorization Code flow is supported (authorization code token is issued after successful authentication)",
+      "url": "https://help.salesforce.com/s/articleView?id=remoteaccess_oauth_tokens_scopes.htm&language=en_US&type=5"
+    },
+    {
+      "field": "authentication",
+      "claim": "Client Credentials flow is supported for server‑to‑server connections",
+      "url": "https://developer.salesforce.com/blogs/2024/02/invoke-rest-apis-with-the-salesforce-integration-user-and-oauth-client-credentials"
+    },
+    {
+      "field": "authentication",
+      "claim": "Access token is issued after client is authorized and is used to access protected resources",
+      "url": "https://help.salesforce.com/s/articleView?id=remoteaccess_oauth_tokens_scopes.htm&language=en_US&type=5"
+    },
+    {
+      "field": "api",
+      "claim": "Salesforce provides a REST API",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_list.htm"
+    },
+    {
+      "field": "api",
+      "claim": "Salesforce REST API is designed to work with Salesforce objects",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm"
+    },
+    {
+      "field": "access",
+      "claim": "Free development environment and Developer Edition available",
+      "url": "https://developer.salesforce.com/free-trials"
+    },
+    {
+      "field": "access",
+      "claim": "Start building on Salesforce for free, no paid plan required for development environment",
+      "url": "https://developer.salesforce.com/free-trials"
+    },
+    {
+      "field": "mcp",
+      "claim": "Hosted MCP Servers run with the same object‑level, field‑level, and sharing permissions as the authorizing user.",
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/security-best-practices.html"
+    },
+    {
+      "field": "mcp",
+      "claim": "MCP integration uses OAuth 2.0 Authorization Code flow with PKCE and requires an External Client App; Connected Apps cannot be used.",
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/client-connection-overview.html"
+    },
+    {
+      "field": "mcp",
+      "claim": "Salesforce offers a read‑only MCP server (platform/sobject-reads) that only exposes read operations.",
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/security-best-practices.html"
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "",
+  "_meta": {
+    "app_id": 1,
+    "research_time_seconds": 40.0,
+    "research_status": "success"
+  }
+}

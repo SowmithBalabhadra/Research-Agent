@@ -1,0 +1,142 @@
+{
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "description": "Freshdesk is a customer support and helpdesk platform developed by Freshworks that provides a REST API as its primary programmatic interface, with all official API access provided through the versioned REST API.",
+  "authentication": {
+    "methods": [
+      "API Key",
+      "Basic Auth"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Client Credentials"
+    ],
+    "token_types": [
+      "access token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "unknown",
+    "plan_requirement": "none",
+    "admin_requirement": "admin approval required",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Freshdesk explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP/API access requires administrator approval."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Freshdesk documentation explicitly mentions API keys.",
+      "url": "https://community.freshworks.dev/t/freshdesk-app-with-client-credentials-flow/7461"
+    },
+    {
+      "field": "authentication",
+      "claim": "Freshdesk documentation explicitly mentions API keys.",
+      "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key-"
+    },
+    {
+      "field": "authentication",
+      "claim": "Freshdesk documentation explicitly mentions Basic Authentication.",
+      "url": "https://community.freshworks.dev/t/freshdesk-app-with-client-credentials-flow/7461"
+    },
+    {
+      "field": "authentication",
+      "claim": "Freshdesk documentation explicitly mentions access tokens.",
+      "url": "https://community.freshworks.dev/t/freshdesk-app-with-client-credentials-flow/7461"
+    },
+    {
+      "field": "authentication",
+      "claim": "Freshdesk documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://community.freshworks.dev/t/freshdesk-app-with-client-credentials-flow/7461"
+    },
+    {
+      "field": "authentication",
+      "claim": "Freshdesk documentation explicitly mentions the Client Credentials authentication flow.",
+      "url": "https://community.freshworks.dev/t/freshdesk-app-with-client-credentials-flow/7461"
+    },
+    {
+      "field": "api",
+      "claim": "Freshdesk documentation explicitly documents a REST interface.",
+      "url": "https://apis.io/graphqls/freshdesk/freshdesk-graphql/"
+    },
+    {
+      "field": "api",
+      "claim": "Freshdesk documentation explicitly documents a REST interface.",
+      "url": "https://github.com/api-evangelist/freshdesk/blob/main/apis.yml"
+    },
+    {
+      "field": "api",
+      "claim": "Freshdesk documentation explicitly documents a GraphQL interface.",
+      "url": "https://apis.io/graphqls/freshdesk/freshdesk-graphql/"
+    },
+    {
+      "field": "api",
+      "claim": "Freshdesk documentation explicitly documents a GraphQL interface.",
+      "url": "https://github.com/api-evangelist/freshdesk/blob/main/apis.yml"
+    },
+    {
+      "field": "api",
+      "claim": "Freshdesk documentation explicitly documents a Webhooks interface.",
+      "url": "https://apis.io/graphqls/freshdesk/freshdesk-graphql/"
+    },
+    {
+      "field": "api",
+      "claim": "Freshdesk documentation explicitly documents a Webhooks interface.",
+      "url": "https://github.com/api-evangelist/freshdesk/blob/main/apis.yml"
+    },
+    {
+      "field": "access",
+      "claim": "Freshdesk provides a free developer/development environment.",
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans"
+    },
+    {
+      "field": "access",
+      "claim": "Freshdesk documentation explicitly indicates that the relevant capability is available without a paid plan.",
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans"
+    },
+    {
+      "field": "access",
+      "claim": "Freshdesk documentation explicitly requires administrator approval or permissions.",
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans"
+    },
+    {
+      "field": "mcp",
+      "claim": "Freshdesk documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-"
+    },
+    {
+      "field": "mcp",
+      "claim": "Freshdesk documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://developers.freshworks.com/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Freshdesk documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://partnersupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-"
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 13,
+    "research_time_seconds": 57.18,
+    "research_status": "success"
+  }
+}

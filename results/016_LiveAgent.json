@@ -1,0 +1,84 @@
+{
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "description": "LiveAgent is a platform that exposes a built-in MCP server, allowing external AI tools to connect directly to the account and perform actions on behalf of agents, using their identity and permissions.",
+  "authentication": {
+    "methods": [
+      "API Key"
+    ],
+    "flows": [],
+    "token_types": []
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "LiveAgent explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP is available, but the exact credential-access requirements are not fully established."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "LiveAgent documentation explicitly mentions API keys.",
+      "url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors"
+    },
+    {
+      "field": "authentication",
+      "claim": "LiveAgent documentation explicitly mentions API keys.",
+      "url": "https://support.liveagent.com/567924-Documentation"
+    },
+    {
+      "field": "api",
+      "claim": "LiveAgent documentation explicitly documents a REST interface.",
+      "url": "https://support.liveagent.com/066804-LiveAgent-API"
+    },
+    {
+      "field": "access",
+      "claim": "LiveAgent provides a free developer/development environment.",
+      "url": "https://support.liveagent.com/567924-Documentation"
+    },
+    {
+      "field": "mcp",
+      "claim": "LiveAgent documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents"
+    },
+    {
+      "field": "mcp",
+      "claim": "LiveAgent documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://support.liveagent.com/578762-MCP-Tools-Reference"
+    },
+    {
+      "field": "mcp",
+      "claim": "LiveAgent documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://support.liveagent.com/466386-AI-Agents-feature-overview"
+    },
+    {
+      "field": "mcp",
+      "claim": "LiveAgent MCP documentation explicitly mentions the authorization code flow.",
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents"
+    }
+  ],
+  "confidence": 0.89,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 16,
+    "research_time_seconds": 44.46,
+    "research_status": "success"
+  }
+}

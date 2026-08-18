@@ -1,0 +1,121 @@
+{
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "description": "DealCloud is a platform that provides REST APIs for managing users, data, schema, backups, publications, and relationship‑intelligence, enabling custom integrations and workflow automation.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "flows": [
+      "Client Credentials"
+    ],
+    "token_types": [
+      "access token",
+      "bearer token",
+      "API key"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "enable API key via user profile",
+    "plan_requirement": "unknown",
+    "admin_requirement": "admin approval required",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "DealCloud exposes an MCP server that AI assistants connect to via an OAuth sign‑in flow, receiving a per‑user endpoint that enforces the user’s permissions and provides read‑only tools for querying data.",
+    "auth": "OAuth sign‑in flow per user"
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "Requires admin approval to obtain credentials."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token",
+      "url": "https://api.docs.dealcloud.com/docs/token"
+    },
+    {
+      "field": "authentication",
+      "claim": "The token endpoint returns an access_token (bearer token)",
+      "url": "https://api.docs.dealcloud.com/docs/token"
+    },
+    {
+      "field": "authentication",
+      "claim": "Authorization header uses Bearer token",
+      "url": "https://api.docs.dealcloud.com/docs/token"
+    },
+    {
+      "field": "authentication",
+      "claim": "API Keys can be obtained from the user profile and used for API requests",
+      "url": "https://api.docs.dealcloud.com/docs/apikeys"
+    },
+    {
+      "field": "authentication",
+      "claim": "Treat your API key like a password; it is used for authentication",
+      "url": "https://api.docs.dealcloud.com/docs/apikeys"
+    },
+    {
+      "field": "api",
+      "claim": "DealCloud provides a documented public API",
+      "url": "https://api.docs.dealcloud.com/docs"
+    },
+    {
+      "field": "api",
+      "claim": "DealCloud's API is RESTful",
+      "url": "https://api.docs.dealcloud.com/docs"
+    },
+    {
+      "field": "api",
+      "claim": "DealCloud's API uses OAuth2 Client Credentials flow for authentication",
+      "url": "https://api.docs.dealcloud.com/docs/token"
+    },
+    {
+      "field": "access",
+      "claim": "API key obtained via enabling in user profile",
+      "url": "https://api.docs.dealcloud.com/docs/apikeys"
+    },
+    {
+      "field": "access",
+      "claim": "Admin approval required to assign user group permissions for API access",
+      "url": "https://api.docs.dealcloud.com/docs/apikeys"
+    },
+    {
+      "field": "mcp",
+      "claim": "DealCloud offers an MCP Server that AI assistants can connect to via an endpoint URL.",
+      "url": "https://api.docs.dealcloud.com/mcp/getting-started"
+    },
+    {
+      "field": "mcp",
+      "claim": "The MCP Server authenticates connections using an OAuth sign‑in flow that establishes a per‑user connection.",
+      "url": "https://api.docs.dealcloud.com/mcp/authentication"
+    },
+    {
+      "field": "mcp",
+      "claim": "MCP connections respect the DealCloud user permission model, limiting data access to what the signed‑in user is allowed to see.",
+      "url": "https://api.docs.dealcloud.com/mcp/authentication"
+    },
+    {
+      "field": "mcp",
+      "claim": "A default MCP Server is provided out‑of‑the‑box and is tied to the site’s default schema.",
+      "url": "https://api.docs.dealcloud.com/mcp/getting-started"
+    }
+  ],
+  "confidence": 0.7,
+  "notes": "",
+  "_meta": {
+    "app_id": 10,
+    "research_time_seconds": 69.94,
+    "research_status": "success"
+  }
+}

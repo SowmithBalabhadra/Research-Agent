@@ -1,0 +1,107 @@
+{
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "description": "Aircall is a platform that supports two ways to authenticate with the REST API: Basic Authentication and OAuth, with Basic Authentication being used for connecting internal tools or private integrations and OAuth for accessing data on behalf of other users or customers.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0",
+      "API Key",
+      "Basic Auth"
+    ],
+    "flows": [],
+    "token_types": []
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "OAuth client / connected app configuration",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "none"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Aircall explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Aircall documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://developer.aircall.io/docs/public-vs-private-app"
+    },
+    {
+      "field": "authentication",
+      "claim": "Aircall documentation explicitly mentions API keys.",
+      "url": "https://developer.aircall.io/docs/basic-authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Aircall documentation explicitly mentions API keys.",
+      "url": "https://developer.aircall.io/docs/public-vs-private-app"
+    },
+    {
+      "field": "authentication",
+      "claim": "Aircall documentation explicitly mentions Basic Authentication.",
+      "url": "https://developer.aircall.io/docs/authentication"
+    },
+    {
+      "field": "api",
+      "claim": "Aircall documentation explicitly documents a REST interface.",
+      "url": "https://developer.aircall.io/docs/authentication"
+    },
+    {
+      "field": "api",
+      "claim": "Aircall documentation explicitly documents a REST interface.",
+      "url": "https://developer.aircall.io/docs/log-transcriptions"
+    },
+    {
+      "field": "api",
+      "claim": "Aircall documentation explicitly documents a Webhooks interface.",
+      "url": "https://developer.aircall.io/docs/your-first-api-call"
+    },
+    {
+      "field": "api",
+      "claim": "Aircall documentation explicitly documents a Webhooks interface.",
+      "url": "https://developer.aircall.io/docs/log-transcriptions"
+    },
+    {
+      "field": "access",
+      "claim": "Aircall documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://developer.aircall.io/docs/authentication"
+    },
+    {
+      "field": "access",
+      "claim": "Aircall documentation explicitly states that a partnership is not required.",
+      "url": "https://developer.aircall.io/docs/authentication"
+    },
+    {
+      "field": "mcp",
+      "claim": "Aircall documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://developer.aircall.io/docs/introduction"
+    },
+    {
+      "field": "mcp",
+      "claim": "Aircall documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://github.com/themobilefirstco/aircall-mcp-server"
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 29,
+    "research_time_seconds": 44.74,
+    "research_status": "success"
+  }
+}

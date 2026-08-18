@@ -1,0 +1,133 @@
+{
+  "app": "Attio",
+  "category": "CRM and Sales",
+  "description": "Attio is a developer platform that lets you create custom integrations, automate actions with webhooks, and embed apps using its REST API and SDK.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0",
+      "API Key",
+      "Basic Auth",
+      "Bearer Token"
+    ],
+    "flows": [],
+    "token_types": [
+      "access token",
+      "bearer token",
+      "API key"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "OAuth 2.0 authentication",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Attio hosts an MCP server that lets AI assistants connect via OAuth and use the Model Context Protocol to securely read and write workspace data.",
+    "auth": "OAuth (user authenticates as their Attio account)"
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "Developer signup / access process is undocumented in the sources reviewed."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Attio supports OAuth 2.0 flow to generate access tokens",
+      "url": "https://docs.attio.com/rest-api/guides/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Attio supports generating an API key for a single workspace",
+      "url": "https://docs.attio.com/rest-api/guides/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Attio supports HTTP Basic Authentication where the username is the token",
+      "url": "https://docs.attio.com/rest-api/guides/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Attio uses Bearer token in the Authorization header for access tokens",
+      "url": "https://docs.attio.com/rest-api/guides/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Attio API token can be passed as a Bearer token in the Authorization header",
+      "url": "https://docs.attio.com/sdk/server/attio-api-token"
+    },
+    {
+      "field": "api",
+      "claim": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+      "url": "https://docs.attio.com/rest-api/overview"
+    },
+    {
+      "field": "api",
+      "claim": "Attio provides webhooks (setting up and listening to webhooks).",
+      "url": "https://docs.attio.com/rest-api/overview"
+    },
+    {
+      "field": "api",
+      "claim": "The Attio App SDK exposes record and workspace data through a GraphQL API.",
+      "url": "https://docs.attio.com/sdk/graphql/graphql"
+    },
+    {
+      "field": "access",
+      "claim": "OAuth 2.0 authentication supported for API access",
+      "url": "https://attio.com/platform/developers"
+    },
+    {
+      "field": "access",
+      "claim": "OAuth flow tutorial for API authentication",
+      "url": "https://docs.attio.com/rest-api/overview"
+    },
+    {
+      "field": "mcp",
+      "claim": "Attio provides a hosted MCP server at https://mcp.attio.com/mcp.",
+      "url": "https://mcp.attio.com/"
+    },
+    {
+      "field": "mcp",
+      "claim": "The MCP server enables AI tools to connect to Attio using the Model Context Protocol.",
+      "url": "https://mcp.attio.com/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Integration uses OAuth authentication to authorize AI assistants.",
+      "url": "https://docs.attio.com/mcp/overview"
+    },
+    {
+      "field": "mcp",
+      "claim": "Attio MCP allows AI tools to search, read, create, and update records in the CRM workspace.",
+      "url": "https://docs.attio.com/mcp/overview"
+    },
+    {
+      "field": "mcp",
+      "claim": "Attio MCP is available on all plans and for all workspace members.",
+      "url": "https://attio.com/help/reference/attio-ai/attio-mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Attio MCP is the supported method for connecting external AI assistants like ChatGPT or Claude to Attio.",
+      "url": "https://attio.com/help/reference/attio-ai/attio-mcp"
+    }
+  ],
+  "confidence": 0.8,
+  "notes": "",
+  "_meta": {
+    "app_id": 4,
+    "research_time_seconds": 80.67,
+    "research_status": "success"
+  }
+}

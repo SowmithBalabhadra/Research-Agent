@@ -1,0 +1,81 @@
+{
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Meta MCP Integrations 2026: Connecting Meta Ads, Llama, Graph API & WhatsApp to AI Assistants",
+  "authentication": {
+    "methods": [],
+    "flows": [
+      "Authorization Code"
+    ],
+    "token_types": [
+      "access token"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "Webhooks"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Meta Ads provides MCP server support and documents OAuth 2.0 for connecting MCP clients.",
+    "auth": "OAuth 2.0"
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP is available, but the exact credential-access requirements are not fully established."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Meta Ads documentation explicitly mentions access tokens.",
+      "url": "https://developers.facebook.com/docs/marketing-api/get-started/authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Meta Ads documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://developers.facebook.com/docs/marketing-api/get-started/authentication/"
+    },
+    {
+      "field": "api",
+      "claim": "Meta Ads documentation explicitly documents a Webhooks interface.",
+      "url": "https://developers.facebook.com/docs/graph-api/overview/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Meta Ads documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://soku.ai/blog/meta-ads-mcp-guide"
+    },
+    {
+      "field": "mcp",
+      "claim": "Meta Ads documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://navoto.com/blog/meta-mcp-integrations/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Meta Ads documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://www.get-ryze.ai/blog/meta-mcp-server-official-setup-and-configuration"
+    },
+    {
+      "field": "mcp",
+      "claim": "Meta Ads MCP documentation explicitly mentions OAuth 2.0 authentication.",
+      "url": "https://www.get-ryze.ai/blog/meta-mcp-server-official-setup-and-configuration"
+    }
+  ],
+  "confidence": 0.67,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 32,
+    "research_time_seconds": 29.85,
+    "research_status": "success"
+  }
+}

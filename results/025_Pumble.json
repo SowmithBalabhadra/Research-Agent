@@ -1,0 +1,89 @@
+{
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "description": "Connect AI Agents to Team Chat via the Pumble MCP Server",
+  "authentication": {
+    "methods": [],
+    "flows": [
+      "Authorization Code"
+    ],
+    "token_types": [
+      "access token"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "OAuth client / connected app configuration",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [],
+    "breadth": "unknown"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Pumble explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Pumble documentation explicitly mentions access tokens.",
+      "url": "https://cake-com.github.io/pumble-node-sdk/authorization.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Pumble documentation explicitly mentions access tokens.",
+      "url": "https://dev-docs.marketplace.cake.com/pumble/build/advanced-concepts.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Pumble documentation explicitly mentions access tokens.",
+      "url": "https://cake-com.github.io/pumble-node-sdk/api-client.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Pumble documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://cake-com.github.io/pumble-node-sdk/authorization.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Pumble documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://dev-docs.marketplace.cake.com/pumble/build/advanced-concepts.html"
+    },
+    {
+      "field": "access",
+      "claim": "Pumble documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://cake-com.github.io/pumble-node-sdk/authorization.html"
+    },
+    {
+      "field": "mcp",
+      "claim": "Pumble documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Pumble documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://pumble.com/learn/pumble/connecting-pumble-with-ai-agents-mcp/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Pumble documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://pumble.com/mcp"
+    }
+  ],
+  "confidence": 0.67,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 25,
+    "research_time_seconds": 29.22,
+    "research_status": "success"
+  }
+}

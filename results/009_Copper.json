@@ -1,0 +1,102 @@
+{
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "description": "Copper is a platform that provides a RESTful web API enabling developers to programmatically access its resources and build custom applications.",
+  "authentication": {
+    "methods": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "flows": [],
+    "token_types": [
+      "API key"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "admin approval required",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": "unknown",
+    "details": "",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "Requires admin approval to obtain credentials."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "There are two ways to access the Copper Developer API: API keys and OAuth2.0.",
+      "url": "https://developer.copper.com/introduction/authentication.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "To generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' button.",
+      "url": "https://developer.copper.com/introduction/authentication.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "The Dev API uses token based authentication.",
+      "url": "https://developer.copper.com/introduction/authentication.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "You have to include the token in the header of every request, along with the email address of the user who generated the token.",
+      "url": "https://developer.copper.com/introduction/authentication.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Users can hold multiple valid tokens at the same time.",
+      "url": "https://developer.copper.com/introduction/authentication.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Admins can see all user generated tokens and generate new ones.",
+      "url": "https://developer.copper.com/introduction/authentication.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "A service account is a non-personal account used to manage API keys for automated or shared operations.",
+      "url": "https://developer.copper.co/api-reference/service-accounts"
+    },
+    {
+      "field": "api",
+      "claim": "Copper provides a public documented API",
+      "url": "https://www.developer.copper.com/"
+    },
+    {
+      "field": "api",
+      "claim": "The Copper Developer API is a RESTful interface",
+      "url": "https://www.developer.copper.com/"
+    },
+    {
+      "field": "access",
+      "claim": "API keys generated in system settings",
+      "url": "https://developer.copper.com/introduction/authentication.html"
+    },
+    {
+      "field": "access",
+      "claim": "Only admin users can generate API keys",
+      "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key"
+    }
+  ],
+  "confidence": 0.55,
+  "notes": "",
+  "_meta": {
+    "app_id": 9,
+    "research_time_seconds": 52.9,
+    "research_status": "success"
+  }
+}

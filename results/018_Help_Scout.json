@@ -1,0 +1,138 @@
+{
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "description": "Great, I understand you're looking for information on the Help Scout Inbox API 2.0. This API is the primary REST API for managing conversations, customers, and support operations in Help Scout. It supports OAuth 2.0 authentication and has a rate limit of 200 requests per minute per account. The API uses HAL+JSON format with embedded resources and pagination. Here's a quick overview of some key endpoints and examples for creating, updating, and listing conversations, as well as listing threads in a conversation. If you have any specific questions or need more details on any of these endpoints, feel free to ask! I can also provide more information on authentication, custom fields, and other features of the API. Let me know how I can assist you further.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Client Credentials",
+      "Refresh Token"
+    ],
+    "token_types": [
+      "bearer token",
+      "access token",
+      "refresh token"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "OAuth client / connected app configuration",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Help Scout provides MCP server support and documents OAuth 2.0 for connecting MCP clients.",
+    "auth": "OAuth 2.0"
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Help Scout documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://developer.helpscout.com/llms.txt"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documentation explicitly mentions bearer tokens.",
+      "url": "https://developer.helpscout.com/llms.txt"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documentation explicitly mentions bearer tokens.",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documentation explicitly mentions access tokens.",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documentation explicitly mentions refresh tokens.",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://developer.helpscout.com/llms.txt"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documentation explicitly mentions the Client Credentials authentication flow.",
+      "url": "https://developer.helpscout.com/llms.txt"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documentation explicitly mentions the Client Credentials authentication flow.",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Help Scout documentation explicitly mentions the Refresh Token authentication flow.",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    {
+      "field": "api",
+      "claim": "Help Scout documentation explicitly documents a REST interface.",
+      "url": "https://developer.helpscout.com/llms.txt"
+    },
+    {
+      "field": "api",
+      "claim": "Help Scout documentation explicitly documents a Webhooks interface.",
+      "url": "https://developer.helpscout.com/"
+    },
+    {
+      "field": "access",
+      "claim": "Help Scout documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Help Scout documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://github.com/drewburchfield/help-scout-mcp-server"
+    },
+    {
+      "field": "mcp",
+      "claim": "Help Scout MCP documentation explicitly mentions OAuth 2.0 authentication.",
+      "url": "https://developer.helpscout.com/llms.txt"
+    },
+    {
+      "field": "mcp",
+      "claim": "Help Scout MCP documentation explicitly mentions the authorization code flow.",
+      "url": "https://developer.helpscout.com/llms.txt"
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 18,
+    "research_time_seconds": 47.39,
+    "research_status": "success"
+  }
+}

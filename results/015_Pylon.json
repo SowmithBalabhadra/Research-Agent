@@ -1,0 +1,84 @@
+{
+  "app": "Pylon",
+  "category": "Support and Helpdesk",
+  "description": "How to Connect to the Pylon MCP Server\n\nThe Pylon MCP server at https://mcp.usepylon.com provides AI tools access to your Pylon data. It uses OAuth authentication with your Pylon account. The application you connect to Pylon's MCP will only have access to data you would have access to in Pylon, and will read and write on behalf of you.\n\n### Common Clients\n\n#### Claude Code\n```\nclaude mcp add pylon --transport http https://mcp.usepylon.com/\n```\nThen, in Claude Code, run the`/mcp` command and select the`pylon` MCP to authenticate.\n\n#### Claude Desktop and Web\nIn \"Admin Settings\", add a custom connector named \"Pylon\" with URL`https://mcp.usepylon.com/`\nLeave \"OAuth Client ID\" and \"OAuth Client Secret\" blank.\nNavigate to \"Settings > Connectors\" and click the \"Connect\" button next to the Pylon MCP to authenticate.\n\n#### ChatGPT\nIn the Apps tab, search for Pylon and install our native ChatGPT app.\n\n#### Cursor\nAdd to your Cursor MCP settings: `~/.cursor/mcp.json`\n```\n{ \"mcpServers\": { ... \"pylon\": { \"url\": \"https://mcp.usepylon.com/\" } ... }}\n```\nNavigate to \"Cursor Settings > Tools & MCP\" and click \"Connect\" next to the Pylon MCP to authenticate.\n\n### Authentication Flow\n\n1. When the MCP client connects, it will open your browser.\n2. Log in with your Pylon account credentials.\n3. Authorize the MCP connection.\n4. The browser will redirect back and complete the OAuth flow.\n5. Your MCP client is now connected to Pylon!\n\n### Session Expiry and Reconnecting\n\nOAuth sessions expire periodically. The exact duration varies by MCP client - some sessions last a few hours, others can last several days. When your session expires, you may see authentication errors or your MCP tools may stop returning results. To reconnect, simply re-authenticate through the same flow you used during initial setup:\n\n- Claude Code: Run`/mcp` and re-authenticate the Pylon connection\n- Claude Desktop/Web: Go to Settings > Connectors and click \"Connect\" next to Pylon\n- Cursor: Go to Cursor Settings > Tools & MCP and click \"Connect\" next to Pylon\n\nThis is normal behavior and not a bug. If you find yourself needing to reconnect unusually frequently (e.g. multiple times per day), please reach out to support.\n\n### Use case examples\n\n- Debug an issue end to end: Solve an issue with Claude Code with a prompt like \"debug this \" and put up a PR for a bug fix\n- Write a product spec notion doc: Feed it a bunch of issues and use a Claude Code skill to generate a product spec doc based on evidence\n- Ad hoc analysis: Ask a question about a customer in ChatGPT and leverage data from Pylon in addition to other tools like Notion or Linear\n\n**Note:** Member or Admin users need a Member or Admin seat to connect to the MCP server. Viewer and Integration users cannot authenticate and will see an \"Authorization failed\" error. If you hit this, ask your workspace admin to upgrade your seat type in Settings > Users.\n\n---\n\nFor more detailed instructions, see [here](https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server?lang=en). For the complete documentation index, see [llms.txt](https://docs.usepylon.com/pylon-docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp.md).",
+  "authentication": {
+    "methods": [
+      "API Key"
+    ],
+    "flows": [],
+    "token_types": [
+      "bearer token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [],
+    "breadth": "unknown"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Pylon provides MCP server support and documents OAuth 2.0 for connecting MCP clients.",
+    "auth": "OAuth 2.0"
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP is available, but the exact credential-access requirements are not fully established."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Pylon documentation explicitly mentions API keys.",
+      "url": "https://app.getpylon.com/docs/api"
+    },
+    {
+      "field": "authentication",
+      "claim": "Pylon documentation explicitly mentions bearer tokens.",
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Pylon documentation explicitly mentions bearer tokens.",
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts"
+    },
+    {
+      "field": "access",
+      "claim": "Pylon provides a free developer/development environment.",
+      "url": "https://www.getpylon.com/developers/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Pylon documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Pylon documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server"
+    },
+    {
+      "field": "mcp",
+      "claim": "Pylon documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://www.usepylon.com/integrations/mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Pylon MCP documentation explicitly mentions OAuth 2.0 authentication.",
+      "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+    }
+  ],
+  "confidence": 0.67,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 15,
+    "research_time_seconds": 161.83,
+    "research_status": "success"
+  }
+}

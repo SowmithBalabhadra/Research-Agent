@@ -1,0 +1,1562 @@
+[
+  {
+    "app": "WooCommerce",
+    "category": "Ecommerce",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://woocommerce.com/document/woocommerce-rest-api/",
+        "https://developer.woocommerce.com/docs/apis/rest-api/",
+        "https://rudratechtalk.com/woocommerce-rest-api-authentication-explained-beginner-friendly-guide/"
+      ],
+      "api": [
+        "https://developer.woocommerce.com/docs/apis/",
+        "https://developer.woocommerce.com/docs/apis/rest-api/",
+        "https://woocommerce.github.io/woocommerce-rest-api-docs/v3"
+      ],
+      "access": [
+        "https://woocommerce.com/document/woocommerce-rest-api/",
+        "https://developer.woocommerce.com/docs/apis/rest-api/",
+        "https://woo.zendesk.com/hc/en-us/articles/15664200876948-WooCommerce-REST-API"
+      ],
+      "mcp": [
+        "https://developer.woocommerce.com/docs/features/mcp/",
+        "https://woocommerce.com/document/w7s-mcp/",
+        "https://github.com/techspawn/woocommerce-mcp-server"
+      ]
+    }
+  },
+  {
+    "app": "BigCommerce",
+    "category": "Ecommerce",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://deepwiki.com/bigcommerce/docs/5.2-authentication-and-tokens",
+        "https://support.bigcommerce.com/s/article/Store-API-Accounts"
+      ],
+      "api": [
+        "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+        "https://docs.bigcommerce.com/",
+        "https://github.com/bigcommerce/dev-docs/blob/main/docs/api-docs/storefront/graphql/graphql-api-examples.mdx"
+      ],
+      "access": [
+        "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+        "https://moldstud.com/articles/p-step-by-step-guide-to-implementing-bigcommerce-api-authentication-successfully",
+        "https://support.bigcommerce.com/s/article/Store-API-Accounts"
+      ],
+      "mcp": [
+        "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+        "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
+        "https://primrose.dev/mcp/bigcommerce/auth"
+      ]
+    }
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication.html",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html"
+      ],
+      "api": [
+        "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+        "https://developer.salesforce.com/docs/platform/graphql/overview",
+        "https://github.com/api-evangelist/salesforce-commerce-cloud/blob/main/graphql/salesforce-commerce-cloud-graphql.md"
+      ],
+      "access": [
+        "https://developer.salesforce.com/developer-centers/commerce-cloud",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+        "https://www.salesforce.com/commerce/pricing/"
+      ],
+      "mcp": [
+        "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce",
+        "https://github.com/vinkius-labs/salesforce-commerce-mcp",
+        "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html"
+      ]
+    }
+  },
+  {
+    "app": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [],
+      "api": [
+        "https://developer.adobe.com/commerce/webapi/graphql/reference/",
+        "https://developer.adobe.com/commerce/webapi/",
+        "https://github.com/AdobeDocs/commerce-webapi"
+      ],
+      "access": [
+        "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+        "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys",
+        "https://experienceleague.adobe.com/en/docs/commerce-admin/systems/integrations"
+      ],
+      "mcp": [
+        "https://modelcontextprotocol.info/docs/",
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic",
+        "https://mcpmarket.com/server/magento-adobe-commerce"
+      ]
+    }
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developers.squarespace.com/commerce-apis/oauth",
+        "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+        "https://developers.squarespace.com/commerce-apis/making-requests"
+      ],
+      "api": [
+        "https://developers.squarespace.com/commerce-apis/webhook-subscriptions-overview",
+        "https://developers.squarespace.com/webhooks/overview",
+        "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys"
+      ],
+      "access": [
+        "https://developers.squarespace.com/",
+        "https://developers.squarespace.com/commerce-apis/oauth",
+        "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys"
+      ],
+      "mcp": [
+        "https://www.stackone.com/connectors/squarespace/mcp/",
+        "https://github.com/BusyBee3333/squarespace-mcp-2026-complete/tree/main",
+        "https://github.com/BusyBee3333/squarespace-mcp-2026-complete/blob/main/README.md"
+      ]
+    }
+  },
+  {
+    "app": "Ecwid",
+    "category": "Ecommerce",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "https://docs.ecwid.com/api-reference",
+        "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md"
+      ],
+      "api": [
+        "https://docs.ecwid.com/webhook-automations",
+        "https://docs.ecwid.com/",
+        "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_webhooks.md"
+      ],
+      "access": [
+        "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "https://docs.ecwid.com/api-reference",
+        "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid"
+      ],
+      "mcp": [
+        "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic",
+        "https://modelcontextprotocol.info/docs/"
+      ]
+    }
+  },
+  {
+    "app": "Gumroad",
+    "category": "Ecommerce",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://gumroad.com/api",
+        "https://gumroad.com/help/article/280-create-application-api",
+        "https://mindcloud.co/docs/universal/rest/gumroad/latest/introduction/authentication"
+      ],
+      "api": [
+        "https://gumroad.com/api",
+        "https://gumroad.com/help/article/280-create-application-api",
+        "https://apitracker.io/a/gumroad"
+      ],
+      "access": [
+        "https://gumroad.com/api",
+        "https://gumroad.com/help/article/280-create-application-api",
+        "https://rollout.com/integration-guides/gumroad/api-essentials"
+      ],
+      "mcp": [
+        "https://github.com/rmarescu/gumroad-mcp",
+        "https://mcp.so/servers/gumroad-mcp",
+        "https://github.com/keithah/gumroad-mcp"
+      ]
+    }
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developer-docs.amazon/sp-api/",
+        "https://developer.amazonservices.com/",
+        "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html"
+      ],
+      "api": [],
+      "access": [
+        "https://developer.amazonservices.com/register?lang=en-US",
+        "https://developer.amazonservices.com/",
+        "https://sell.amazon.com/developers"
+      ],
+      "mcp": [
+        "https://github.com/mattcoatsworth/AmazonSeller-mcp-server",
+        "https://github.com/enginterzi/amazon-seller-mcp",
+        "https://modelcontextprotocol.info/docs/"
+      ]
+    }
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://dev-docs.fanbasis.com/",
+        "https://rankr.ai/saas-api/fanbasis/",
+        "https://rankr.ai/developer-marketplace-api/fanbasis/"
+      ],
+      "api": [
+        "https://dev-docs.fanbasis.com/",
+        "https://graphql.org/",
+        "https://graphql.com/"
+      ],
+      "access": [
+        "https://dev-docs.fanbasis.com/",
+        "https://www.fanbasis.com/auth/setup/signup",
+        "https://emergent.sh/integrations/fanbasis"
+      ],
+      "mcp": [
+        "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+        "https://modelcontextprotocol.info/docs/",
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic"
+      ]
+    }
+  },
+  {
+    "app": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+        "https://docs.dataforseo.com/v3/auth/",
+        "https://mindcloud.co/docs/universal/rest/dataforseo/latest/introduction/authentication"
+      ],
+      "api": [
+        "https://docs.dataforseo.com/v3/",
+        "https://dataforseo.com/apis",
+        "https://dataforseo.com/"
+      ],
+      "access": [],
+      "mcp": [
+        "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+        "https://dataforseo.com/model-context-protocol",
+        "https://github.com/dataforseo/mcp-server-typescript"
+      ]
+    }
+  },
+  {
+    "app": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://oauth.net/2/",
+        "https://dev.to/_d7eb1c1703182e3ce1782/understanding-oauth-20-flow-complete-diagram-and-implementation-guide-486m",
+        "https://skycloak.io/blog/oauth-2-0-developers-visual-guide/"
+      ],
+      "api": [
+        "https://seranking.com/api/project/",
+        "https://seranking.com/api/data/reference/",
+        "https://seranking.com/api.html"
+      ],
+      "access": [
+        "https://seranking.com/api/data/getting-started/",
+        "https://www.postman.com/serankingdev/se-ranking-developers/overview",
+        "https://seranking.com/api/how-to-get-api/"
+      ],
+      "mcp": [
+        "https://seranking.com/api/integrations/mcp/",
+        "https://modelcontextprotocol.info/docs/",
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic"
+      ]
+    }
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "https://docs.ahrefs.com/",
+        "https://developers.frontegg.com/agen-for-work/connectors/marketplace/ahrefs"
+      ],
+      "api": [
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/api-guide",
+        "https://docs.ahrefs.com/en/api",
+        "https://docs.ahrefs.com/"
+      ],
+      "access": [
+        "https://docs.ahrefs.com/",
+        "https://docs.ahrefs.com/en/api/docs/introduction",
+        "https://ahrefs.com/pricing"
+      ],
+      "mcp": [
+        "https://docs.ahrefs.com/en/mcp/docs/introduction",
+        "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+        "https://ahrefs.com/mcp/"
+      ]
+    }
+  },
+  {
+    "app": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow",
+        "https://auth0.com/docs/authenticate/protocols/oauth",
+        "https://ashishsrivastav.com/blog/oauth2-authorization-code-pkce-guide"
+      ],
+      "api": [
+        "https://mrscraper.com/start/integrations",
+        "https://mrscraper.com/",
+        "https://developer.x.com/exhibit/mrscraper"
+      ],
+      "access": [
+        "https://clawhub.ai/ai-mrscraper/mrscraper",
+        "https://github.com/mrscraper-com/cli",
+        "https://github.com/mrscraper-com/sdk-node/tree/main"
+      ],
+      "mcp": [
+        "https://devblogs.microsoft.com/ise/aca-secure-mcp-server-oauth21-azure-ad/",
+        "https://baeseokjae.github.io/posts/mcp-oauth-authentication-guide-2026/",
+        "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/plugin-authentication-oauth"
+      ]
+    }
+  },
+  {
+    "app": "Apify",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.apify.com/api/v2",
+        "https://github.com/apify/apify-docs",
+        "https://docs.apify.com/integrations/integrate"
+      ],
+      "api": [
+        "https://docs.apify.com/api/v2",
+        "https://docs.apify.com/api",
+        "https://apify.com/jupri/graphql-extractor/api"
+      ],
+      "access": [
+        "https://use-apify.com/docs/apify-for-developers",
+        "https://console.apify.com/sign-up",
+        "https://docs.apify.com/account/console"
+      ],
+      "mcp": []
+    }
+  },
+  {
+    "app": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.firecrawl.dev/api-reference/endpoint/token-usage",
+        "https://deepwiki.com/firecrawl/firecrawl-py/2.2-authentication",
+        "https://docs.firecrawl.dev/api-reference/introduction"
+      ],
+      "api": [
+        "https://docs.firecrawl.dev/api-reference/introduction",
+        "https://docs.firecrawl.dev/api-reference/v2-introduction",
+        "https://www.firecrawl.dev/"
+      ],
+      "access": [
+        "https://www.firecrawl.dev/pricing",
+        "https://www.firecrawl.dev/",
+        "https://www.usagepricing.com/blueprint/firecrawl"
+      ],
+      "mcp": [
+        "https://docs.firecrawl.dev/use-cases/developers-mcp",
+        "https://github.com/firecrawl/firecrawl-mcp-server",
+        "https://docs.firecrawl.dev/mcp-server/keyless"
+      ]
+    }
+  },
+  {
+    "app": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.brightdata.com/api-reference/authentication",
+        "https://docs.brightdata.com/api-reference/proxy/proxy_api_auth",
+        "https://docs.brightsec.com/docs/creating-authentication"
+      ],
+      "api": [
+        "https://graphql.org/",
+        "https://www.postman.com/bright-data-api/bright-data-api/overview",
+        "https://apitracker.io/a/bright-data"
+      ],
+      "access": [
+        "https://docs.brightdata.com/api-reference/authentication",
+        "https://docs.brightdata.com/integrations/bright-data",
+        "https://docs.brightdata.com/api-reference/proxy-manager/generate_token_for_token_based_authentication"
+      ],
+      "mcp": [
+        "https://github.com/brightdata/brightdata-mcp",
+        "https://docs.brightdata.com/ai/mcp-server/overview",
+        "https://brightdata.com/ai/mcp-server"
+      ]
+    }
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://skycloak.io/blog/oauth-2-0-developers-visual-guide/",
+        "https://dev.to/_d7eb1c1703182e3ce1782/understanding-oauth-20-flow-complete-diagram-and-implementation-guide-486m",
+        "https://www.c-sharpcorner.com/article/how-to-implement-oauth-2-0-authorization-code-flow-step-by-step/"
+      ],
+      "api": [
+        "https://developer.synopsys.com/docs/sherlock-apis-2026-r1/index.md",
+        "https://developer.synopsys.com/docs/sherlock",
+        "https://app.sherlock.sh/reference"
+      ],
+      "access": [
+        "https://developer.synopsys.com/docs/sherlock-apis-2026-r1/index.md",
+        "https://developer.ansys.com/docs/sherlock",
+        "https://developer.ansys.com/docs/sherlock-apis-2026-r1/getting-started.md"
+      ],
+      "mcp": [
+        "https://modelcontextprotocol.info/docs/",
+        "https://github.com/Burnsedia/sherlock-mcp",
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic"
+      ]
+    }
+  },
+  {
+    "app": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.waterfall.io/v1/authentication",
+        "https://docs.waterfall.io/v1/api-keys-overview",
+        "https://www.withone.ai/knowledge/waterfall/conn_mod_def::GJ8TOqyg9n0::AaJGRR9iRt6B7PPO2f2VMw"
+      ],
+      "api": [
+        "https://docs.waterfall.io/v1/introduction",
+        "https://graphql.org/",
+        "https://docs.waterfall.io/v1/openapi-spec"
+      ],
+      "access": [
+        "https://docs.waterfall.io/v1/authentication",
+        "https://docs.waterfall.io/v1/api-keys-create",
+        "https://apitracker.io/a/waterfall-to"
+      ],
+      "mcp": [
+        "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+        "https://modelcontextprotocol.info/docs/",
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic"
+      ]
+    }
+  },
+  {
+    "app": "Clay",
+    "category": "Data, SEO and Scraping",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developers.google.com/identity/protocols/oauth2",
+        "https://skycloak.io/blog/oauth-2-0-developers-visual-guide/",
+        "https://dev.to/_d7eb1c1703182e3ce1782/understanding-oauth-20-flow-complete-diagram-and-implementation-guide-486m"
+      ],
+      "api": [],
+      "access": [],
+      "mcp": [
+        "https://modelcontextprotocol.info/docs/",
+        "https://www.clay.com/guides/clay-mcp",
+        "https://developers.clay.com/concepts/mcp"
+      ]
+    }
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "https://docs.github.com/en/rest/authentication",
+        "https://www.getknit.dev/blog/github-api-integration-guide"
+      ],
+      "api": [
+        "https://docs.github.com/en/rest",
+        "https://octokit.github.io/routes/cache/api.github.com/v3/index.html",
+        "https://docs.github.com/en/rest/about-the-rest-api/about-the-rest-api"
+      ],
+      "access": [
+        "https://docs.github.com/en/rest/credentials",
+        "https://docs.github.com/en/enterprise-cloud@latest/rest/credentials",
+        "https://docs.github.com/developers/overview/github-developer-program"
+      ],
+      "mcp": [
+        "https://github.com/github/github-mcp-server",
+        "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server",
+        "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/use-the-github-mcp-server"
+      ]
+    }
+  },
+  {
+    "app": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+        "https://vercel.com/docs/rest-api/authentication/create-an-auth-token",
+        "https://deepwiki.com/vercel/sdk/5.1-authentication-and-setup"
+      ],
+      "api": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/cli/api",
+        "https://deepwiki.com/vercel/sdk/5.2-api-reference"
+      ],
+      "access": [],
+      "mcp": [
+        "https://vercel.com/docs/mcp",
+        "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "https://modelcontextprotocol.info/docs/"
+      ]
+    }
+  },
+  {
+    "app": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/",
+        "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth/",
+        "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/"
+      ],
+      "api": [
+        "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "https://docs.netlify.com/build/data-and-storage/netlify-database/api/",
+        "https://open-api.netlify.com/"
+      ],
+      "access": [
+        "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "https://developers.netlify.com/",
+        "https://app.netlify.com/signup"
+      ],
+      "mcp": [
+        "https://developers.netlify.com/guides/write-mcps-on-netlify/",
+        "https://github.com/netlify/netlify-mcp",
+        "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/"
+      ]
+    }
+  },
+  {
+    "app": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developers.cloudflare.com/fundamentals/oauth/",
+        "https://developers.cloudflare.com/fundamentals/oauth/create-an-oauth-client/",
+        "https://blog.cloudflare.com/oauth-for-all/"
+      ],
+      "api": [],
+      "access": [
+        "https://developers.cloudflare.com/api/overview/",
+        "https://developers.cloudflare.com/fundamentals/account/create-account/",
+        "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/"
+      ],
+      "mcp": []
+    }
+  },
+  {
+    "app": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://supabase.com/docs/guides/integrations/build-a-supabase-oauth-integration",
+        "https://supabase.com/docs/guides/auth",
+        "https://deepwiki.com/supabase/auth/3-api-reference"
+      ],
+      "api": [],
+      "access": [
+        "https://supabase.com/docs/reference/javascript/auth-signup",
+        "https://supabase.com/docs/guides/api",
+        "https://docs.supabase.com/"
+      ],
+      "mcp": [
+        "https://supabase.com/docs/guides/ai-tools/mcp",
+        "https://github.com/supabase/mcp",
+        "https://supabase.com/docs/guides/ai-tools/byo-mcp"
+      ]
+    }
+  },
+  {
+    "app": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://neo4j.com/docs/aura/api/authentication/",
+        "https://hoop.dev/blog/the-simplest-way-to-make-neo4j-oauth-work-like-it-should",
+        "https://github.com/neo4j/neo4j-example-auth-plugins"
+      ],
+      "api": [
+        "https://neo4j.com/docs/",
+        "https://neo4j.com/docs/rest-docs/current/",
+        "https://github.com/neo4j/docs-http-api"
+      ],
+      "access": [
+        "https://neo4j.com/developer/",
+        "https://neo4j.com/docs/aura/api/authentication/",
+        "https://neo4j.com/docs/aura/getting-started/create-account/"
+      ],
+      "mcp": [
+        "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+        "https://neo4j.com/docs/mcp/current/",
+        "https://github.com/neo4j/mcp"
+      ]
+    }
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.snowflake.com/en/user-guide/api-authentication",
+        "https://docs.snowflake.com/en/sql-reference/sql/create-security-integration-api-auth",
+        "https://docs.snowflake.cn/en/sql-reference/sql/alter-security-integration-api-auth"
+      ],
+      "api": [
+        "https://www.bing.com/aclick?ld=e8TJMyPYZKUhLrDzInV7-16jVUCUyfh4LFqfXKHiAkbljHu0ivnmXcI6i9avfnySW8mAJFQZ2dTIco1tcsV4ux5k3oh70UH2NRh57L7cDX3iJHJFXgUj_42HDCxclisACXgvZ5aZBByhh2YASQrS6570ZqaRi0SG3UGCc3fmM0yifhhW7QMgqaZTKRPks2PVpL4eCPk69bDbfl6MTPh6kp05864mA&u=aHR0cHMlM2ElMmYlMmZtb25pdG9yLmx1bmlvLmFpJTJmdjMuMCUyZnRlbXBsYXRlJTNmYWNjaWQlM2QxNjg5NiUyNnVybGRlY29kZSUzZDElMjZrdyUzZHNub3dmbGFrZSUyNTIwcmVxdWVzdCUyNm10JTNkcCUyNm53JTNkbyUyNmNwbiUzZDQyODMyOTIzNiUyNmRldmklM2RjJTI2ZGV2bSUzZCUyNmxvY3AlM2QyNTYwMTAlMjZsb2NpJTNkJTI2cGwlM2QlMjZjciUzZCUyNmFkcCUzZCUyNnNhZHQlM2QlMjZ1cmwlM2RodHRwcyUyNTNBJTI1MkYlMjUyRnd3dy5kYXRhZG9naHEuY29tJTI1MkZkZyUyNTJGbW9uaXRvciUyNTJGc25vd2ZsYWtlJTI1MkYlMjUzRnV0bV9zb3VyY2UlMjUzRGJpbmclMjUyNnV0bV9tZWRpdW0lMjUzRHBhaWQtc2VhcmNoJTI1MjZ1dG1fY2FtcGFpZ24lMjUzRGRnLWluZnJhLW5hLXNub3dmbGFrZSUyNTI2dXRtX2tleXdvcmQlMjUzRHNub3dmbGFrZSUyNTI1MjByZXF1ZXN0JTI1MjZ1dG1fbWF0Y2h0eXBlJTI1M0RwJTI1MjZpZ2FhZyUyNTNEMTMwMDcyMzQyODQxODE5NyUyNTI2aWdhYXQlMjUzRCUyNTI2aWdhY20lMjUzRDQyODMyOTIzNiUyNTI2aWdhY3IlMjUzRCUyNTI2aWdha3clMjUzRHNub3dmbGFrZSUyNTI1MjByZXF1ZXN0JTI1MjZpZ2FtdCUyNTNEcCUyNTI2aWdhbnQlMjUzRG8lMjUyNnV0bV9jYW1wYWlnbmlkJTI1M0Q0MjgzMjkyMzYlMjUyNnV0bV9hZGdyb3VwaWQlMjUzRDEzMDA3MjM0Mjg0MTgxOTclMjZtc2Nsa2lkJTNkODA1ZjU3ZjY1OWU5MTU1ZjJkNjQzZDcyZGRkNTNiZjk&rlid=805f57f659e9155f2d643d72ddd53bf9",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api"
+      ],
+      "access": [
+        "https://www.snowflake.com/en/pricing-options/",
+        "https://docs.snowflake.com/en/developer?utm_cta=website-pricing-page-resources-pricing-guide",
+        "https://www.snowflake.com/en/developers/"
+      ],
+      "mcp": [
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/",
+        "https://a2a-mcp.org/entry/snowflake-mcp"
+      ]
+    }
+  },
+  {
+    "app": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+        "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+        "https://learn.mongodb.com/courses/secure-mongodb-atlas-authn-and-authz"
+      ],
+      "api": [
+        "https://www.mongodb.com/docs/atlas/api/",
+        "https://www.mongodb.com/docs/api/",
+        "https://ngrok.com/docs/integrations/webhooks/mongodb-webhooks"
+      ],
+      "access": [
+        "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=service-account",
+        "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2",
+        "https://github.com/mongodb-developer/atlas-admin-api-serviceaccount-auth/blob/main/README.md"
+      ],
+      "mcp": [
+        "https://www.bing.com/aclick?ld=e8wTdOQ6KeoXe6kL3XH6uHwDVUCUyZgAnxKGiI9iPb-xpYzr5iFnJpSkZQCW63OE3IhPyMDyc8PwDQSkjVPE4AYzO6ZqNVEQFVqBdx9Tbv9JnVctqlxcD5Kh_Ejvhc9xc3k5uCPzSzY3SoLPX3FdC4pT6XvnTfjckX9nW2NZl8rIvfR-tqc_3LDL2G2-mb-TWcukgFrTVpfhpdIDQVYvkb-78SIRU&u=aHR0cHMlM2ElMmYlMmZ3d3cubW9uZ29kYi5jb20lMmZwcm9kdWN0cyUyZnBsYXRmb3JtJTJmYXRsYXMtdmVjdG9yLXNlYXJjaCUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkc2VhcmNoX2JzX3BsX2V2ZXJncmVlbl92ZWN0b3Itc2VhcmNoX3Byb2R1Y3RfcHJvc3AtYnJhbmRfZ2ljLW51bGxfYXBhYy1pbl9wcy1hbGxfZGVza3RvcF9lbmdfbGVhZCUyNnV0bV90ZXJtJTNkTW9uZ29EQiUyNTIwUSUyNTI2QSUyNTIwc3lzdGVtcyUyNnV0bV9tZWRpdW0lM2RjcGNfcGFpZF9zZWFyY2glMjZ1dG1fYWQlM2RwJTI2dXRtX2FkX2NhbXBhaWduX2lkJTNkNjYzNTQ2MDM3JTI2YWRncm91cCUzZDEzMTgzMTcxMjIxMzExNDElMjZjcV9jbXAlM2Q2NjM1NDYwMzclMjZtc2Nsa2lkJTNkOWYwNzc2OGJhNjk2MTg1ZjM4ODYxYzBmMjI1YWNkY2E&rlid=9f07768ba696185f38861c0f225acdca",
+        "https://www.mongodb.com/docs/mcp-server/get-started/",
+        "https://www.mongodb.com/docs/mcp-server/overview/"
+      ]
+    }
+  },
+  {
+    "app": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://www.datadoghq.com/blog/datadog-api-authentication/",
+        "https://docs.datadoghq.com/api/latest/authentication/",
+        "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/"
+      ],
+      "api": [
+        "https://docs.datadoghq.com/api/latest/",
+        "https://github.com/api-evangelist/datadog/blob/main/graphql/datadog-graphql.md",
+        "https://docs.datadoghq.com/integrations/apollo/"
+      ],
+      "access": [
+        "https://docs.datadoghq.com/extend/integrations/api_integration/",
+        "https://docs.datadoghq.com/account_management/api-app-keys/",
+        "https://www.datadoghq.com/blog/datadog-api-authentication/"
+      ],
+      "mcp": [
+        "https://docs.datadoghq.com/mcp_server/",
+        "https://www.datadoghq.com/knowledge-center/mcp-server/",
+        "https://www.datadoghq.com/blog/engineering/mcp-server-agent-tools/"
+      ]
+    }
+  },
+  {
+    "app": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [],
+      "api": [
+        "https://blog.sentry.io/improved-graphql-support-in-sentry/",
+        "https://github.com/getsentry/sentry/discussions/38913",
+        "https://docs.sentry.io/api/"
+      ],
+      "access": [
+        "https://sentry.io/pricing/",
+        "https://docs.sentry.io/pricing/",
+        "https://costbench.com/software/developer-tools/sentry/"
+      ],
+      "mcp": [
+        "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture",
+        "https://mcp.sentry.dev/",
+        "https://modelcontextprotocol.info/docs/"
+      ]
+    }
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developers.notion.com/workers/guides/oauth",
+        "https://developers.notion.com/guides/get-started/authorization",
+        "https://composio.dev/auth/notion"
+      ],
+      "api": [
+        "https://developers.notion.com/guides/get-started/overview",
+        "https://tasteful-poppy-7ef.notion.site/API-Documentation-49ab01c18d1a452bbc053b9d592b586d",
+        "https://hasura.io/blog/creating-a-graphql-api-for-notion-with-hasura-actions"
+      ],
+      "access": [
+        "https://developers.notion.com/guides/get-started/overview",
+        "https://developers.notion.com/guides/get-started/quick-start",
+        "https://developers.notion.com/guides/get-started/authorization"
+      ],
+      "mcp": [
+        "https://www.notion.com/help/notion-mcp",
+        "https://developers.notion.com/guides/mcp/overview",
+        "https://www.notion.com/en-gb/help/notion-mcp"
+      ]
+    }
+  },
+  {
+    "app": "Airtable",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://airtable.com/developers/web/api/oauth-reference",
+        "https://datafetcher.com/blog/airtable-oauth2-api",
+        "https://support.airtable.com/docs/third-party-integrations-via-oauth-overview"
+      ],
+      "api": [
+        "https://airtable.com/developers/web/api/introduction",
+        "https://community.airtable.com/show-and-tell-15/using-airtable-with-graphql-3075",
+        "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api"
+      ],
+      "access": [
+        "https://airtable.com/pricing",
+        "https://airtable.com/developers/web/api/billing-plans",
+        "https://thestackarchitects.com/airtable-api-pricing-shifts/"
+      ],
+      "mcp": [
+        "https://airtable.com/developers/agents/mcp/getting-started",
+        "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+        "https://github.com/onimsha/airtable-mcp-server-oauth"
+      ]
+    }
+  },
+  {
+    "app": "Linear",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://linear.app/developers/oauth-2-0-authentication",
+        "https://linear.app/developers",
+        "https://deepwiki.com/cline/linear-mcp/2.1-authentication-methods"
+      ],
+      "api": [
+        "https://linear.app/docs/api-and-webhooks",
+        "https://linear.app/developers/graphql",
+        "https://rollout.com/integration-guides/linear/api-essentials"
+      ],
+      "access": [
+        "https://linear.app/pricing",
+        "https://aitoolsatlas.ai/tools/linear-api/pricing",
+        "https://aitoolsatlas.ai/tools/linear-api"
+      ],
+      "mcp": [
+        "https://linear.app/docs/mcp",
+        "https://linear.app/docs/mcp.md",
+        "https://www.remote-mcp.com/servers/linear"
+      ]
+    }
+  },
+  {
+    "app": "Jira",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+        "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+        "https://developer.atlassian.com/server/jira/platform/jira-rest-api-example-oauth-authentication-6291692/"
+      ],
+      "api": [
+        "https://www.bing.com/aclick?ld=e8rt3Iby2rNoJ4Bl0Kvwzj9zVUCUztG1DnO9i9_c5b4g1SxtPyNdHNy1iY3bXSLh4K-H_C8KLQOBFre-n1MEVrEAtb4MkGbYYBIu5vAQu4bUnhNpIij1HE93fosDORVHUeCxevzENBa5mERo4WUpXOzpqflyYCF1KlFW1hJB2UwtBxftIbTxzYTe8j6oDGVJTTCVSOLlsqoicOaZOYedSuRam23r0&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmamlyYSUyZnNlcnZpY2UtbWFuYWdlbWVudCUzZmNhbXBhaWduJTNkNDcwMDk3MzQ4JTI2YWRncm91cCUzZDEyOTk2MjMxODA5NjQzMjQlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjY4ODIyNzcyMSUzYWxvYy05MCUyNm1hdGNodHlwZSUzZHAlMjZiaWRtYXRjaHR5cGUlM2RicCUyNm5ldHdvcmslM2RvJTI2ZGV2aWNlJTNkYyUyNmNyZWF0aXZlJTNkODEyMjY1MzgwOTQ1MTAlMjZrZXl3b3JkJTNkamlyYSUyNTIwc2VydmljZSUyNTIwZGVzayUyNTIwYXBpJTI2cXVlcnlzdHJpbmclM2RKaXJhJTI1MjBkZXZlbG9wZXIlMjUyMEFQSSUyNTIwcmVmZXJlbmNlJTI2ZHNfZWlkJTNkNzAwMDAwMDAxNzIxODMyJTI2ZHNfZTElM2RNSUNST1NPRlQlMjZtc19hY2NfaWQlM2RGMTExNlgxMyUyNm1zY2xraWQlM2Q3ZWZiZmM4NTBlMmExYTI3ZDI4ZDk2MDE4OGY2MGVkZQ&rlid=7efbfc850e2a1a27d28d960188f60ede",
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/",
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+      ],
+      "access": [
+        "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/",
+        "https://support.atlassian.com/jira-align/kb/configuring-jira-connector-credentials-using-jira-cloud-api-service-account/"
+      ],
+      "mcp": [
+        "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+        "https://github.com/atlassian/atlassian-mcp-server",
+        "https://developer.atlassian.com/cloud/rovo-mcp/guides/getting-started/"
+      ]
+    }
+  },
+  {
+    "app": "Asana",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developers.asana.com/docs/authentication",
+        "https://developers.asana.com/docs/api-features",
+        "https://asana.com/developers"
+      ],
+      "api": [
+        "https://developers.asana.com/",
+        "https://developers.asana.com/docs/api-features",
+        "https://asana.com/developers"
+      ],
+      "access": [
+        "https://asana.com/developers",
+        "https://developers.asana.com/docs/personal-access-token",
+        "https://developers.asana.com/docs/api-features"
+      ],
+      "mcp": [
+        "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+        "https://developers.asana.com/docs/using-asanas-mcp-server",
+        "https://www.mintmcp.com/blog/connect-asana-to-mcp"
+      ]
+    }
+  },
+  {
+    "app": "Monday.com",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developer.monday.com/api-reference/docs/authentication",
+        "https://developer.monday.com/apps/docs/integration-authorization",
+        "https://docs.n8n.io/integrations/builtin/credentials/mondaycom"
+      ],
+      "api": [
+        "https://developer.monday.com/api-reference/",
+        "https://developer.monday.com/apps/docs/api-reference",
+        "https://support.monday.com/hc/en-us/sections/360003537260-API"
+      ],
+      "access": [
+        "https://developer.monday.com/apps/docs/the-developer-center",
+        "https://developer.monday.com/api-reference/docs/getting-started",
+        "https://monday.com/agents-signup"
+      ],
+      "mcp": [
+        "https://monday.com/w/mcp",
+        "https://support.monday.com/hc/en-us/articles/28588158981266-Get-started-with-monday-MCP",
+        "https://modelcontextprotocol.info/docs/"
+      ]
+    }
+  },
+  {
+    "app": "ClickUp",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developer.clickup.com/docs/authentication",
+        "https://developer.clickup.com/reference/getaccesstoken",
+        "https://consultevo.com/clickup-api-authentication-guide/"
+      ],
+      "api": [
+        "https://developer.clickup.com/docs/Getting+Started",
+        "https://developer.clickup.com/",
+        "https://clickup.com/p/how-to-use-clickup-for-api-documentation"
+      ],
+      "access": [
+        "https://developer.clickup.com/docs/authentication",
+        "https://developer.clickup.com/docs/Getting+Started",
+        "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API"
+      ],
+      "mcp": [
+        "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+        "https://help.clickup.com/hc/en-us/sections/37731627018647-ClickUp-MCP",
+        "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+      ]
+    }
+  },
+  {
+    "app": "Coda",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://coda.io/packs/build/latest/guides/basics/authentication/oauth2/",
+        "https://coda.io/packs/build/latest/guides/basics/authentication/oauth2/index.md",
+        "https://github.com/coda/packs-sdk/blob/main/docs/guides/basics/authentication/oauth2.md"
+      ],
+      "api": [],
+      "access": [
+        "https://saaspricehub.io/tools/coda",
+        "https://thedigitalprojectmanager.com/tools/coda-pricing/",
+        "https://toolmango.com/tools/coda/pricing"
+      ],
+      "mcp": [
+        "https://modelcontextprotocol.info/docs/",
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic",
+        "https://coda.io/resources/guides/getting_started_with_coda_mcp"
+      ]
+    }
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "https://developers.smartsheet.com/api/smartsheet/openapi/tokens",
+        "https://help.smartsheet.com/articles/2482389-generate-API-key"
+      ],
+      "api": [
+        "https://developers.smartsheet.com/",
+        "https://developers.smartsheet.com/api/smartsheet/openapi",
+        "https://www.postman.com/api-reference-library/smartsheet/collection/x37d8df/smartsheet-api-reference"
+      ],
+      "access": [
+        "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+        "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "https://www.smartsheet.com/content-center/managing-work/it-management/authentication-mastery-smartsheet-api"
+      ],
+      "mcp": [
+        "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+        "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+        "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server"
+      ]
+    }
+  },
+  {
+    "app": "Harvest",
+    "category": "Productivity and Project Management",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "https://help.getharvest.com/api-v1/authentication/authentication/oauth/",
+        "https://mindcloud.co/docs/universal/rest/harvest/latest/introduction/authentication"
+      ],
+      "api": [
+        "https://help.getharvest.com/api-v2/",
+        "https://harvest.com/support/api/",
+        "https://help.getharvest.com/api-v2/introduction/overview/general/"
+      ],
+      "access": [
+        "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "https://support.greenhouse.io/hc/en-us/articles/115000521723-Manage-Harvest-API-credentials-permissions",
+        "https://support.greenhouse.io/hc/en-us/articles/5888163769883-Create-Harvest-API-credentials-for-an-integration"
+      ],
+      "mcp": [
+        "https://netapp.github.io/harvest/26.02/mcp/overview/",
+        "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+        "https://modelcontextprotocol.info/docs/"
+      ]
+    }
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.stripe.com/stripe-apps/api-authentication/oauth",
+        "https://docs.stripe.com/api/authentication",
+        "https://publicapis.io/blog/oauth-vs-api-key-authentication-gri5"
+      ],
+      "api": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/development",
+        "https://support.stripe.com/topics/api"
+      ],
+      "access": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/api/plans",
+        "https://stripe.com/pricing"
+      ],
+      "mcp": [
+        "https://docs.stripe.com/mcp",
+        "https://marketplace.stripe.com/apps/stripe-mcp",
+        "https://www.cdata.com/drivers/stripe/docs/mcp/"
+      ]
+    }
+  },
+  {
+    "app": "Plaid",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://plaid.com/docs/api/oauth/",
+        "https://plaid.com/core-exchange/docs/authentication/",
+        "https://deepwiki.com/plaid/plaid-ruby/3.2-authentication-and-token-flow"
+      ],
+      "api": [
+        "https://plaid.com/docs/api/",
+        "https://plaid.com/docs/",
+        "https://www.postman.com/plaid-api/plaid/overview"
+      ],
+      "access": [
+        "https://plaid.com/docs/api/",
+        "https://plaid.com/docs/quickstart/",
+        "https://dashboard.plaid.com/signup/"
+      ],
+      "mcp": [
+        "https://plaid.com/docs/resources/mcp/",
+        "https://modelcontextprotocol.info/docs/",
+        "https://plaid.com/docs/resources/mcp/index.html.md"
+      ]
+    }
+  },
+  {
+    "app": "Binance",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [],
+      "api": [
+        "https://developers.binance.com/en/docs/introduction",
+        "https://developers.binance.com/en/docs/catalog",
+        "https://www.binance.com/en/binance-api"
+      ],
+      "access": [
+        "https://developers.binance.com/en",
+        "https://developers.binance.com/en/docs/introduction",
+        "https://developers.binance.com/en/docs/catalog"
+      ],
+      "mcp": []
+    }
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://publicapis.io/blog/api-authentication-methods",
+        "https://www.getmaxim.ai/articles/mcp-authentication-explained-oauth-api-keys-and-token-management/",
+        "https://success.outsystems.com/documentation/outsystems_developer_cloud/odc_rest_apis/api_authentication_and_authorization/"
+      ],
+      "api": [
+        "https://www.ibm.com/docs/en/api-connect-graphql/saas?topic=understanding-api-connect-graphql",
+        "https://graphql.org/",
+        "https://docs.connect.paymentsense.cloud/rest/api"
+      ],
+      "access": [
+        "https://docs.paygent.to/reference/api-reference/",
+        "https://gopaygent.com/signup",
+        "https://gopaygent.com/"
+      ],
+      "mcp": [
+        "https://baeseokjae.github.io/posts/mcp-oauth-authentication-guide-2026/",
+        "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/authorization",
+        "https://stytch.com/blog/oauth-for-mcp-explained-with-a-real-world-example/"
+      ]
+    }
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://www.ipayx.ai/docs/api?lang=en",
+        "https://www.ipayx.ai/developers",
+        "https://github.com/IpayX-org/ipayx/tree/main/app/lib"
+      ],
+      "api": [
+        "https://www.ipayx.ai/docs/api",
+        "https://www.ipayx.ai/developers?lang=en",
+        "https://github.com/IpayX-org/ipayx/tree/main/app"
+      ],
+      "access": [
+        "https://www.ipayx.ai/pricing",
+        "https://www.ipayx.ai/developers?lang=en",
+        "https://developer.apple.com/"
+      ],
+      "mcp": []
+    }
+  },
+  {
+    "app": "QuickBooks",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+        "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+        "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground"
+      ],
+      "api": [
+        "https://developer.intuit.com/app/developer/qbo/docs/develop/develop-with-graphql",
+        "https://developer.intuit.com/app/developer/qbo/docs/learn/learn-about-graphql/graphql-rest-vs-gql",
+        "https://vorplabs.com/agent-tools/quickbooks-online-api"
+      ],
+      "access": [],
+      "mcp": []
+    }
+  },
+  {
+    "app": "Xero",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developer.xero.com/documentation/guides/oauth2/overview/",
+        "https://satvasolutions.com/blog/xero-api-integration-guide",
+        "https://developer.xero.com/faq/oauth2"
+      ],
+      "api": [
+        "https://developer.xero.com/",
+        "https://developer.xero.com/documentation/api/accounting/overview",
+        "https://github.com/XeroAPI"
+      ],
+      "access": [
+        "https://developer.xero.com/documentation/guides/oauth2/overview/",
+        "https://developer.xero.com/faq/getting-started",
+        "https://satvasolutions.com/blog/xero-api-integration-guide"
+      ],
+      "mcp": []
+    }
+  },
+  {
+    "app": "Brex",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developer.brex.com/guides/authentication",
+        "https://developer.brex.com/guides/partner_authentication",
+        "https://www.brex.com/product/api"
+      ],
+      "api": [
+        "https://developer.brex.com/",
+        "https://www.brex.com/product/api",
+        "https://www.brex.com/support/brex-api"
+      ],
+      "access": [
+        "https://developer.brex.com/",
+        "https://www.brex.com/support/brex-api",
+        "https://www.brex.com/product/api"
+      ],
+      "mcp": [
+        "https://modelcontextprotocol.info/docs/",
+        "https://developer.brex.com/docs/mcp",
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic"
+      ]
+    }
+  },
+  {
+    "app": "Ramp",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.ramp.com/developer-api/v1/authorization",
+        "https://docs.ramp.com/developer-api/v1/introduction",
+        "https://docs.ramp.com/developer-api/v1/api/authorization"
+      ],
+      "api": [
+        "https://docs.ramp.com/developer-api/v1/introduction",
+        "https://docs.ramp.com/developer-api/v1",
+        "https://ramp.com/developer-tools"
+      ],
+      "access": [
+        "https://docs.ramp.com/developer-api/v1/getting-started",
+        "https://ramp.com/developer-tools",
+        "https://docs.ramp.com/developer-api/v1"
+      ],
+      "mcp": [
+        "https://modelcontextprotocol.info/docs/",
+        "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+        "https://agents.ramp.com/docs/mcp/overview"
+      ]
+    }
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://pitchbook.com/help/PitchBook-api",
+        "https://documenter.getpostman.com/view/5190535/TzCV1iRc",
+        "https://pipeline.zoominfo.com/sales/pitchbook-api-review"
+      ],
+      "api": [
+        "https://pitchbook.com/help/PitchBook-api",
+        "https://documenter.getpostman.com/view/5190535/TzCV1iRc",
+        "https://apitracker.io/a/pitchbook"
+      ],
+      "access": [
+        "https://pitchbook.com/help/PitchBook-api",
+        "https://documenter.getpostman.com/view/5190535/TzCV1iRc",
+        "https://apitracker.io/a/pitchbook"
+      ],
+      "mcp": [
+        "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+        "https://mcpservers.org/remote-mcp-servers/pitchbook",
+        "https://gitbook.com/docs/docs-as-code/gitbook-mcp"
+      ]
+    }
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "https://github.com/jiawei-jwt/notebooklm/blob/main/docs/AUTHENTICATION.md",
+        "https://github.com/HenriqueCosta05/notebooklm-ts-api/blob/main/docs/authentication.md"
+      ],
+      "api": [
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "https://github.com/gnh1201/notebooklm-rest-api",
+        "https://roomi-fields.github.io/notebooklm-mcp/notebooklm-rest-api"
+      ],
+      "access": [
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "https://github.com/gnh1201/notebooklm-rest-api",
+        "https://github.com/topics/notebooklm-api"
+      ],
+      "mcp": [
+        "https://github.com/PleasePrompto/notebooklm-mcp",
+        "https://github.com/pbp1701/notebooklm-mcp-cli",
+        "https://mcp.directory/blog/notebooklm-mcp-complete-guide-2026"
+      ]
+    }
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://otter.ai/blog/saml",
+        "https://help.otter.ai/hc/en-us/articles/14474312169367-Set-up-SAML-Single-Sign-On-SSO",
+        "https://saml-doc.okta.com/SAML_Docs/How-to-Configure-SAML-2.0-for-Otter-ai.html"
+      ],
+      "api": [],
+      "access": [
+        "https://getotter.io/api-access/",
+        "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "https://otter.ai/setting/developer"
+      ],
+      "mcp": [
+        "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+        "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+        "https://modelcontextprotocol.info/docs/"
+      ]
+    }
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developers.fathom.ai/sdks/oauth",
+        "https://developers.fathom.ai/sdks/authentication",
+        "https://usefathom.com/api/v1/authentication"
+      ],
+      "api": [
+        "https://api-docs.fathom.global/reference/rest.html",
+        "https://api-docs.fathom.global/index.html",
+        "https://docs.fathom.ai/"
+      ],
+      "access": [
+        "https://pipeline.zoominfo.com/sales/fathom-api-review",
+        "https://developers.fathom.ai/",
+        "https://www.switchmytool.com/tools/fathom"
+      ],
+      "mcp": [
+        "https://developers.fathom.ai/mcp-docs",
+        "https://help.fathom.video/en/articles/11497793",
+        "https://github.com/Dot-Fun/fathom-mcp"
+      ]
+    }
+  },
+  {
+    "app": "Consensus",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://hub.goconsensus.com/salesforce-67/connecting-consensus-to-salesforce-oauth-2-0-method-version-11-10-required-532",
+        "https://github.com/hherb/consensus/blob/main/docs/devel/11-authentication.md",
+        "https://lalatenduswain.medium.com/claude-api-authentication-in-2026-oauth-tokens-vs-api-keys-explained-12e8298bed3d"
+      ],
+      "api": [
+        "https://consensus.app/home/api/",
+        "https://support.goconsensus.com/consensus-api-documents",
+        "https://agentsapis.com/consensus-api/"
+      ],
+      "access": [
+        "https://help.consensus.app/en/articles/10087865-subscription-plans",
+        "https://consensus.app/home/api/",
+        "https://consensus.app/pricing/team/"
+      ],
+      "mcp": [
+        "https://modelcontextprotocol.info/docs/",
+        "https://modelcontextprotocol.io/specification/2025-06-18/basic",
+        "https://registry.modelcontextprotocol.io/?all=1"
+      ]
+    }
+  },
+  {
+    "app": "Reducto",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.reducto.ai/quickstart",
+        "https://docs.reducto.ai/sdk/python/overview",
+        "https://github.com/maton-ai/api-gateway-skill/blob/main/references/reducto/README.md"
+      ],
+      "api": [
+        "https://reducto.ai/developers",
+        "https://docs.reducto.ai/overview",
+        "https://docs.reducto.ai/quickstart"
+      ],
+      "access": [
+        "https://reducto.ai/pricing",
+        "https://apio.sh/apis/reducto",
+        "https://aitoolsatlas.ai/tools/reducto/pricing"
+      ],
+      "mcp": [
+        "https://docs.reducto.ai/mcp-server",
+        "https://github.com/reductoai/mcp-server-reducto",
+        "https://github.com/reductoai/mcp-server-reducto/blob/main/src/mcp_server_reducto/auth.py"
+      ]
+    }
+  },
+  {
+    "app": "Devin",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.devin.ai/api-reference/authentication",
+        "https://docs.devin.ai/api-reference/overview",
+        "https://mindcloud.co/docs/universal/rest/devin/latest/introduction/authentication"
+      ],
+      "api": [
+        "https://docs.devin.ai/use-cases/gallery/parallelize-migration",
+        "https://docs.devin.ai/api-reference/overview",
+        "https://deepwiki.com/kevinhamza/Devin/9-api-documentation"
+      ],
+      "access": [
+        "https://docs.devin.ai/api-reference/authentication",
+        "https://docs.devin.ai/api-reference/overview",
+        "https://deepwiki.com/kevinhamza/Devin/9-api-documentation"
+      ],
+      "mcp": []
+    }
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://docs.higgsfield.ai/docs/authentication",
+        "https://docs.higgsfield.ai/docs",
+        "https://github.com/higgsfield-ai/higgsfield-client"
+      ],
+      "api": [
+        "https://docs.higgsfield.ai/docs",
+        "https://github.com/higgsfield-ai/higgsfield-js",
+        "https://deepwiki.com/higgsfield-ai/higgsfield-client/5.4-webhooks"
+      ],
+      "access": [
+        "https://cloud.higgsfield.ai/api-keys",
+        "https://docs.higgsfield.ai/docs/authentication",
+        "https://docs.higgsfield.ai/docs"
+      ],
+      "mcp": []
+    }
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [],
+      "api": [
+        "https://github.com/mermaid-js/mermaid-cli",
+        "https://mermaid.ai/docs",
+        "https://mermaid.ai/open-source/config/mermaidCLI.html"
+      ],
+      "access": [
+        "https://mermaid.ai/web/pricing/",
+        "https://github.com/noahsabaj/mermaid-cli",
+        "https://mermaid.ai/open-source/config/mermaidCLI.html"
+      ],
+      "mcp": [
+        "https://mermaid.ai/docs/ai/mcp-server",
+        "https://github.com/abekdwight/mermaid-mcp-server",
+        "https://github.com/hustcc/mcp-mermaid"
+      ]
+    }
+  },
+  {
+    "app": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://transcriptapi.com/docs/api/",
+        "https://transcriptapi.com/swagger",
+        "https://developers.google.com/youtube/v3/guides/authentication"
+      ],
+      "api": [],
+      "access": [
+        "https://apimemo.com/api/youtube-transcript3",
+        "https://transcriptapi.com/",
+        "https://github.com/Youtube-Transcript-Dev/Youtube-Transcript-API"
+      ],
+      "mcp": [
+        "https://github.com/spinalshock/youtube-transcript-mcp",
+        "https://github.com/SystemSolution21/model-context-protocol/tree/main/mcp-youtube-transcript",
+        "https://transcriptapi.com/docs/mcp/"
+      ]
+    }
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "website": "",
+    "documentation_hint": "",
+    "sources": {
+      "authentication": [
+        "https://developers.grain.com/",
+        "https://docs.grainledger.com/authentication",
+        "https://support.grain.com/en/articles/15507288-grain-api"
+      ],
+      "api": [
+        "https://graphql.org/",
+        "https://developers.grain.com/",
+        "https://support.grain.com/en/articles/15507288-grain-api"
+      ],
+      "access": [
+        "https://developers.grain.com/",
+        "https://docs.grainfinance.co/get-started/retrieve-api-keys",
+        "https://docs.grainfinance.co/api-reference/authentication"
+      ],
+      "mcp": [
+        "https://modelcontextprotocol.info/docs/",
+        "https://docs.grainledger.com/mcp-server",
+        "https://grain.com/release-note/06-18-2025"
+      ]
+    }
+  }
+]

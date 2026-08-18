@@ -1,0 +1,142 @@
+{
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "LinkedIn Ads provides a REST API for programmatic access to advertising functionality, including ad account management, campaign management, and reporting, authenticated via OAuth 2.0.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Client Credentials"
+    ],
+    "token_types": [
+      "access token",
+      "bearer token",
+      "refresh token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "Client ID and Client Secret obtained from the LinkedIn Developer Portal after creating an app",
+    "plan_requirement": "unknown",
+    "admin_requirement": "admin approval required",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": false,
+    "details": "",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "Access to the Advertising API requires submitting an access-request form and approval; generic data collection use cases are rejected."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "LinkedIn Ads uses OAuth 2.0 for authentication.",
+      "url": "https://unified.to/blog/how_to_get_your_linkedin_ads_api_key"
+    },
+    {
+      "field": "authentication",
+      "claim": "Access to the LinkedIn Marketing/Advertising API runs through a vetted Developer app and 3-legged OAuth.",
+      "url": "https://unified.to/blog/how_to_get_your_linkedin_ads_api_key"
+    },
+    {
+      "field": "authentication",
+      "claim": "Marketing/Ads APIs require 3-legged OAuth (acting on behalf of a member). The 2-legged client-credentials flow is explicitly not allowed for Ads.",
+      "url": "https://unified.to/blog/how_to_get_your_linkedin_ads_api_key"
+    },
+    {
+      "field": "authentication",
+      "claim": "LinkedIn Ads exposes user management through the `/rest/adAccountUsers` collection under the Marketing API, authenticated via OAuth 2.0.",
+      "url": "https://www.stitchflow.com/user-management/linkedin-ads/api"
+    },
+    {
+      "field": "authentication",
+      "claim": "OAuth 2.0 is used for authentication, with steps including registering an application, requesting scopes, and exchanging an authorization code for an access token.",
+      "url": "https://www.stitchflow.com/user-management/linkedin-ads/api"
+    },
+    {
+      "field": "authentication",
+      "claim": "For server-to-server flows, use the 2-legged OAuth (client credentials) flow if your app is approved for it.",
+      "url": "https://www.stitchflow.com/user-management/linkedin-ads/api"
+    },
+    {
+      "field": "authentication",
+      "claim": "Include the access token in all API requests as a Bearer token in the Authorization header.",
+      "url": "https://www.stitchflow.com/user-management/linkedin-ads/api"
+    },
+    {
+      "field": "authentication",
+      "claim": "The LinkedIn Ads API uses OAuth 2.0 for authentication.",
+      "url": "https://rollout.com/integration-guides/linkedin-ads/api-essentials"
+    },
+    {
+      "field": "authentication",
+      "claim": "To use the LinkedIn Ads API, developers typically authenticate using OAuth 2.0.",
+      "url": "https://rollout.com/integration-guides/linkedin-ads/api-essentials"
+    },
+    {
+      "field": "api",
+      "claim": "LinkedIn Ads provides a REST API.",
+      "url": "https://rollout.com/integration-guides/linkedin-ads/api-essentials"
+    },
+    {
+      "field": "api",
+      "claim": "LinkedIn Ads utilizes a REST API for programmatic access to advertising functionality.",
+      "url": "https://rollout.com/integration-guides/linkedin-ads/api-essentials"
+    },
+    {
+      "field": "api",
+      "claim": "The LinkedIn Ads API has webhooks (called 'push events' or 'notifications').",
+      "url": "https://rollout.com/integration-guides/linkedin-ads/api-essentials"
+    },
+    {
+      "field": "access",
+      "claim": "There is no LinkedIn Ads 'API key.' You create a LinkedIn Developer app, get approved for the Advertising API, and use 3-legged OAuth to get access tokens.",
+      "url": "https://unified.to/blog/how_to_get_your_linkedin_ads_api_key"
+    },
+    {
+      "field": "access",
+      "claim": "Access is gated: you submit an access-request form describing your use case, and LinkedIn reviews it. Generic data collection gets rejected; ads management and reporting use cases get approved.",
+      "url": "https://unified.to/blog/how_to_get_your_linkedin_ads_api_key"
+    },
+    {
+      "field": "access",
+      "claim": "To create a developer app, you need a LinkedIn account and a LinkedIn Company Page.",
+      "url": "https://docs.n8n.io/integrations/builtin/credentials/linkedin"
+    },
+    {
+      "field": "access",
+      "claim": "A Client ID and Client Secret are generated after you create a new developer app.",
+      "url": "https://docs.n8n.io/integrations/builtin/credentials/linkedin"
+    },
+    {
+      "field": "mcp",
+      "claim": "This is a third-party MCP server for LinkedIn Ads, not officially provided by LinkedIn.",
+      "url": "https://github.com/danielpopamd/linkedin-ads-mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "This is a third-party MCP server for LinkedIn API integration, not officially provided by LinkedIn.",
+      "url": "https://github.com/felipfr/linkedin-mcpserver"
+    },
+    {
+      "field": "mcp",
+      "claim": "This is generic Model Context Protocol documentation, not specific to LinkedIn Ads.",
+      "url": "https://modelcontextprotocol.info/docs/"
+    }
+  ],
+  "confidence": 0.7,
+  "notes": "Authentication and API details are derived from third-party guides (unified.to, stitchflow.com, rollout.com) and n8n documentation, as official LinkedIn developer documentation was not accessible or provided. The MCP sources are third-party implementations, not official LinkedIn support."
+}

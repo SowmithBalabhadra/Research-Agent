@@ -1,0 +1,59 @@
+{
+  "app": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "description": "WhatsApp Cloud API Get Started | Developer Documentation\n\nWhatsApp Business Platform\n\nWas this helpful?\n\n# WhatsApp Cloud API Get Started\n\nUpdated: Jun 16, 2026\n\nCopy for LLM\n\nView as Markdown\n\nThis documentation is for developers building on the WhatsApp Business Platform. If you are a WhatsApp user experiencing issues with your personal account, visit the WhatsApp Help Center⁠ for support. This guide helps developers quickly get started with the WhatsApp Cloud API. It covers the basic setup steps, including registering as a developer, creating a Meta app, sending your first message, and setting up a test webhook endpoint. You’ll also learn how to generate secure access tokens and send both template and non-template messages. Advanced features and further resources are introduced for deeper exploration.\n\n## Download the sample app\n\nThe Jasper’s Market sample app contains all of the messages and code used in the Jasper’s Market demo. You can use this sample app to learn how to build an application that sends and handles WhatsApp Cloud API data.\n\nDownload the Jasper’s Market Sample App\n\n## Prerequisites\n\n- Facebook account or managed Meta account\n- Developer registration\n- If not yet registered, visit the developer registration page and follow the prompts.\n- WhatsApp-enabled device for sending and receiving test messages\n\n## Step 1. Create a new Meta app with WhatsApp\n\n1. Open the Meta App Dashboard to create a new Meta app with the WhatsApp use case.\n2. Click Create App.\n3. Add your app’s name and your email.\n4. Select the Connect with customers through WhatsApp use case and click Next.\n5. Select an existing business portfolio or create a new one.\n6. A list of publishing requirements are listed. You may not have any at this point. Click Next.\n7. Confirm your details, use case, and business portfolio. Click Previous to make changes or Create app to complete app creation.\n\nAfter creating your app with the WhatsApp use case, you are redirected to the Customize use case > Connect on WhatsApp > Quickstart page in the dashboard.\n\n## Step 2. Start using the API\n\n1. Click the Start using the API button to set up the API by adding a phone number and sending your first message. You are redirected to the API Setup page.\n2. In the API Setup section, connect your app to a WhatsApp Business account. This connection allows your app to access the WhatsApp Cloud API and send messages on behalf of your business.\n3. - To use an existing account: Select the WhatsApp Business account from the dropdown menu.\n4. - To create a new account: Click Create a WhatsApp Business account and follow the prompts to set up your business profile.\n5. Once connected, you will see your WhatsApp Business account ID displayed in the API Setup panel.\n6. - Save this ID for use in API calls. Note: If you created a new Meta Business Portfolio during app creation, a WhatsApp Business account may have been automatically created for you. Verify the connection in the API Setup section before proceeding.\n\n## Step 3. Send and receive messages\n\n1. Click Generate access token to generate a temporary access token to send a test message.\n2. Select a From phone number, or add a new one, from the dropdown menu.\n3. Add a To phone number that will receive the test message.\n4. Click the Send message button to send your first message.\n5. - Make sure to retain both your test phone number ID and WhatsApp Business account ID for later use.\n6. Once you receive the message you sent, make sure to reply back to keep the conversation going.\n\nThe left-side menu lists ways in which you can customize use case settings and permissions to make your app work the way you want it to. You can update these settings at any time.\n\n- Permissions and features- View required and optional permissions for this use case and add them to an App Review submission, if applicable.\n- Quickstart- Start using the API and learn how to scale your business, improve\n\n## Further Resources\n\n- [WhatsApp Cloud API Reference](https://developers.facebook.com/docs/whatsapp/cloud-api/reference)\n- [WhatsApp Cloud API Use Cases](https://developers.facebook.com/docs/whatsapp/cloud-api/use-cases)\n- [WhatsApp Cloud API Best Practices](https://developers.facebook.com/docs/whatsapp/cloud-api/best-practices)\n\nWas this helpful?\n\n--- ## Title: WhatsApp Cloud API Get Started | Developer Documentation\n\n## URL: https://developers.facebook.com/docs/whatsapp/cloud-api/get-started/\n\n## Content:\n\nWhatsApp Cloud API Get Started | Developer Documentation\n\nWhatsApp Business Platform\n\nWas this helpful?\n\n# WhatsApp Cloud API Get Started\n\nUpdated: Jun 16, 2026\n\nCopy for LLM\n\nView as Markdown\n\nThis documentation is for developers building on the WhatsApp Business Platform. If you are a WhatsApp user experiencing issues with your personal account, visit the WhatsApp Help Center⁠ for support. This guide helps developers quickly get started with the WhatsApp Cloud API. It covers the basic setup steps, including registering as a developer, creating a Meta app, sending your first message, and setting up a test webhook endpoint. You’ll also learn how to generate secure access tokens and send both template and non-template messages. Advanced features and further resources are introduced for deeper exploration.\n\n## Download the sample app\n\nThe Jasper’s Market sample app contains all of the messages and code used in the Jasper’s Market demo. You can use this sample app to learn how to build an application that sends and handles WhatsApp Cloud API data.\n\nDownload the Jasper’s Market Sample App\n\n## Prerequisites\n\n- Facebook account or managed Meta account\n- Developer registration\n- If not yet registered, visit the developer registration page and follow the prompts.\n- WhatsApp-enabled device for sending and receiving test messages\n\n## Step 1. Create a new Meta app with WhatsApp\n\n1. Open the Meta App Dashboard to create a new Meta app with the WhatsApp use case.\n2. Click Create App.\n3. Add your app’s name and your email.\n4. Select the Connect with customers through WhatsApp use case and click Next.\n5. Select an existing business portfolio or create a new one.\n6. A list of publishing requirements are listed. You may not have any at this point. Click Next.\n7. Confirm your details, use case, and business portfolio. Click Previous to make changes or Create app to complete app creation.\n\nAfter creating your app with the WhatsApp use case, you are redirected to the Customize use case > Connect on WhatsApp > Quickstart page in the dashboard.\n\n## Step 2. Start using the API\n\n1. Click the Start using the API button to set up the API by adding a phone number and sending your first message. You are redirected to the API Setup page.\n2. In the API Setup section, connect your app to a WhatsApp Business account. This connection allows your app to access the WhatsApp Cloud API and send messages on behalf of your business.\n3. - To use an existing account: Select the WhatsApp Business account from the dropdown menu.\n4. - To create a new account: Click Create a WhatsApp Business account and follow the prompts to set up your business profile.\n5. Once connected, you will see your WhatsApp Business account ID displayed in the API Setup panel.\n6. - Save this ID for use in API calls. Note: If you created a new Meta Business Portfolio during app creation, a WhatsApp Business account may have been automatically created for you. Verify the connection in the API Setup section before proceeding.\n\n## Step 3. Send and receive messages\n\n1. Click Generate access token to generate a temporary access token to send a test message.\n2. Select a From phone number, or add a new one, from the dropdown menu.\n3. Add a To phone number that will receive the test message.\n4. Click the Send message button to send your first message.\n5. - Make sure to retain both your test phone number ID and WhatsApp Business account ID for later use.\n6. Once you receive the message you sent, make sure to reply back to keep the conversation going.\n\nThe left-side menu lists ways in which you can customize use case settings and permissions to make your app work the way you want it to. You can update these settings at any time.\n\n- Permissions and features- View required and optional permissions for this use case and add them to an App Review submission, if applicable.\n- Quickstart- Start using the API and learn how to scale your business, improve\n\n## Further Resources\n\n- [WhatsApp Cloud API Reference](https://developers.facebook.com/docs/whatsapp/cloud-api/reference)\n- [WhatsApp Cloud API Use Cases](https://developers.facebook.com/docs/whatsapp/cloud-api/use-cases)\n- [WhatsApp Cloud API Best Practices](https://developers.facebook.com/docs/whatsapp/cloud-api/best-practices)\n\nWas this helpful?",
+  "authentication": {
+    "methods": [],
+    "flows": [],
+    "token_types": [
+      "access token"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "Webhooks"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": "unknown",
+    "details": "",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "A public API is documented, but authentication requirements were not sufficiently established."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "WhatsApp Business documentation explicitly mentions access tokens.",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started/"
+    },
+    {
+      "field": "authentication",
+      "claim": "WhatsApp Business documentation explicitly mentions access tokens.",
+      "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/get-started"
+    },
+    {
+      "field": "api",
+      "claim": "WhatsApp Business documentation explicitly documents a Webhooks interface.",
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/"
+    }
+  ],
+  "confidence": 0.44,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 28,
+    "research_time_seconds": 361.04,
+    "research_status": "success"
+  }
+}

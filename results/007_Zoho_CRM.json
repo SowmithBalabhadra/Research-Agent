@@ -1,0 +1,125 @@
+{
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "description": "Zoho CRM is a cloud‑based customer relationship management platform that lets businesses manage contacts, sales, and service data while enabling CRUD operations and integration with third‑party applications through flexible APIs and SDKs.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0"
+    ],
+    "flows": [
+      "Authorization Code"
+    ],
+    "token_types": [
+      "access token",
+      "refresh token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "client ID and client secret from developer console",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "GraphQL"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Zoho CRM provides pre‑built MCP servers that translate natural‑language prompts from an AI agent into CRM actions by registering the server’s capabilities as tools the agent can call.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication.",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Authorization code flow is used to obtain access and refresh tokens.",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Access Token is a token that is sent to the resource server to access the protected resources of the user.",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Authentication server provides Access and Refresh tokens to the client.",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Server-based apps can use the authorization code flow to generate an access token.",
+      "url": "https://www.zoho.com/accounts/protocol/oauth.html"
+    },
+    {
+      "field": "authentication",
+      "claim": "Access token is an OAuth token used to access Zoho's protected resources.",
+      "url": "https://www.zoho.com/accounts/protocol/oauth.html"
+    },
+    {
+      "field": "api",
+      "claim": "Zoho CRM offers RESTful Core APIs",
+      "url": "https://www.zoho.com/crm/developer/docs/"
+    },
+    {
+      "field": "api",
+      "claim": "Zoho CRM offers GraphQL APIs",
+      "url": "https://www.zoho.com/crm/developer/docs/"
+    },
+    {
+      "field": "api",
+      "claim": "Zoho CRM provides GraphQL APIs as described in the GraphQL overview",
+      "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-overview.html"
+    },
+    {
+      "field": "api",
+      "claim": "Zoho CRM has a documented public API",
+      "url": "https://www.zoho.com/crm/developer/docs/"
+    },
+    {
+      "field": "access",
+      "claim": "Developer Edition is free and provides a developer account",
+      "url": "https://www.zoho.com/crm/developer/docs/dev-edition.html"
+    },
+    {
+      "field": "access",
+      "claim": "Register app in Zoho Developer Console to get client ID and client secret",
+      "url": "https://www.zoho.com/developer/oauth/introduction.html"
+    },
+    {
+      "field": "access",
+      "claim": "Get started by clicking GET STARTED in Zoho Developer Console",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/register-client.html"
+    },
+    {
+      "field": "mcp",
+      "claim": "Zoho CRM MCP servers connect AI tools to Zoho CRM using the Model Context Protocol (MCP) and expose CRM capabilities as tools.",
+      "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+    },
+    {
+      "field": "mcp",
+      "claim": "Four composable MCP servers are offered, each scoped to specific CRM functions, allowing secure, authenticated AI agent access to read or modify CRM data.",
+      "url": "https://www.zoho.com/crm/developer/mcp.html"
+    }
+  ],
+  "confidence": 0.85,
+  "notes": "",
+  "_meta": {
+    "app_id": 7,
+    "research_time_seconds": 77.43,
+    "research_status": "success"
+  }
+}

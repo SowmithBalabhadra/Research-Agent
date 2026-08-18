@@ -1,0 +1,104 @@
+{
+  "app": "Close",
+  "category": "CRM and Sales",
+  "description": "Close is a REST‑based platform that lets businesses organize and track leads, contacts, opportunities, activities, and custom fields throughout their sales pipeline.",
+  "authentication": {
+    "methods": [
+      "API Key",
+      "OAuth 2.0",
+      "Basic Auth"
+    ],
+    "flows": [],
+    "token_types": [
+      "API key"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "API key via HTTP Basic Auth",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Close exposes an MCP server at https://mcp.close.com/mcp that AI clients connect to over HTTP using OAuth 2.0 (or an API key) with scoped permissions to read or modify Close data.",
+    "auth": "Supports OAuth 2.0 Dynamic Client Registration or API‑key authentication via the Close‑API‑Key and Close‑Scope headers."
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "Developer signup / access process is undocumented in the sources reviewed."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Close supports API Key authentication",
+      "url": "https://developer.close.com/api/overview"
+    },
+    {
+      "field": "authentication",
+      "claim": "Close supports OAuth 2.0 authentication",
+      "url": "https://developer.close.com/api/overview"
+    },
+    {
+      "field": "authentication",
+      "claim": "API Key authentication uses HTTP Basic Auth with the API key as username and empty password",
+      "url": "https://developer.close.com/api/overview"
+    },
+    {
+      "field": "authentication",
+      "claim": "An API key is a secret token used to authenticate requests",
+      "url": "https://help.close.com/docs/api-keys-oauth"
+    },
+    {
+      "field": "api",
+      "claim": "Close provides a documented public API",
+      "url": "https://developer.close.com/api/overview"
+    },
+    {
+      "field": "api",
+      "claim": "Close uses industry-standard REST conventions",
+      "url": "https://developer.close.com/api/overview"
+    },
+    {
+      "field": "api",
+      "claim": "Close offers Webhooks for real-time data",
+      "url": "https://developer.close.com/api/overview"
+    },
+    {
+      "field": "access",
+      "claim": "API Keys authentication supported (use HTTP Basic Auth with API key as username)",
+      "url": "https://developer.close.com/api/overview"
+    },
+    {
+      "field": "mcp",
+      "claim": "Close provides an MCP server at https://mcp.close.com/mcp.",
+      "url": "https://help.close.com/docs/mcp-server"
+    },
+    {
+      "field": "mcp",
+      "claim": "The MCP server supports HTTP Streamable and OAuth 2.0 Dynamic Client Registration.",
+      "url": "https://help.close.com/docs/mcp-server"
+    },
+    {
+      "field": "mcp",
+      "claim": "Authentication can be performed via OAuth 2.0 or an API key using Close‑API‑Key and Close‑Scope headers.",
+      "url": "https://help.close.com/docs/mcp-server"
+    }
+  ],
+  "confidence": 0.55,
+  "notes": "",
+  "_meta": {
+    "app_id": 8,
+    "research_time_seconds": 65.08,
+    "research_status": "success"
+  }
+}

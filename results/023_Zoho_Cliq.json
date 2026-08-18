@@ -1,0 +1,141 @@
+{
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "description": "Introduction | Zoho Cliq | API Documentation\n\nAPI Docs / No Results Found\n\nV2 Resources\n\nAccess Zoho Cliq\n\nSign In\n\nIntroduction\n\n# Zoho Cliq REST API Documentation\n\nAI Tools\n\nOpen in ChatGPT\n\nOpen in ChatGPT to ask questions about this page\n\nOpen in Claude\n\nOpen in Claude to ask questions about this page\n\nCopy as Markdown\n\nCopy this page as markdown to use with AI assistants\n\nView as Markdown\n\nOpen this page as markdown in a new tab\n\nZoho Cliq's REST API is built on RESTful architecture principles, enabling seamless communication between your applications and the Zoho Cliq platform. Our API leverages standard HTTP protocols, making integration straightforward and intuitive for developers.\n\nAPI Root Endpoint - The Zoho Cliq API is based on REST principles. It enables you to perform read-and-write operations similar to those available with our web client. - The relative path prefix `/v2/` indicates that we currently use version 2 of our API. This API adheres to HTTP standards, identifies Cliq users through OAuth, and responds to JSON objects. - Each resource URL serves as a unique identifier, and you can access the URL for each resource by navigating to the API Root Endpoint.\n\nDownload Zoho Cliq OpenAPI Document\n\nAPI Root Endpoint\n\n` https://cliq.zoho.com/api/v2 `\n\n# Authentication\n\nZoho Cliq API uses the OAuth 2.0 protocol for authentication. OAuth 2.0 is an industry-standard protocol specification that enables third-party applications (also known as clients) to gain delegated access to protected resources in Zoho Cliq via an API.\n\nWhat is OAuth 2.0?\n\nOAuth 2.0 is an industry-standard protocol that allows you to grant a third-party website or application (i.e., a client) delegated access to Zoho Cliq's protected resources via Zoho Cliq APIs. It is a way to authenticate and authorise API requests made to Zoho Cliq.\n\nAdvantages of OAuth 2.0\n\n- Clients are not required to support password authentication or store user credentials, as authentication and authorisation are handled by exchanging OAuth tokens.\n- Clients gain delegated access, i.e., access only to resources authorised by the user.\n- Users can revoke a third-party application's delegated access at any time.\n- OAuth access tokens expire after a set time. If the client faces a security breach, user data will be compromised only as long as the access token remains valid.\n\n# Networks\n\nCliq network is a dedicated space for collaborating with external business stakeholders such as partners, vendors, agencies, consultants, volunteers, and more. It equips you with an extensive set of configurable permissions to facilitate controlled, secure, and full-fledged external collaboration.\n\nIn the case of networks, the API Root endpoint differs. All the network endpoints should have the prefix as `/network/{NETWORK_UNIQUE_NAME}` or `/network/{NETWORK_ID}` For example, the API Root endpoints to call information from a Cliq network named 'Zylker Clients' would be: `https://cliq.zoho.com/network/zylkerclients` `zylkerclients` is the unique name of the network.\n\nAPI Root Endpoint for Networks\n\n` https://cliq.zoho.com/network/{NETWORK_UNIQUE_NAME} https://cliq.zoho.com/network/{NETWORK_ID} `\n\n# Multiple Data Centers\n\nZoho Cliq is hosted at multiple data centers, and therefore available on different domains. There are 9 different domains for Zoho Cliq's APIs, so you can use the one that is applicable to you.\n\n| Data Center | Domain | Base API URI |\n| --- | --- | --- |\n| United States | .com | `https://cliq.zoho.com/` |\n| Europe | .eu | `https://cliq.zoho.eu/` |\n| India | .in | `https://cliq.zoho.in/` |\n| Australia | .au | `https://cliq.zoho.com.au/` |\n| China | .cn | `https://cliq.zoho.com.cn/` |\n| Japan | .jp | `https://cliq.zoho.jp/` |\n| Saudi Arabia | .sa | `https://cliq.zoho.sa/` |\n| United Kingdom | .uk | `https://cliq.zoho.uk/` |\n| Canada | .zohocloud.ca | `https://cliq.zohocloud.ca/` |\n\nThe APIs on this page are for organizations hosted on the `.com` domain. If your organization is hosted on a different domain, you can use the corresponding API URI. For example, if your organization is hosted on the `.eu` domain, you would use `https://cliq.zoho.eu/` for the API URI.\n\nFor more information on Zoho Cliq's API documentation, please refer to the official Zoho Cliq documentation. If you have any questions or need further assistance, please contact support@zohomcp.com or support@zohocliq.com.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Refresh Token"
+    ],
+    "token_types": [
+      "bearer token",
+      "access token",
+      "refresh token"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "OAuth client / connected app configuration",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Zoho Cliq provides MCP server support and documents OAuth 2.0 for connecting MCP clients.",
+    "auth": "OAuth 2.0"
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documentation explicitly mentions bearer tokens.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documentation explicitly mentions access tokens.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documentation explicitly mentions access tokens.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documentation explicitly mentions access tokens.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documentation explicitly mentions refresh tokens.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zoho Cliq documentation explicitly mentions the Refresh Token authentication flow.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+    },
+    {
+      "field": "api",
+      "claim": "Zoho Cliq documentation explicitly documents a REST interface.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+    },
+    {
+      "field": "api",
+      "claim": "Zoho Cliq documentation explicitly documents a REST interface.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/"
+    },
+    {
+      "field": "access",
+      "claim": "Zoho Cliq documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/"
+    },
+    {
+      "field": "access",
+      "claim": "Zoho Cliq documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+    },
+    {
+      "field": "access",
+      "claim": "Zoho Cliq documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Zoho Cliq documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html"
+    },
+    {
+      "field": "mcp",
+      "claim": "Zoho Cliq documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://www.zoho.com/cliq/help/platform/configure-zoho-cliq-mcp.html"
+    },
+    {
+      "field": "mcp",
+      "claim": "Zoho Cliq MCP documentation explicitly mentions OAuth 2.0 authentication.",
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/"
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 23,
+    "research_time_seconds": 211.97,
+    "research_status": "success"
+  }
+}

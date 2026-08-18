@@ -1,0 +1,136 @@
+{
+  "app": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Authorization and HTTP Headers | Google Ads API | Google for Developers\n\nWhen calling the Google Ads API, you need both OAuth 2.0 application credentials and a developer token. If making API calls with a Google Ads manager account, you must specify a login-customer-id header. You can use desktop/web app flows or service accounts to obtain OAuth 2.0 credentials. A developer token is required in the developer-token HTTP header for every API call. The request-id response header uniquely identifies an API request and is useful for debugging. You need both OAuth 2.0 credentials and a developer token when calling the Google Ads API. If you're making API calls with a Google Ads manager account, you also need to specify a login-customer-id header with each request. This page describes how to set these values and documents several additional API-specific HTTP headers that are sent and received when using the REST interface.\n\n### OAuth 2.0 credentials\nThe Google Ads API uses OAuth 2.0 for authorizing API requests. Both OAuth 2.0 user authentication flow and service account flow are supported. For more details, see OAuth 2.0 in the Google Ads API. If you are new to Google APIs, you can use gcloud CLI or the OAuth 2.0 Playground to experiment with OAuth 2.0 credentials and the Google Ads API before writing code for your app. We recommend that you use one of the OAuth 2.0 libraries available at https://oauth.net/code/ to implement the OAuth 2.0 authorization workflows. However, we have listed the curl instructions in case you need to implement it yourself.\n\n### Service accounts\nFollow the steps to configure a Google Cloud project for the Google Ads API. Record the service account email and service account key. Next, follow the common instructions in the Service Accounts guide to set up the service account to access your Google Ads account.\n\n### User authentication\nFollow the steps to configure a Google Cloud Console project for the Google Ads API. Record the client ID and client secret. Next, follow the desktop app flow instructions or the web app flow instructions to generate a refresh token and an access token. The scope to use for Google Ads API access is https://www.googleapis.com/auth/adwords. If you are using a service account, you can skip the sub parameter when constructing the JWT claim set, because the setup steps grant the service account direct access to the Google Ads account, thus avoiding the need to impersonate a Google Ads user. You then use the access token in the Authorization HTTP header of every API call to the Google Ads API: GET /v25/customers:listAccessibleCustomers HTTP/1.1 Host: googleads.googleapis.com Authorization: Bearer ACCESS_TOKEN developer-token: DEVELOPER_TOKEN\n\n### User authentication\nOnce you have an OAuth 2.0 client ID, client secret, and refresh token, you can generate a new access token for use in API calls with the curl command line tool:\ncurl --data \"grant_type=refresh_token\" --data \"client_id=CLIENT_ID\" --data \"client_secret=CLIENT_SECRET\" --data \"refresh_token=REFRESH_TOKEN\" https://www.googleapis.com/oauth2/v3/token\n\nYou then use the access token returned by the curl request in the Authorization HTTP header of every API call to the Google Ads API: GET /v25/customers:listAccessibleCustomers HTTP/1.1 Host: googleads.googleapis.com Authorization: Bearer ACCESS_TOKEN developer-token: DEVELOPER_TOKEN\n\n## Request headers",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0"
+    ],
+    "flows": [
+      "Refresh Token"
+    ],
+    "token_types": [
+      "bearer token",
+      "access token",
+      "refresh token",
+      "JWT"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "OAuth client / connected app configuration",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Google Ads provides MCP server support and documents OAuth 2.0 for connecting MCP clients.",
+    "auth": "OAuth 2.0"
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Google Ads documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://developers.google.com/google-ads/api/rest/auth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/client-library"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documentation explicitly mentions bearer tokens.",
+      "url": "https://developers.google.com/google-ads/api/rest/auth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documentation explicitly mentions bearer tokens.",
+      "url": "https://developers.google.com/google-ads/api/docs/concepts/call-structure"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documentation explicitly mentions access tokens.",
+      "url": "https://developers.google.com/google-ads/api/rest/auth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documentation explicitly mentions access tokens.",
+      "url": "https://developers.google.com/google-ads/api/docs/concepts/call-structure"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documentation explicitly mentions refresh tokens.",
+      "url": "https://developers.google.com/google-ads/api/rest/auth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documentation explicitly mentions refresh tokens.",
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/client-library"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documentation explicitly mentions JWTs.",
+      "url": "https://developers.google.com/google-ads/api/rest/auth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documentation explicitly mentions the Refresh Token authentication flow.",
+      "url": "https://developers.google.com/google-ads/api/rest/auth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Google Ads documentation explicitly mentions the Refresh Token authentication flow.",
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/client-library"
+    },
+    {
+      "field": "api",
+      "claim": "Google Ads documentation explicitly documents a REST interface.",
+      "url": "https://developers.google.com/google-ads/api/rest/design/overview"
+    },
+    {
+      "field": "access",
+      "claim": "Google Ads documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://developers.google.com/google-ads/api/rest/auth"
+    },
+    {
+      "field": "mcp",
+      "claim": "Google Ads documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+    },
+    {
+      "field": "mcp",
+      "claim": "Google Ads documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://github.com/googleads/google-ads-mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Google Ads MCP documentation explicitly mentions OAuth 2.0 authentication.",
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+    },
+    {
+      "field": "mcp",
+      "claim": "Google Ads MCP documentation explicitly mentions OAuth 2.0 authentication.",
+      "url": "https://developers.google.com/google-ads/api/rest/auth"
+    }
+  ],
+  "confidence": 0.89,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 31,
+    "research_time_seconds": 131.71,
+    "research_status": "success"
+  }
+}

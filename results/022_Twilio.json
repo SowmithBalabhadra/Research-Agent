@@ -1,0 +1,144 @@
+{
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "description": "Introducing the Twilio MCP Server and Skills: Give Your Coding Agents Native Access to 1,800+ Twilio APIs\n\nAI coding agents are changing how developers build, but they can only work with what they can see. And now, we’re going to help them see more Twilio – today, we're launching the Twilio MCP server and Twilio Skills in Public Beta. Together, our new MCP server and Skills package will help your coding agent better discover, plan with, and use Twilio Products and APIs, including our latest Conversations products. In this post, you'll learn why we built the new MCP server and Skills, what they do, and – most importantly – how to connect your coding agent.\n\nThe problem: your coding agent doesn't know Twilio well enough. If you've used an agent like Claude Code, Cursor, or Codex to build a Twilio integration, you probably recognize this scenario: your agent generates code that looks right but uses the wrong endpoint, skips pre-requisite steps, or misses entire products that would solve your problem more elegantly. This isn't your agent's fault. Twilio has over 1,800 API endpoints and more than 30 products. Compounding the issue, some of our most powerful products – Conversation Memory, Conversation Orchestrator, Twilio Agent Connect, and Conversation Intelligence– are new enough that your agent's training data likely doesn't cover them yet. And even for our older, well-established APIs, there's often a gap between",
+  "authentication": {
+    "methods": [
+      "API Key",
+      "Basic Auth"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Client Credentials",
+      "Refresh Token"
+    ],
+    "token_types": [
+      "bearer token",
+      "access token",
+      "refresh token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "unknown",
+    "plan_requirement": "none",
+    "admin_requirement": "admin approval required",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Twilio explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP/API access requires administrator approval."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions API keys.",
+      "url": "https://www.twilio.com/docs/usage/requests-to-twilio"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions API keys.",
+      "url": "https://www.twilio.com/docs/iam/api"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions Basic Authentication.",
+      "url": "https://www.twilio.com/docs/usage/requests-to-twilio"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions Basic Authentication.",
+      "url": "https://www.twilio.com/docs/iam/api"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions bearer tokens.",
+      "url": "https://www.twilio.com/docs/iam/oauth-apps/oauth-access-token"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions access tokens.",
+      "url": "https://www.twilio.com/docs/iam/oauth-apps/oauth-access-token"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions refresh tokens.",
+      "url": "https://www.twilio.com/docs/iam/oauth-apps/oauth-access-token"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://www.twilio.com/docs/iam/oauth-apps/oauth-access-token"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions the Client Credentials authentication flow.",
+      "url": "https://www.twilio.com/docs/iam/oauth-apps/oauth-access-token"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twilio documentation explicitly mentions the Refresh Token authentication flow.",
+      "url": "https://www.twilio.com/docs/iam/oauth-apps/oauth-access-token"
+    },
+    {
+      "field": "api",
+      "claim": "Twilio documentation explicitly documents a REST interface.",
+      "url": "https://www.twilio.com/docs/iam/api"
+    },
+    {
+      "field": "api",
+      "claim": "Twilio documentation explicitly documents a Webhooks interface.",
+      "url": "https://www.twilio.com/docs/usage/api"
+    },
+    {
+      "field": "access",
+      "claim": "Twilio provides a free developer/development environment.",
+      "url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account"
+    },
+    {
+      "field": "access",
+      "claim": "Twilio documentation explicitly indicates that the relevant capability is available without a paid plan.",
+      "url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account"
+    },
+    {
+      "field": "access",
+      "claim": "Twilio documentation explicitly requires administrator approval or permissions.",
+      "url": "https://www.twilio.com/docs/iam/access-control/types-of-roles"
+    },
+    {
+      "field": "mcp",
+      "claim": "Twilio documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://www.twilio.com/docs/ai/mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Twilio documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills"
+    },
+    {
+      "field": "mcp",
+      "claim": "Twilio documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://github.com/twilio/ai/blob/main/mcp/README.md"
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 22,
+    "research_time_seconds": 90.98,
+    "research_status": "success"
+  }
+}

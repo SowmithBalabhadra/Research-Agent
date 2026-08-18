@@ -1,0 +1,103 @@
+{
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "description": "Front provides developers with resources to build API integrations, including documentation, sample code, and tools, and offers a MCP server for connecting AI assistants to Front's platform.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Refresh Token"
+    ],
+    "token_types": [
+      "bearer token",
+      "refresh token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "partnership required"
+  },
+  "api": {
+    "available": true,
+    "types": [],
+    "breadth": "unknown"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Front explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "difficult",
+    "blocker": "Documented access restrictions may block self-serve integration."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Front documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://dev.frontapp.com/docs/oauth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Front documentation explicitly mentions bearer tokens.",
+      "url": "https://dev.frontapp.com/docs/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Front documentation explicitly mentions bearer tokens.",
+      "url": "https://dev.frontapp.com/docs/core-api-getting-started"
+    },
+    {
+      "field": "authentication",
+      "claim": "Front documentation explicitly mentions refresh tokens.",
+      "url": "https://dev.frontapp.com/docs/oauth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Front documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://dev.frontapp.com/docs/oauth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Front documentation explicitly mentions the Refresh Token authentication flow.",
+      "url": "https://dev.frontapp.com/docs/oauth"
+    },
+    {
+      "field": "access",
+      "claim": "Front provides a free developer/development environment.",
+      "url": "https://dev.frontapp.com/docs/welcome"
+    },
+    {
+      "field": "access",
+      "claim": "Front provides a free developer/development environment.",
+      "url": "https://help.front.com/en/articles/2309"
+    },
+    {
+      "field": "access",
+      "claim": "Front documentation explicitly indicates a partner or contact-sales requirement.",
+      "url": "https://dev.frontapp.com/docs/authentication"
+    },
+    {
+      "field": "mcp",
+      "claim": "Front documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://dev.frontapp.com/docs/mcp-server"
+    },
+    {
+      "field": "mcp",
+      "claim": "Front documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://help.front.com/en/articles/4883136"
+    }
+  ],
+  "confidence": 0.68,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 14,
+    "research_time_seconds": 46.91,
+    "research_status": "success"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "description": "Dis.gg MCP Documentation",
+  "authentication": {
+    "methods": [],
+    "flows": [
+      "Authorization Code",
+      "Client Credentials"
+    ],
+    "token_types": [
+      "bearer token",
+      "access token"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "OAuth client / connected app configuration",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "partnership required"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Discord explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "difficult",
+    "blocker": "Documented access restrictions may block self-serve integration."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Discord documentation explicitly mentions bearer tokens.",
+      "url": "https://docs.discord.com/developers/reference"
+    },
+    {
+      "field": "authentication",
+      "claim": "Discord documentation explicitly mentions bearer tokens.",
+      "url": "https://docs.discord.com/developers/topics/oauth2"
+    },
+    {
+      "field": "authentication",
+      "claim": "Discord documentation explicitly mentions access tokens.",
+      "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions"
+    },
+    {
+      "field": "authentication",
+      "claim": "Discord documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://docs.discord.com/developers/topics/oauth2"
+    },
+    {
+      "field": "authentication",
+      "claim": "Discord documentation explicitly mentions the Client Credentials authentication flow.",
+      "url": "https://docs.discord.com/developers/topics/oauth2"
+    },
+    {
+      "field": "api",
+      "claim": "Discord documentation explicitly documents a REST interface.",
+      "url": "https://docs.discord.com/developers/reference"
+    },
+    {
+      "field": "access",
+      "claim": "Discord documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://docs.discord.com/developers/topics/oauth2"
+    },
+    {
+      "field": "access",
+      "claim": "Discord documentation explicitly indicates a partner or contact-sales requirement.",
+      "url": "https://docs.discord.com/developers/topics/oauth2"
+    },
+    {
+      "field": "mcp",
+      "claim": "Discord documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://mcp.dis.gg/docs/usage"
+    },
+    {
+      "field": "mcp",
+      "claim": "Discord documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://mcp.dis.gg/docs"
+    },
+    {
+      "field": "mcp",
+      "claim": "Discord documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://mcp.dis.gg/docs/tools/mcp"
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 26,
+    "research_time_seconds": 26.83,
+    "research_status": "success"
+  }
+}

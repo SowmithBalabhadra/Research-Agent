@@ -1,0 +1,97 @@
+{
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "description": "飞书/Lark官方 OpenAPI MCP - Stars: 779 - Forks: 108 - Watchers: 779 - Open issues: 61 - License: MIT License - Default branch: main - Created: 2025-04-16T08:42:02Z\n\n## Languages\n- Dockerfile\n- JavaScript\n- TypeScript\n\n## Top Contributors\n- chenli-idevlab (62 contributions)\n- liuyitian777 (3 contributions)\n\n---\n\n## README\n# Feishu/Lark OpenAPI MCP\n\n[![npm version](https://img.shields.io/npm/v/@larksuiteoapi/lark-mcp.svg)](https://www.npmjs.com/package/@larksuiteoapi/lark-mcp)\n[![npm downloads](https://img.shields.io/npm/dm/@larksuiteoapi/lark-mcp.svg)](https://www.npmjs.com/package/@larksuiteoapi/lark-mcp)\n[![Node.js Version](https://img.shields.io/node/v/@larksuiteoapi/lark-mcp.svg)](https://nodejs.org/)\n\nEnglish | [中文](./README_ZH.md)\n\n[Developer Documentation Retrieval MCP](./docs/recall-mcp/README.md)\n[Official Document](https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction)\n[Trouble Shooting](https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/use_cases)\n\n> **⚠️ Beta Version Notice**: This tool is currently in Beta stage. Features and APIs may change, so please stay updated with version releases. This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool designed to help users quickly connect to the Feishu/Lark platform and enable efficient collaboration between AI Agents and Feishu/Lark. The tool encapsulates Feishu/Lark Open Platform API interfaces as MCP tools, allowing AI assistants to directly call these interfaces and implement various automation scenarios such as document processing, conversation management, calendar scheduling, and more.\n\n## Preparation\n### Creating a Feishu/Lark Application\nBefore using the lark-mcp tool, you need to create a Feishu/Lark application:\n1. Visit the [Feishu Open Platform](https://open.feishu.cn/) or [Lark Open Platform](https://open.larksuite.com/) and log in\n2. Click",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0"
+    ],
+    "flows": [
+      "Authorization Code",
+      "PKCE"
+    ],
+    "token_types": [
+      "access token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [],
+    "breadth": "unknown"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Lark (Larksuite) provides MCP server support and documents OAuth 2.0 for connecting MCP clients.",
+    "auth": "OAuth 2.0"
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP is available, but the exact credential-access requirements are not fully established."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Lark (Larksuite) documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/get-user-access-token"
+    },
+    {
+      "field": "authentication",
+      "claim": "Lark (Larksuite) documentation explicitly mentions access tokens.",
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/uMTNz4yM1MjLzUzM"
+    },
+    {
+      "field": "authentication",
+      "claim": "Lark (Larksuite) documentation explicitly mentions access tokens.",
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide"
+    },
+    {
+      "field": "authentication",
+      "claim": "Lark (Larksuite) documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/get-user-access-token"
+    },
+    {
+      "field": "authentication",
+      "claim": "Lark (Larksuite) documentation explicitly mentions the PKCE authentication flow.",
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/get-user-access-token"
+    },
+    {
+      "field": "access",
+      "claim": "Lark (Larksuite) provides a free developer/development environment.",
+      "url": "https://open.larksuite.com/document/home/introduction-to-custom-app-development/self-built-application-development-process?lang=en-US"
+    },
+    {
+      "field": "mcp",
+      "claim": "Lark (Larksuite) documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction"
+    },
+    {
+      "field": "mcp",
+      "claim": "Lark (Larksuite) documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://github.com/larksuite/lark-openapi-mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Lark (Larksuite) documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://github.com/larksuite/lark-samples/tree/main/mcp_quick_demo"
+    },
+    {
+      "field": "mcp",
+      "claim": "Lark (Larksuite) MCP documentation explicitly mentions OAuth 2.0 authentication.",
+      "url": "https://github.com/larksuite/lark-openapi-mcp"
+    }
+  ],
+  "confidence": 0.67,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 24,
+    "research_time_seconds": 111.45,
+    "research_status": "success"
+  }
+}

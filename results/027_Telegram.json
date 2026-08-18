@@ -1,0 +1,73 @@
+{
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "description": "Telegram APIs",
+  "authentication": {
+    "methods": [],
+    "flows": [
+      "Authorization Code",
+      "PKCE"
+    ],
+    "token_types": []
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [],
+    "breadth": "unknown"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Telegram explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP is available, but the exact credential-access requirements are not fully established."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Telegram documentation explicitly mentions the Authorization Code authentication flow.",
+      "url": "https://core.telegram.org/bots/telegram-login"
+    },
+    {
+      "field": "authentication",
+      "claim": "Telegram documentation explicitly mentions the PKCE authentication flow.",
+      "url": "https://core.telegram.org/bots/telegram-login"
+    },
+    {
+      "field": "access",
+      "claim": "Telegram provides a free developer/development environment.",
+      "url": "https://core.telegram.org/api/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Telegram documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://modelcontextprotocol.org/docs/learn/architecture"
+    },
+    {
+      "field": "mcp",
+      "claim": "Telegram MCP documentation explicitly mentions the authorization code flow.",
+      "url": "https://core.telegram.org/api/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Telegram MCP documentation explicitly mentions the authorization code flow.",
+      "url": "https://core.telegram.org/"
+    }
+  ],
+  "confidence": 0.67,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 27,
+    "research_time_seconds": 26.77,
+    "research_status": "success"
+  }
+}

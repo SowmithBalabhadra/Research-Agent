@@ -1,0 +1,154 @@
+{
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "description": "Twenty is a platform that generates per‑workspace REST and GraphQL APIs from your schema, letting you create, read, update, and delete built‑in and custom records while programmatically managing objects, fields, and relationships.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0",
+      "API Key",
+      "JWT"
+    ],
+    "flows": [
+      "Authorization Code",
+      "PKCE",
+      "Client Credentials"
+    ],
+    "token_types": [
+      "Bearer token",
+      "JWT"
+    ]
+  },
+  "access": {
+    "developer_signup": "free trial signup",
+    "credential_access": "create API key via Settings",
+    "plan_requirement": "none",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "GraphQL"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Twenty's server implements MCP‑compliant OAuth discovery endpoints, providing path‑aware protected‑resource metadata and advertising required MCP parameters.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access.",
+      "url": "https://docs.twenty.com/developers/extend/oauth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Internal scripts, automation use API Key authentication.",
+      "url": "https://docs.twenty.com/developers/extend/oauth"
+    },
+    {
+      "field": "authentication",
+      "claim": "External app acting on behalf of a user uses OAuth — Authorization Code.",
+      "url": "https://docs.twenty.com/developers/extend/oauth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Server-to-server, no user context uses OAuth — Client Credentials.",
+      "url": "https://docs.twenty.com/developers/extend/oauth"
+    },
+    {
+      "field": "authentication",
+      "claim": "Twenty's authentication system supports API keys, OAuth tokens, and JWT.",
+      "url": "https://twentyhq-twenty.mintlify.app/developers/api/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Include the API key in the Authorization header as a Bearer token.",
+      "url": "https://twentyhq-twenty.mintlify.app/developers/api/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Send a Bearer token with each request via the Authorization header.",
+      "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-server/src/engine/core-modules/open-api/utils/base-schema.utils.ts"
+    },
+    {
+      "field": "api",
+      "claim": "Twenty provides REST and GraphQL APIs generated from the workspace schema.",
+      "url": "https://docs.twenty.com/developers/extend/api"
+    },
+    {
+      "field": "api",
+      "claim": "Core API is available via /rest/ and /graphql/ endpoints.",
+      "url": "https://docs.twenty.com/developers/extend/api"
+    },
+    {
+      "field": "api",
+      "claim": "Metadata API is also available as REST and GraphQL.",
+      "url": "https://docs.twenty.com/developers/extend/api"
+    },
+    {
+      "field": "api",
+      "claim": "Base URL for cloud is https://api.twenty.com/.",
+      "url": "https://docs.twenty.com/developers/extend/api"
+    },
+    {
+      "field": "api",
+      "claim": "Authentication uses Bearer API keys.",
+      "url": "https://docs.twenty.com/developers/extend/api"
+    },
+    {
+      "field": "api",
+      "claim": "OAuth-based access is supported for external apps.",
+      "url": "https://docs.twenty.com/developers/extend/api"
+    },
+    {
+      "field": "api",
+      "claim": "Twenty provides a REST API for CRUD operations on CRM data.",
+      "url": "https://twentyhq-twenty.mintlify.app/developers/api/rest-api"
+    },
+    {
+      "field": "access",
+      "claim": "Free trial signup provides API access",
+      "url": "https://docs.twenty.com/getting-started/quickstart"
+    },
+    {
+      "field": "access",
+      "claim": "API key created in Settings → API & Webhooks",
+      "url": "https://docs.twenty.com/developers/extend/api"
+    },
+    {
+      "field": "access",
+      "claim": "API included in free trial, no paid plan required",
+      "url": "https://docs.twenty.com/getting-started/quickstart"
+    },
+    {
+      "field": "mcp",
+      "claim": "Twenty's server aligns its OAuth discovery metadata with the MCP authorization specification (draft).",
+      "url": "https://github.com/twentyhq/twenty/commit/5223c4771df5d8163825cf9ca9731e0cd51cdfa5"
+    },
+    {
+      "field": "mcp",
+      "claim": "The server splits protected‑resource metadata by path (/.well-known/oauth-protected-resource and /.well-known/oauth-protected-resource/mcp) to meet MCP and RFC 9728 requirements.",
+      "url": "https://github.com/twentyhq/twenty/commit/5223c4771df5d8163825cf9ca9731e0cd51cdfa5"
+    },
+    {
+      "field": "mcp",
+      "claim": "It advertises the authorization_response_iss_parameter_supported flag as true to satisfy MCP and OAuth 2.1 security BCP.",
+      "url": "https://github.com/twentyhq/twenty/commit/5223c4771df5d8163825cf9ca9731e0cd51cdfa5"
+    }
+  ],
+  "confidence": 0.85,
+  "notes": "",
+  "_meta": {
+    "app_id": 5,
+    "research_time_seconds": 91.8,
+    "research_status": "success"
+  }
+}

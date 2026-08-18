@@ -1,0 +1,128 @@
+{
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "description": "The Model Context Protocol (MCP) is an open standard that defines how AI models can discover and use external tools, APIs, and data sources in a consistent, secure way. Vonage provides two MCP Servers designed for different purposes: the Documentation MCP Server and the Server API Bindings MCP Server. The Documentation MCP Server exposes Vonage API Documentation to AI assistants, while the Server API Bindings MCP Server provides tools for managing Vonage applications, numbers, and reports programmatically. Both servers follow the same MCP structure, making them interoperable and easy to use together. The Vonage MCP Servers work with any AI or IDE environment that supports the Model Context Protocol, including Claude Desktop, VS Code MCP Extension, and Cursor IDE. The Vonage MCP Servers allow developers and AI agents to query documentation, manage Vonage applications, and automate communication tasks simply by using natural language, providing several benefits such as AI-native discovery, faster setup, secure and structured interactions, and a consistent developer experience. The Vonage MCP Servers are designed to bridge natural language and API actions, allowing developers to stay focused on building rather than searching or scripting. The Vonage MCP Servers are available for installation in the installation guides for the documentation server and for the server API bindings server.",
+  "authentication": {
+    "methods": [
+      "API Key",
+      "Basic Auth"
+    ],
+    "flows": [],
+    "token_types": [
+      "bearer token",
+      "JWT"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "Webhooks"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Vonage explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP is available, but the exact credential-access requirements are not fully established."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions API keys.",
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions API keys.",
+      "url": "https://developer.vonage.com/en/verify/concepts/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions API keys.",
+      "url": "https://developer.vonage.com/en/messages/technical-details"
+    },
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions Basic Authentication.",
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions Basic Authentication.",
+      "url": "https://developer.vonage.com/en/verify/concepts/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions Basic Authentication.",
+      "url": "https://developer.vonage.com/en/messages/technical-details"
+    },
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions bearer tokens.",
+      "url": "https://developer.vonage.com/en/verify/concepts/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions JWTs.",
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions JWTs.",
+      "url": "https://developer.vonage.com/en/verify/concepts/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Vonage documentation explicitly mentions JWTs.",
+      "url": "https://developer.vonage.com/en/messages/technical-details"
+    },
+    {
+      "field": "api",
+      "claim": "Vonage documentation explicitly documents a Webhooks interface.",
+      "url": "https://developer.vonage.com/en/getting-started/overview"
+    },
+    {
+      "field": "access",
+      "claim": "Vonage provides a free developer/development environment.",
+      "url": "https://developer.vonage.com/en/dashboard/getting-started"
+    },
+    {
+      "field": "access",
+      "claim": "Vonage provides a free developer/development environment.",
+      "url": "https://developer.vonage.com/en/account/guides/dashboard-management"
+    },
+    {
+      "field": "mcp",
+      "claim": "Vonage documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-tooling-mcp-server"
+    },
+    {
+      "field": "mcp",
+      "claim": "Vonage documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Vonage documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://developer.vonage.com/en/blog/step-by-step-adding-vonage-apis-to-your-ai-agent-with-mcp"
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 30,
+    "research_time_seconds": 66.66,
+    "research_status": "success"
+  }
+}

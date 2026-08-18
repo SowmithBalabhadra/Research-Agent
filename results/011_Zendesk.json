@@ -1,0 +1,161 @@
+{
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "description": "Zendesk is a customer service platform that offers ticketing, help‑center knowledge base, live‑chat, voice, sales CRM, and omnichannel tools for managing customer interactions.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0",
+      "Basic Auth",
+      "API Key",
+      "JWT"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Client Credentials"
+    ],
+    "token_types": [
+      "access token",
+      "bearer token",
+      "API key",
+      "JWT",
+      "refresh token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free 14-day trial account",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "GraphQL"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Zendesk can act as an MCP client to connect to external MCP servers, discover and use their tools in action flows, and also act as an MCP server exposing its own tools for third‑party AI agents.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Zendesk supports using OAuth access tokens to authenticate API requests.",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Existing customers using basic authentication or API tokens must migrate to OAuth access tokens.",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Global OAuth tokens must be used to authenticate Zendesk API requests for distributed apps.",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Client‑side CORS requests are supported when authenticated with an OAuth access token.",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Requests using a Zendesk API token are not supported for client‑side CORS.",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "The Zendesk API supports OAuth authorization flows.",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "OAuth access token is sent in an Authorization header as a Bearer token.",
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Zendesk supports two OAuth flows: Authorization code and Client credentials.",
+      "url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Authorization code flow acts on behalf of a user who signs in and approves access.",
+      "url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Client credentials flow authenticates on behalf of the user who created the OAuth client.",
+      "url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "OAuth access tokens are short‑lived and are paired with a refresh token for automatic renewal.",
+      "url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Authentication can be performed with API tokens, OAuth access tokens, and JWTs.",
+      "url": "https://support.zendesk.com/hc/en-us/articles/10306782115610-Troubleshooting-401-and-403-Errors-on-the-Zendesk-Developer-Platform"
+    },
+    {
+      "field": "authentication",
+      "claim": "Basic authentication uses Base64‑encoded credentials and may cause 401 errors if malformed.",
+      "url": "https://support.zendesk.com/hc/en-us/articles/10306782115610-Troubleshooting-401-and-403-Errors-on-the-Zendesk-Developer-Platform"
+    },
+    {
+      "field": "authentication",
+      "claim": "OAuth tokens placed in a Basic authentication header are invalid.",
+      "url": "https://support.zendesk.com/hc/en-us/articles/10306782115610-Troubleshooting-401-and-403-Errors-on-the-Zendesk-Developer-Platform"
+    },
+    {
+      "field": "authentication",
+      "claim": "Invalid or expired JWTs result in authentication failures.",
+      "url": "https://support.zendesk.com/hc/en-us/articles/10306782115610-Troubleshooting-401-and-403-Errors-on-the-Zendesk-Developer-Platform"
+    },
+    {
+      "field": "api",
+      "claim": "Zendesk provides documented public APIs (e.g., Ticketing, Help Center, Chat, etc.)",
+      "url": "https://developer.zendesk.com/api-reference/"
+    },
+    {
+      "field": "api",
+      "claim": "The Chat Conversations API is a GraphQL API",
+      "url": "https://developer.zendesk.com/api-reference/live-chat/chat-conversations-api/conversations-api/"
+    },
+    {
+      "field": "access",
+      "claim": "Free 14-day trial account available",
+      "url": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Zendesk can connect to external MCP servers and retrieve available tools for use in action flows.",
+      "url": "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows"
+    },
+    {
+      "field": "mcp",
+      "claim": "Zendesk can act as an MCP server, exposing tools that third‑party AI agents can use to access Zendesk data or perform actions.",
+      "url": "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows"
+    },
+    {
+      "field": "mcp",
+      "claim": "Zendesk supports connections to both public MCP servers from vendors and private MCP servers.",
+      "url": "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client"
+    }
+  ],
+  "confidence": 0.85,
+  "notes": "",
+  "_meta": {
+    "app_id": 11,
+    "research_time_seconds": 82.76,
+    "research_status": "success"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "description": "plain.mcp v0.1.0 MCP (Model Context Protocol) server for Plain apps. - Author email: Dave Gaeddert <dave.gaeddert@dropseed.dev> - License: BSD-3-Clause - Python: >=3.13 - Package URL: https://pypi.org/project/plain.mcp/0.1.0/",
+  "authentication": {
+    "methods": [
+      "API Key"
+    ],
+    "flows": [],
+    "token_types": [
+      "bearer token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "OAuth client / connected app configuration",
+    "plan_requirement": "unknown",
+    "admin_requirement": "admin approval required",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "GraphQL"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Plain explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP/API access requires administrator approval."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Plain documentation explicitly mentions API keys.",
+      "url": "https://apis.io/security/plain/plain-authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Plain documentation explicitly mentions API keys.",
+      "url": "https://apis.io/security/plain-support/plain-support-authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Plain documentation explicitly mentions API keys.",
+      "url": "https://docs.natural.co/api-reference/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Plain documentation explicitly mentions bearer tokens.",
+      "url": "https://apis.io/security/plain/plain-authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Plain documentation explicitly mentions bearer tokens.",
+      "url": "https://apis.io/security/plain-support/plain-support-authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Plain documentation explicitly mentions bearer tokens.",
+      "url": "https://docs.natural.co/api-reference/authentication"
+    },
+    {
+      "field": "api",
+      "claim": "Plain documentation explicitly documents a GraphQL interface.",
+      "url": "https://plain.mintlify.app/graphql/introduction"
+    },
+    {
+      "field": "api",
+      "claim": "Plain documentation explicitly documents a GraphQL interface.",
+      "url": "https://plain.support.site/article/using-plains-api"
+    },
+    {
+      "field": "api",
+      "claim": "Plain documentation explicitly documents a GraphQL interface.",
+      "url": "https://www.plain.com/docs/graphql/sdk"
+    },
+    {
+      "field": "access",
+      "claim": "Plain provides a free developer/development environment.",
+      "url": "https://docs.developers.clio.com/handbook/getting-started/get-a-developer-account/"
+    },
+    {
+      "field": "access",
+      "claim": "Plain documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://docs.developers.clio.com/handbook/getting-started/get-a-developer-account/"
+    },
+    {
+      "field": "access",
+      "claim": "Plain documentation explicitly requires administrator approval or permissions.",
+      "url": "https://developers.figma.com/docs/rest-api/plan-access-tokens/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Plain documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://github.com/dropseed/plain/tree/master/plain-mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Plain documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://pypi.org/project/plain.mcp/0.1.0/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Plain documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://ts.sdk.modelcontextprotocol.io/v2/serving/authorization"
+    }
+  ],
+  "confidence": 0.9,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 17,
+    "research_time_seconds": 36.67,
+    "research_status": "success"
+  }
+}

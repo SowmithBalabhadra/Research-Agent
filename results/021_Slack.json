@@ -1,0 +1,99 @@
+{
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "description": "How Slack Keeps MCP Secure | Slack",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0"
+    ],
+    "flows": [
+      "Refresh Token"
+    ],
+    "token_types": [
+      "bearer token"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "RPC"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Slack provides MCP server support and documents OAuth 2.0 with PKCE for connecting MCP clients.",
+    "auth": "OAuth 2.0 with PKCE"
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "MCP is available, but the exact credential-access requirements are not fully established."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Slack documents OAuth 2.0 for authentication or authorization.",
+      "url": "https://docs.slack.dev/apis/web-api/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Slack documentation explicitly mentions bearer tokens.",
+      "url": "https://docs.slack.dev/apis/web-api/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Slack documentation explicitly mentions bearer tokens.",
+      "url": "https://docs.slack.dev/faq"
+    },
+    {
+      "field": "authentication",
+      "claim": "Slack documentation explicitly mentions the Refresh Token authentication flow.",
+      "url": "https://docs.slack.dev/authentication/tokens/"
+    },
+    {
+      "field": "api",
+      "claim": "Slack documentation explicitly documents a REST interface.",
+      "url": "https://docs.slack.dev/apis/web-api/"
+    },
+    {
+      "field": "api",
+      "claim": "Slack documentation explicitly documents a RPC interface.",
+      "url": "https://docs.slack.dev/apis/web-api/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Slack documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://docs.slack.dev/ai/slack-mcp-server/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Slack documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://slack.com/blog/news/slackbot-mcp-security"
+    },
+    {
+      "field": "mcp",
+      "claim": "Slack documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://docs.slack.dev/ai/slackbot-mcp-client/"
+    },
+    {
+      "field": "mcp",
+      "claim": "Slack Hosted MCP Servers use OAuth 2.0 with PKCE for authentication.",
+      "url": "https://slack.com/blog/news/slackbot-mcp-security"
+    }
+  ],
+  "confidence": 0.68,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 21,
+    "research_time_seconds": 26.65,
+    "research_status": "success"
+  }
+}

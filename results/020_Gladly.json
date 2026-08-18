@@ -1,0 +1,76 @@
+{
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "description": "Now you can test the myriad possibilities of the Gladly API in a secure space. This guide will help you understand the testing and iteration process. It covers setting up a sandbox environment, creating API users, and managing API tokens. The guide also includes information on authentication and how to contact Gladly Support for assistance.",
+  "authentication": {
+    "methods": [
+      "Basic Auth"
+    ],
+    "flows": [],
+    "token_types": []
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "unknown",
+    "plan_requirement": "unknown",
+    "admin_requirement": "admin approval required",
+    "partner_requirement": "partnership required"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": "unknown",
+    "details": "",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "difficult",
+    "blocker": "Requires partnership / contact-sales approval."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Gladly documentation explicitly mentions Basic Authentication.",
+      "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing"
+    },
+    {
+      "field": "api",
+      "claim": "Gladly documentation explicitly documents a REST interface.",
+      "url": "https://developer.gladly.com/rest/"
+    },
+    {
+      "field": "api",
+      "claim": "Gladly documentation explicitly documents a GraphQL interface.",
+      "url": "https://help.gladly.com/developer-tutorials/docs/graphql-in-gladly"
+    },
+    {
+      "field": "api",
+      "claim": "Gladly documentation explicitly documents a Webhooks interface.",
+      "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing"
+    },
+    {
+      "field": "access",
+      "claim": "Gladly documentation explicitly requires administrator approval or permissions.",
+      "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks"
+    },
+    {
+      "field": "access",
+      "claim": "Gladly documentation explicitly indicates a partner or contact-sales requirement.",
+      "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks"
+    }
+  ],
+  "confidence": 0.67,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 20,
+    "research_time_seconds": 32.94,
+    "research_status": "success"
+  }
+}

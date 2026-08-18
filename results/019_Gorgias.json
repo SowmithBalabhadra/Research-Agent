@@ -1,0 +1,103 @@
+{
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "description": "Gorgias is a helpdesk platform that allows developers to integrate with its API to support thousands of shop owners and grow their app audience, or to build a private app to empower their support teams with the tools they need.",
+  "authentication": {
+    "methods": [
+      "API Key",
+      "Basic Auth"
+    ],
+    "flows": [],
+    "token_types": [
+      "bearer token",
+      "access token"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "OAuth client / connected app configuration",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Gorgias explicitly documents MCP server or Model Context Protocol support.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "Gorgias documentation explicitly mentions API keys.",
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys"
+    },
+    {
+      "field": "authentication",
+      "claim": "Gorgias documentation explicitly mentions API keys.",
+      "url": "https://developers.gorgias.com/reference/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Gorgias documentation explicitly mentions Basic Authentication.",
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys"
+    },
+    {
+      "field": "authentication",
+      "claim": "Gorgias documentation explicitly mentions bearer tokens.",
+      "url": "https://developers.gorgias.com/docs/oauth2-bearer-token"
+    },
+    {
+      "field": "authentication",
+      "claim": "Gorgias documentation explicitly mentions access tokens.",
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys"
+    },
+    {
+      "field": "authentication",
+      "claim": "Gorgias documentation explicitly mentions access tokens.",
+      "url": "https://developers.gorgias.com/docs/oauth2-bearer-token"
+    },
+    {
+      "field": "api",
+      "claim": "Gorgias documentation explicitly documents a REST interface.",
+      "url": "https://developers.gorgias.com/reference/introduction"
+    },
+    {
+      "field": "access",
+      "claim": "Gorgias documents obtaining API credentials through an OAuth client or connected-app configuration.",
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys"
+    },
+    {
+      "field": "mcp",
+      "claim": "Gorgias documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+    },
+    {
+      "field": "mcp",
+      "claim": "Gorgias documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://www.gorgias.com/blog/gorgias-mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Gorgias documentation explicitly supports Model Context Protocol (MCP) integration.",
+      "url": "https://github.com/benpalmer1/gorgias-mcp-server"
+    }
+  ],
+  "confidence": 0.89,
+  "notes": "Structured factual fields are extracted from fetched evidence using deterministic rules; Qwen is used only for the description.",
+  "_meta": {
+    "app_id": 19,
+    "research_time_seconds": 42.07,
+    "research_status": "success"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "description": "Podio is a work‑management and collaboration platform that enables custom apps and lets users manage items, workspaces, organizations, tasks, files, comments and webhooks.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Refresh Token"
+    ],
+    "token_types": [
+      "access token",
+      "API key"
+    ]
+  },
+  "access": {
+    "developer_signup": "unknown",
+    "credential_access": "generate client_id and client_secret",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": false,
+    "details": "",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "Developer signup / access process is undocumented in the sources reviewed."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "OAuth 2.0 authentication is used",
+      "url": "https://raw.githubusercontent.com/api-evangelist/podio/refs/heads/main/openapi/podio-oauth-api-openapi.yml"
+    },
+    {
+      "field": "authentication",
+      "claim": "Podio API key is used for client initialization",
+      "url": "https://podio.github.io/podio-js/authentication/"
+    },
+    {
+      "field": "authentication",
+      "claim": "Authorization Code flow is supported",
+      "url": "https://raw.githubusercontent.com/api-evangelist/podio/refs/heads/main/openapi/podio-oauth-api-openapi.yml"
+    },
+    {
+      "field": "authentication",
+      "claim": "Refresh Token grant is supported",
+      "url": "https://raw.githubusercontent.com/api-evangelist/podio/refs/heads/main/openapi/podio-oauth-api-openapi.yml"
+    },
+    {
+      "field": "authentication",
+      "claim": "Access token is returned and used in Authorization header",
+      "url": "https://raw.githubusercontent.com/api-evangelist/podio/refs/heads/main/openapi/podio-oauth-api-openapi.yml"
+    },
+    {
+      "field": "authentication",
+      "claim": "API key is required to initialize the Podio client",
+      "url": "https://podio.github.io/podio-js/authentication/"
+    },
+    {
+      "field": "api",
+      "claim": "Podio provides a REST API",
+      "url": "https://apis.io/apis/podio/rest-api/"
+    },
+    {
+      "field": "api",
+      "claim": "Podio API includes webhooks",
+      "url": "https://apis.io/apis/podio/rest-api/"
+    },
+    {
+      "field": "access",
+      "claim": "API credentials obtained by generating client_id and client_secret",
+      "url": "https://podio.github.io/podio-js/authentication/"
+    }
+  ],
+  "confidence": 0.45,
+  "notes": "",
+  "_meta": {
+    "app_id": 6,
+    "research_time_seconds": 21.93,
+    "research_status": "success"
+  }
+}

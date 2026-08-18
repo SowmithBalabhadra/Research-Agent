@@ -1,0 +1,135 @@
+{
+  "app": "HubSpot",
+  "category": "CRM and Sales",
+  "description": "HubSpot provides a unified developer platform that lets you build, integrate, and ship custom apps and AI‑ready experiences that extend its Smart CRM and reach its 228k+ customers.",
+  "authentication": {
+    "methods": [
+      {
+        "claim": "OAuth is required for multiple accounts",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+      },
+      {
+        "claim": "OAuth access token is provided using the Bearer HTTP authorization header",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+      },
+      {
+        "claim": "Service keys can be used to query HubSpot's REST APIs directly",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys"
+      }
+    ],
+    "flows": [],
+    "token_types": [
+      {
+        "claim": "OAuth access token",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+      },
+      {
+        "claim": "Bearer token supplied via the Authorization: Bearer header",
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+      }
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer test account",
+    "credential_access": "unknown",
+    "plan_requirement": "none",
+    "admin_requirement": "admin approval required",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "The HubSpot MCP server acts as a secure bridge that lets MCP‑compatible AI tools authenticate via OAuth 2.1 with PKCE to read and write CRM data through natural language requests.",
+    "auth": "OAuth 2.1 with PKCE"
+  },
+  "buildability": {
+    "verdict": "moderate",
+    "blocker": "Requires admin approval to obtain credentials."
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "OAuth is required for multiple accounts",
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+    },
+    {
+      "field": "authentication",
+      "claim": "static auth access tokens are used for installing in a single account at a time",
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+    },
+    {
+      "field": "authentication",
+      "claim": "OAuth access token is provided using the Bearer HTTP authorization header",
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+    },
+    {
+      "field": "authentication",
+      "claim": "Service keys can be used to query HubSpot's REST APIs directly",
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys"
+    },
+    {
+      "field": "authentication",
+      "claim": "Service keys are configured with object‑specific scopes",
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys"
+    },
+    {
+      "field": "api",
+      "claim": "HubSpot offers RESTful APIs",
+      "url": "https://developers.hubspot.com/developer-platform-basics"
+    },
+    {
+      "field": "api",
+      "claim": "HubSpot offers webhooks",
+      "url": "https://developers.hubspot.com/developer-platform-basics"
+    },
+    {
+      "field": "api",
+      "claim": "HubSpot provides a documented public API reference",
+      "url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+    },
+    {
+      "field": "access",
+      "claim": "Free developer test accounts available",
+      "url": "https://developers.hubspot.com/docs/getting-started/account-types"
+    },
+    {
+      "field": "access",
+      "claim": "Developer test accounts are free, no paid plan needed",
+      "url": "https://developers.hubspot.com/docs/getting-started/account-types"
+    },
+    {
+      "field": "access",
+      "claim": "Access to development overview requires super admin, partner admin, or developer seat permission",
+      "url": "https://developers.hubspot.com/docs/getting-started/developer-overview"
+    },
+    {
+      "field": "mcp",
+      "claim": "HubSpot provides a remote Model Context Protocol (MCP) server that enables AI assistants to securely interact with HubSpot CRM data.",
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
+    },
+    {
+      "field": "mcp",
+      "claim": "The remote HubSpot MCP server is generally available and allows MCP‑compatible AI tools to read from and write to CRM data.",
+      "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available"
+    },
+    {
+      "field": "mcp",
+      "claim": "Connections to the HubSpot MCP server are authenticated via OAuth 2.1 with PKCE.",
+      "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available"
+    }
+  ],
+  "confidence": 0.95,
+  "notes": "",
+  "_meta": {
+    "app_id": 2,
+    "research_time_seconds": 83.06,
+    "research_status": "success"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "description": "Pipedrive is a platform that offers a RESTful API giving programmatic access to the majority of its core product’s functionality.",
+  "authentication": {
+    "methods": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "flows": [
+      "Authorization Code",
+      "Refresh Token"
+    ],
+    "token_types": [
+      "access token",
+      "API token"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer sandbox account",
+    "credential_access": "API token obtained from Pipedrive app",
+    "plan_requirement": "unknown",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST",
+      "Webhooks"
+    ],
+    "breadth": "broad"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Pipedrive’s native MCP serves as a bridge that lets AI assistants securely retrieve, create, or update CRM data in Pipedrive via a standardized protocol.",
+    "auth": ""
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "OAuth 2.0 is the recommended authorization protocol for all public apps",
+      "url": "https://pipedrive.readme.io/docs/marketplace-oauth-api"
+    },
+    {
+      "field": "authentication",
+      "claim": "OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace",
+      "url": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization"
+    },
+    {
+      "field": "authentication",
+      "claim": "API token must be provided in the x-api-token header for all requests",
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "Every request must contain a valid access_token",
+      "url": "https://pipedrive.readme.io/docs/marketplace-oauth-api"
+    },
+    {
+      "field": "authentication",
+      "claim": "API token is tied to a specific user and company",
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "OAuth flow includes token exchange and refresh",
+      "url": "https://pipedrive.readme.io/docs/marketplace-oauth-api"
+    },
+    {
+      "field": "authentication",
+      "claim": "OAuth authorization uses redirect to /authorize endpoint with client_id",
+      "url": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization"
+    },
+    {
+      "field": "api",
+      "claim": "Pipedrive provides a RESTful API",
+      "url": "https://developers.pipedrive.com/docs/api/v1"
+    },
+    {
+      "field": "api",
+      "claim": "Pipedrive provides a RESTful API",
+      "url": "https://www.pipedrive.com/en/features/crm-api"
+    },
+    {
+      "field": "api",
+      "claim": "Pipedrive supports webhooks",
+      "url": "https://www.pipedrive.com/en/features/crm-api"
+    },
+    {
+      "field": "api",
+      "claim": "Pipedrive supports webhooks",
+      "url": "https://developers.pipedrive.com/"
+    },
+    {
+      "field": "access",
+      "claim": "Free developer sandbox account available",
+      "url": "https://developers.pipedrive.com/docs/api/v1"
+    },
+    {
+      "field": "access",
+      "claim": "Free developer sandbox account available",
+      "url": "https://pipedrive.readme.io/docs/developer-sandbox-account"
+    },
+    {
+      "field": "access",
+      "claim": "API token can be obtained from Pipedrive app",
+      "url": "https://developers.pipedrive.com/docs/api/v1"
+    },
+    {
+      "field": "mcp",
+      "claim": "Pipedrive provides a native Model Context Protocol (MCP) integration.",
+      "url": "https://support.pipedrive.com/en/article/mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "MCP offers a standardized way for AI assistants to securely access and manipulate Pipedrive data.",
+      "url": "https://support.pipedrive.com/en/article/mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "Through MCP, AI assistants can find deal, contact, or organization details, create or update records, retrieve pipeline information, generate summaries, and answer questions using Pipedrive data.",
+      "url": "https://support.pipedrive.com/en/article/mcp"
+    }
+  ],
+  "confidence": 0.85,
+  "notes": "",
+  "_meta": {
+    "app_id": 3,
+    "research_time_seconds": 78.94,
+    "research_status": "success"
+  }
+}

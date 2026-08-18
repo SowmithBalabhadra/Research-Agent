@@ -1,0 +1,114 @@
+{
+  "app": "Intercom",
+  "category": "Support and Helpdesk",
+  "description": "<think>\nHere's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Write exactly one concise sentence describing what Intercom is and does.\n   - **Constraint 1:** Based *only* on the provided excerpts.\n   - **Constraint 2:** Do not mention authentication or API details.\n   - **Constraint 3:** Output ONLY the sentence itself, no preamble, no quotes, no JSON.\n   - **Sources:** Two excerpts from Intercom's developer documentation focusing on REST API, regional hosting, workspace setup, and app creation.\n\n2.  **Extract Key Information from Sources:**\n   - Source 1: Mentions retrieving/updating info from an Intercom account, integrating Intercom into your own product, regional hosting (US, EU, AU), REST API details (JSON, HTTP, rate limiting, etc.).\n   - Source 2: Mentions creating workspaces, building public/private apps, apps as containers for functionality, interacting with the Intercom Platform, managing/installing apps into workspaces, limitations of dev workspaces (no outbound emailing/push notifications, Help Center, Messenger, user/lead limits).\n   - Core concept from both: Intercom is a platform for managing customer communication/support (implied by Messenger, Help Center, emailing, push notifications, users/leads) that allows developers to build and install apps to integrate its functionality into other products or manage workspaces.\n   - Wait, the prompt says \"based only on the excerpts below\". I need to stick strictly to what's explicitly stated or strongly implied in the text.\n   - The text mentions: \"Intercom workspaces\", \"retrieve and update information from your own Intercom account\", \"integrate Intercom into your own product\", \"apps as containers for various pieces of functionality\", \"outbound emailing or push notifications\", \"Help Center Sites\", \"Messenger\", \"users/leads\".\n   - So, Intercom is a platform that provides workspaces for managing customer interactions (like messaging, help centers, and notifications) and enables developers to build and install apps to integrate these capabilities into other products.\n\n3.  **Draft Sentence (Mental Refinement):**\n   Intercom is a customer communication platform that provides workspaces for managing messaging, help centers, and notifications, while enabling developers to build and install apps to integrate these capabilities into other products.\n   - Check constraints: Exactly one sentence? Yes. Concise? Yes. Based only on excerpts? Yes, mentions workspaces, messaging/help centers/notifications, and app integration. No auth/API details? Checked. Output only the sentence? Will do.\n   - Let's verify against the text: The text explicitly mentions \"Intercom workspaces\", \"Messenger\", \"Help Center Sites\", \"outbound emailing or push notifications\", \"users/leads\", and \"integrate Intercom into your own product\" via apps. This aligns well.\n   - Could be tighter: Intercom is a platform that provides workspaces for managing customer messaging, help centers, and notifications, while enabling developers to build and install apps to integrate these capabilities into other products.\n   - Check constraint: \"Do not mention authentication or API details.\" - Met.\n   - Check constraint: \"based only on the excerpts below.\" - The excerpts focus heavily on the developer platform, workspaces, and apps. I should frame it around that.\n   - Alternative: Intercom is a platform that organizes customer communication tools like messaging, help centers, and notifications into workspaces, allowing developers to build and install apps that integrate these capabilities into other products.\n   - Let's ensure it's strictly one sentence and concise.\n   - \"Intercom is a platform that provides workspaces for managing customer messaging, help centers, and notifications, enabling developers to build and install apps that integrate these capabilities into other products.\" (28 words) - Good.\n   - Does it capture \"what Intercom is and does\"? Yes.\n   - Is it based *only* on the excerpts? The excerpts mention workspaces, Messenger, Help Center, emailing/push notifications, users/leads, and building/installing apps to integrate functionality. Yes.\n   - I will refine it slightly to be more direct: Intercom is a platform that provides workspaces for managing customer messaging, help centers, and notifications, enabling developers to build and install apps that integrate these capabilities into other products.\n   - Wait, the prompt says \"based only on the excerpts below\". The excerpts are from the *Developer Platform* docs. They don't explicitly say \"customer communication platform\", but they mention Messenger, Help Center, emailing, push notifications, users/leads. I'll stick to what's there.\n   - Let's craft: Intercom is a platform that organizes messaging, help centers, and notification tools into workspaces, enabling developers to build and install apps that integrate these capabilities into other products.\n   - Check constraints again: Exactly one concise sentence. No auth/API. Only the sentence. Based on excerpts.\n   - All good. I will output exactly that sentence.\n   - One minor adjustment to ensure it strictly reflects the text: \"Intercom is a platform that provides workspaces for managing messaging, help centers, and notifications, enabling developers to build and install apps that integrate these capabilities into other products.\"\n   - Actually, the text says \"integrate Intercom into your own product\" and \"apps as containers for various pieces of functionality\". I'll incorporate that.\n   - Final: Intercom is a platform that provides workspaces for managing messaging, help centers, and notifications, enabling developers to build and install apps that integrate these capabilities into other products.\n   - Matches all constraints. Output matches exactly.✅\n   - Self-Correction/Verification during thought: \n     - Does it mention API/auth? No.\n     - Is it one sentence? Yes.\n     - Is it concise? Yes.\n     - Based only on excerpts? Yes, draws directly from mentioned features (Messenger, Help Center, emailing/push notifications, workspaces, apps for integration).\n     - Output format: Just the sentence.\n     - Ready.✅\n   - Output generation. \n   - Text to output: Intercom is a platform that provides workspaces for managing messaging, help centers, and notifications, enabling developers to build and install apps that integrate these capabilities into other products. \n   - Wait, let's count words: 28. Concise. Covers \"what it is\" (platform with workspaces) and \"what it does\" (manages messaging/help/notifications, enables app integration). Matches constraints perfectly. All good. \n   - Proceeds. \n   - Output matches response. \n   - [Final Check of the Prompt]: \"Write exactly one concise sentence describing what Intercom is and does, based only on the excerpts below. Do not mention authentication or API details. Output ONLY the sentence itself, no preamble, no quotes, no JSON.\"\n   - All constraints met. Output matches.✅\n   - Generating. \n   - *Self-Correction/Refinement during thought*: I want to make sure it strictly uses the provided text's framing. The text says \"Intercom workspaces\", \"Messenger\", \"Help Center Sites\", \"outbound emailing or push notifications\", \"users/leads\", and \"integrate Intercom into your own product\". I'll adjust slightly to be perfectly aligned: Intercom is a platform that provides workspaces for managing users, messaging, help centers, and notifications, enabling developers to build and install apps that integrate these capabilities into other products. (Added \"users\" to be precise to the text). Actually, \"customer communication\" is fine, but I'll stick to the exact features mentioned. The current draft is solid. I'll output it. \n   - Final: Intercom is a platform that provides workspaces for managing messaging, help centers, and notifications, enabling developers to build and install apps that integrate these capabilities into other products. (28 words) -> Perfect. \n   - Output matches. \n   - [Proceeds]\n</think>\n\nIntercom is a platform that provides workspaces for managing messaging, help centers, and notifications, enabling developers to build and install apps that integrate these capabilities into other products.",
+  "authentication": {
+    "methods": [
+      "OAuth",
+      "API Key"
+    ],
+    "flows": [],
+    "token_types": [
+      "Access Token",
+      "API Key"
+    ]
+  },
+  "access": {
+    "developer_signup": "free developer account",
+    "credential_access": "create an app in Developer Hub",
+    "plan_requirement": "none",
+    "admin_requirement": "unknown",
+    "partner_requirement": "unknown"
+  },
+  "api": {
+    "available": true,
+    "types": [
+      "REST"
+    ],
+    "breadth": "moderate"
+  },
+  "mcp": {
+    "available": true,
+    "details": "Intercom provides a remote MCP server that AI applications connect to for securely retrieving workspace data and executing specific functions after verifying user permissions.",
+    "auth": "Follows the authenticated remote MCP specification to verify user permissions."
+  },
+  "buildability": {
+    "verdict": "easy",
+    "blocker": ""
+  },
+  "evidence": [
+    {
+      "field": "authentication",
+      "claim": "OAuth is for if you're building a public app that accesses other people's Intercom data.",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "An Access Token is for if you're using the API to access data in your own Intercom workspace.",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "You currently ask people for their API Keys to request resources on their behalf.",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+    },
+    {
+      "field": "authentication",
+      "claim": "You are also required to set up OAuth so that your app has permission to access and interact with customers' data.",
+      "url": "https://developers.intercom.com/docs"
+    },
+    {
+      "field": "api",
+      "claim": "Intercom provides a documented public REST API for retrieving and updating account information and integrating with custom products.",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis"
+    },
+    {
+      "field": "api",
+      "claim": "The API uses HTTP methods (GET, POST, DELETE), returns JSON encoded data, and requires HTTPS.",
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis"
+    },
+    {
+      "field": "api",
+      "claim": "The Intercom API provides programmatic access to the platform and is defined using the OpenAPI Specification for HTTP APIs.",
+      "url": "https://github.com/intercom/intercom-openapi"
+    },
+    {
+      "field": "access",
+      "claim": "Development workspaces are free and intended for development purposes only.",
+      "url": "https://developers.intercom.com/docs/build-an-integration/getting-started"
+    },
+    {
+      "field": "access",
+      "claim": "sign up here to create your free account.",
+      "url": "https://developers.intercom.com/docs"
+    },
+    {
+      "field": "access",
+      "claim": "To interact with the Intercom Platform you need an app. You can create an app for any of your workspaces in the Your apps section of the Developer Hub.",
+      "url": "https://developers.intercom.com/docs/build-an-integration/getting-started"
+    },
+    {
+      "field": "mcp",
+      "claim": "Intercom hosts a remote MCP server that enables AI tools to securely access and interact with workspace data.",
+      "url": "https://developers.intercom.com/docs/guides/mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "The MCP server follows the authenticated remote MCP specification to verify user permissions before granting access.",
+      "url": "https://developers.intercom.com/docs/guides/mcp"
+    },
+    {
+      "field": "mcp",
+      "claim": "The Intercom MCP Server provides six tools for interacting with the Intercom API.",
+      "url": "https://github.com/intercom/intercom-mcp-server"
+    }
+  ],
+  "confidence": 0.85,
+  "notes": "",
+  "model_used": "qwen/qwen3.6-27b",
+  "_meta": {
+    "app_id": 12,
+    "research_time_seconds": 152.2,
+    "research_status": "success"
+  }
+}
