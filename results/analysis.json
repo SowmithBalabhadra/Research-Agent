@@ -1,0 +1,1638 @@
+{
+  "meta": {
+    "records_analyzed": 100,
+    "analysis_type": "deterministic",
+    "source": "results/*.json and results.json"
+  },
+  "authentication": {
+    "methods": {
+      "OAuth 2.0": {
+        "count": 52,
+        "percentage": 52.0
+      },
+      "API Key": {
+        "count": 31,
+        "percentage": 31.0
+      },
+      "Basic Auth": {
+        "count": 19,
+        "percentage": 19.0
+      },
+      "Bearer Token": {
+        "count": 17,
+        "percentage": 17.0
+      },
+      "Token": {
+        "count": 8,
+        "percentage": 8.0
+      },
+      "JWT": {
+        "count": 4,
+        "percentage": 4.0
+      },
+      "OAuth": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "Private Integration Token": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "Private API Key": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "Public API Key": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "OAuth 2.1": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "Other": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "Mutual TLS": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "Windows Named User Authentication": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "HTTP Digest Authentication": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "OpenID Connect": {
+        "count": 1,
+        "percentage": 1.0
+      }
+    },
+    "flows": {
+      "Authorization Code": {
+        "count": 39,
+        "percentage": 39.0
+      },
+      "Client Credentials": {
+        "count": 16,
+        "percentage": 16.0
+      },
+      "Refresh Token": {
+        "count": 15,
+        "percentage": 15.0
+      },
+      "PKCE": {
+        "count": 9,
+        "percentage": 9.0
+      },
+      "Token Exchange": {
+        "count": 2,
+        "percentage": 2.0
+      },
+      "Implicit Flow": {
+        "count": 2,
+        "percentage": 2.0
+      }
+    },
+    "token_types": {
+      "access token": {
+        "count": 55,
+        "percentage": 55.0
+      },
+      "bearer token": {
+        "count": 28,
+        "percentage": 28.0
+      },
+      "refresh token": {
+        "count": 24,
+        "percentage": 24.0
+      },
+      "API key": {
+        "count": 19,
+        "percentage": 19.0
+      },
+      "JWT": {
+        "count": 6,
+        "percentage": 6.0
+      },
+      "API token": {
+        "count": 5,
+        "percentage": 5.0
+      },
+      "Bearer token": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "Access Token": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "API Key": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "Private Integration Token": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "OAuth token": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "personal access token": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "personal API token": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "authentication token": {
+        "count": 1,
+        "percentage": 1.0
+      }
+    },
+    "apps_with_oauth": {
+      "count": 52,
+      "percentage": 52.0
+    },
+    "apps_with_api_key": {
+      "count": 32,
+      "percentage": 32.0
+    },
+    "apps_with_basic_auth": {
+      "count": 19,
+      "percentage": 19.0
+    },
+    "apps_with_multiple_auth_methods": {
+      "count": 43,
+      "percentage": 43.0
+    }
+  },
+  "access": {
+    "developer_signup": {
+      "unknown": {
+        "count": 73,
+        "percentage": 73.0
+      },
+      "free developer account": {
+        "count": 19,
+        "percentage": 19.0
+      },
+      "free developer test account": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "free developer sandbox account": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "free trial signup": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "free 14-day trial account": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "business account": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "sp-api developer registration": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "free plan": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "plaid dashboard account": {
+        "count": 1,
+        "percentage": 1.0
+      }
+    },
+    "plan_requirement": {
+      "unknown": {
+        "count": 83,
+        "percentage": 83.0
+      },
+      "none": {
+        "count": 10,
+        "percentage": 10.0
+      },
+      "specific plan required": {
+        "count": 5,
+        "percentage": 5.0
+      },
+      "production api access requires approval": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "standalone contract required": {
+        "count": 1,
+        "percentage": 1.0
+      }
+    },
+    "admin_requirement": {
+      "unknown": {
+        "count": 87,
+        "percentage": 87.0
+      },
+      "admin approval required": {
+        "count": 8,
+        "percentage": 8.0
+      },
+      "owner, admin, or manager role required to manage api keys": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "admin role required": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "workspace owner": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "super admin required": {
+        "count": 1,
+        "percentage": 1.0
+      },
+      "account admin or card admin": {
+        "count": 1,
+        "percentage": 1.0
+      }
+    },
+    "partner_requirement": {
+      "unknown": {
+        "count": 95,
+        "percentage": 95.0
+      },
+      "partnership required": {
+        "count": 4,
+        "percentage": 4.0
+      },
+      "none": {
+        "count": 1,
+        "percentage": 1.0
+      }
+    }
+  },
+  "api": {
+    "apps_with_api": {
+      "count": 100,
+      "percentage": 100.0
+    },
+    "types": {
+      "REST": {
+        "count": 53,
+        "percentage": 53.0
+      },
+      "Webhooks": {
+        "count": 23,
+        "percentage": 23.0
+      },
+      "GraphQL": {
+        "count": 13,
+        "percentage": 13.0
+      },
+      "RPC": {
+        "count": 2,
+        "percentage": 2.0
+      },
+      "Other": {
+        "count": 2,
+        "percentage": 2.0
+      },
+      "SOAP": {
+        "count": 1,
+        "percentage": 1.0
+      }
+    },
+    "breadth": {
+      "broad": {
+        "count": 57,
+        "percentage": 57.0
+      },
+      "moderate": {
+        "count": 27,
+        "percentage": 27.0
+      },
+      "unknown": {
+        "count": 16,
+        "percentage": 16.0
+      }
+    }
+  },
+  "mcp": {
+    "availability": {
+      "yes": {
+        "count": 69,
+        "percentage": 69.0
+      },
+      "no": {
+        "count": 22,
+        "percentage": 22.0
+      },
+      "unknown": {
+        "count": 9,
+        "percentage": 9.0
+      }
+    }
+  },
+  "buildability": {
+    "verdicts": {
+      "moderate": {
+        "count": 50,
+        "percentage": 50.0
+      },
+      "easy": {
+        "count": 33,
+        "percentage": 33.0
+      },
+      "difficult": {
+        "count": 9,
+        "percentage": 9.0
+      },
+      "unknown": {
+        "count": 8,
+        "percentage": 8.0
+      }
+    },
+    "blockers": [
+      {
+        "blocker": "MCP is available, but the exact credential-access requirements are not fully established.",
+        "count": 7
+      },
+      {
+        "blocker": "Requires admin approval to obtain credentials.",
+        "count": 3
+      },
+      {
+        "blocker": "Developer signup / access process is undocumented in the sources reviewed.",
+        "count": 3
+      },
+      {
+        "blocker": "MCP/API access requires administrator approval.",
+        "count": 3
+      },
+      {
+        "blocker": "Documented access restrictions may block self-serve integration.",
+        "count": 2
+      },
+      {
+        "blocker": "Requires partnership / contact-sales approval.",
+        "count": 1
+      },
+      {
+        "blocker": "A public API is documented, but authentication requirements were not sufficiently established.",
+        "count": 1
+      },
+      {
+        "blocker": "Access to the Advertising API requires submitting an access-request form and approval; generic data collection use cases are rejected.",
+        "count": 1
+      },
+      {
+        "blocker": "API capabilities depend on the Mailchimp plan level, which may require a paid subscription for full access.",
+        "count": 1
+      },
+      {
+        "blocker": "MCP server access requires Owner, Admin, or Manager role in Klaviyo account.",
+        "count": 1
+      },
+      {
+        "blocker": "Application review and approval for access.",
+        "count": 1
+      },
+      {
+        "blocker": "The supplied Customer accounts MCP documentation requires a custom domain, protected customer-data requirements, and Level 2 protected customer-data access.",
+        "count": 1
+      },
+      {
+        "blocker": "The supplied MCP documentation requires WordPress, WooCommerce, PHP, and database prerequisites for the MCP plugin.",
+        "count": 1
+      },
+      {
+        "blocker": "The supplied MCP documentation states that MCP is currently in beta and that a store owner must enable MCP on the store.",
+        "count": 1
+      },
+      {
+        "blocker": "The supplied B2C Commerce MCP documentation describes a pilot service requiring organization and tenant identifiers and authorized access to the MCP service.",
+        "count": 1
+      }
+    ]
+  },
+  "categories": {
+    "AI, Research and Media-native": {
+      "app_count": 10,
+      "apps": [
+        "NotebookLM",
+        "Otter AI",
+        "Fathom",
+        "Consensus",
+        "Reducto",
+        "Devin",
+        "higgsfield",
+        "Mermaid CLI",
+        "YouTube Transcript",
+        "Grain"
+      ],
+      "buildability": {
+        "easy": {
+          "count": 5,
+          "percentage": 50.0
+        },
+        "moderate": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "difficult": {
+          "count": 2,
+          "percentage": 20.0
+        }
+      },
+      "mcp": {
+        "no": {
+          "count": 5,
+          "percentage": 50.0
+        },
+        "yes": {
+          "count": 5,
+          "percentage": 50.0
+        }
+      },
+      "api_breadth": {
+        "moderate": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "broad": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "unknown": {
+          "count": 2,
+          "percentage": 20.0
+        }
+      }
+    },
+    "CRM and Sales": {
+      "app_count": 10,
+      "apps": [
+        "Salesforce",
+        "HubSpot",
+        "Pipedrive",
+        "Attio",
+        "Twenty",
+        "Podio",
+        "Zoho CRM",
+        "Close",
+        "Copper",
+        "DealCloud"
+      ],
+      "buildability": {
+        "moderate": {
+          "count": 6,
+          "percentage": 60.0
+        },
+        "easy": {
+          "count": 4,
+          "percentage": 40.0
+        }
+      },
+      "mcp": {
+        "yes": {
+          "count": 8,
+          "percentage": 80.0
+        },
+        "no": {
+          "count": 1,
+          "percentage": 10.0
+        },
+        "unknown": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "api_breadth": {
+        "broad": {
+          "count": 7,
+          "percentage": 70.0
+        },
+        "moderate": {
+          "count": 3,
+          "percentage": 30.0
+        }
+      }
+    },
+    "Communications and Messaging": {
+      "app_count": 10,
+      "apps": [
+        "Slack",
+        "Twilio",
+        "Zoho Cliq",
+        "Lark (Larksuite)",
+        "Pumble",
+        "Discord",
+        "Telegram",
+        "WhatsApp Business",
+        "Aircall",
+        "Vonage"
+      ],
+      "buildability": {
+        "moderate": {
+          "count": 6,
+          "percentage": 60.0
+        },
+        "easy": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "difficult": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "mcp": {
+        "yes": {
+          "count": 9,
+          "percentage": 90.0
+        },
+        "unknown": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "api_breadth": {
+        "moderate": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "broad": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "unknown": {
+          "count": 3,
+          "percentage": 30.0
+        }
+      }
+    },
+    "Data, SEO and Scraping": {
+      "app_count": 10,
+      "apps": [
+        "DataForSEO",
+        "SE Ranking",
+        "Ahrefs",
+        "MrScraper",
+        "Apify",
+        "Firecrawl",
+        "Bright Data",
+        "Sherlock",
+        "Waterfall.io",
+        "Clay"
+      ],
+      "buildability": {
+        "easy": {
+          "count": 6,
+          "percentage": 60.0
+        },
+        "moderate": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "difficult": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "mcp": {
+        "yes": {
+          "count": 6,
+          "percentage": 60.0
+        },
+        "no": {
+          "count": 4,
+          "percentage": 40.0
+        }
+      },
+      "api_breadth": {
+        "broad": {
+          "count": 7,
+          "percentage": 70.0
+        },
+        "moderate": {
+          "count": 2,
+          "percentage": 20.0
+        },
+        "unknown": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      }
+    },
+    "Developer, Infra and Data platforms": {
+      "app_count": 10,
+      "apps": [
+        "GitHub",
+        "Vercel",
+        "Netlify",
+        "Cloudflare",
+        "Supabase",
+        "Neo4j",
+        "Snowflake",
+        "MongoDB Atlas",
+        "Datadog",
+        "Sentry"
+      ],
+      "buildability": {
+        "easy": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "moderate": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "unknown": {
+          "count": 2,
+          "percentage": 20.0
+        }
+      },
+      "mcp": {
+        "yes": {
+          "count": 8,
+          "percentage": 80.0
+        },
+        "unknown": {
+          "count": 2,
+          "percentage": 20.0
+        }
+      },
+      "api_breadth": {
+        "broad": {
+          "count": 6,
+          "percentage": 60.0
+        },
+        "unknown": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "moderate": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      }
+    },
+    "Ecommerce": {
+      "app_count": 10,
+      "apps": [
+        "Shopify",
+        "WooCommerce",
+        "BigCommerce",
+        "Salesforce Commerce Cloud",
+        "Magento (Adobe Commerce)",
+        "Squarespace",
+        "Ecwid",
+        "Gumroad",
+        "Amazon Selling Partner",
+        "fanbasis"
+      ],
+      "buildability": {
+        "moderate": {
+          "count": 7,
+          "percentage": 70.0
+        },
+        "difficult": {
+          "count": 2,
+          "percentage": 20.0
+        },
+        "unknown": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "mcp": {
+        "no": {
+          "count": 6,
+          "percentage": 60.0
+        },
+        "yes": {
+          "count": 4,
+          "percentage": 40.0
+        }
+      },
+      "api_breadth": {
+        "broad": {
+          "count": 7,
+          "percentage": 70.0
+        },
+        "moderate": {
+          "count": 2,
+          "percentage": 20.0
+        },
+        "unknown": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      }
+    },
+    "Finance and Fintech": {
+      "app_count": 10,
+      "apps": [
+        "Stripe",
+        "Plaid",
+        "Binance",
+        "Paygent Connect",
+        "iPayX",
+        "QuickBooks",
+        "Xero",
+        "Brex",
+        "Ramp",
+        "PitchBook"
+      ],
+      "buildability": {
+        "moderate": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "unknown": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "easy": {
+          "count": 1,
+          "percentage": 10.0
+        },
+        "difficult": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "mcp": {
+        "yes": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "unknown": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "no": {
+          "count": 3,
+          "percentage": 30.0
+        }
+      },
+      "api_breadth": {
+        "broad": {
+          "count": 6,
+          "percentage": 60.0
+        },
+        "unknown": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "moderate": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      }
+    },
+    "Marketing, Ads, Email and Social": {
+      "app_count": 10,
+      "apps": [
+        "Google Ads",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "GoHighLevel",
+        "Mailchimp",
+        "Klaviyo",
+        "systeme.io",
+        "Pinterest",
+        "Threads (Meta)",
+        "SendGrid"
+      ],
+      "buildability": {
+        "moderate": {
+          "count": 8,
+          "percentage": 80.0
+        },
+        "easy": {
+          "count": 2,
+          "percentage": 20.0
+        }
+      },
+      "mcp": {
+        "yes": {
+          "count": 7,
+          "percentage": 70.0
+        },
+        "no": {
+          "count": 3,
+          "percentage": 30.0
+        }
+      },
+      "api_breadth": {
+        "broad": {
+          "count": 6,
+          "percentage": 60.0
+        },
+        "moderate": {
+          "count": 4,
+          "percentage": 40.0
+        }
+      }
+    },
+    "Productivity and Project Management": {
+      "app_count": 10,
+      "apps": [
+        "Notion",
+        "Airtable",
+        "Linear",
+        "Jira",
+        "Asana",
+        "Monday.com",
+        "ClickUp",
+        "Coda",
+        "Smartsheet",
+        "Harvest"
+      ],
+      "buildability": {
+        "moderate": {
+          "count": 5,
+          "percentage": 50.0
+        },
+        "easy": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "unknown": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "mcp": {
+        "yes": {
+          "count": 9,
+          "percentage": 90.0
+        },
+        "unknown": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "api_breadth": {
+        "broad": {
+          "count": 8,
+          "percentage": 80.0
+        },
+        "moderate": {
+          "count": 1,
+          "percentage": 10.0
+        },
+        "unknown": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      }
+    },
+    "Support and Helpdesk": {
+      "app_count": 10,
+      "apps": [
+        "Zendesk",
+        "Intercom",
+        "Freshdesk",
+        "Front",
+        "Pylon",
+        "LiveAgent",
+        "Plain",
+        "Help Scout",
+        "Gorgias",
+        "Gladly"
+      ],
+      "buildability": {
+        "easy": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "moderate": {
+          "count": 4,
+          "percentage": 40.0
+        },
+        "difficult": {
+          "count": 2,
+          "percentage": 20.0
+        }
+      },
+      "mcp": {
+        "yes": {
+          "count": 9,
+          "percentage": 90.0
+        },
+        "unknown": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "api_breadth": {
+        "moderate": {
+          "count": 5,
+          "percentage": 50.0
+        },
+        "broad": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "unknown": {
+          "count": 2,
+          "percentage": 20.0
+        }
+      }
+    }
+  },
+  "priority_clusters": {
+    "mcp_opportunity": {
+      "count": 37,
+      "apps": [
+        "HubSpot",
+        "Attio",
+        "Close",
+        "DealCloud",
+        "Freshdesk",
+        "Pylon",
+        "LiveAgent",
+        "Plain",
+        "Slack",
+        "Twilio",
+        "Lark (Larksuite)",
+        "Telegram",
+        "Vonage",
+        "Meta Ads",
+        "GoHighLevel",
+        "Mailchimp",
+        "Klaviyo",
+        "systeme.io",
+        "Pinterest",
+        "Shopify",
+        "WooCommerce",
+        "BigCommerce",
+        "SE Ranking",
+        "Ahrefs",
+        "Clay",
+        "Supabase",
+        "Neo4j",
+        "Snowflake",
+        "MongoDB Atlas",
+        "Notion",
+        "Jira",
+        "Asana",
+        "Coda",
+        "Smartsheet",
+        "Plaid",
+        "Ramp",
+        "Otter AI"
+      ]
+    },
+    "easy_win": {
+      "count": 33,
+      "apps": [
+        "Salesforce",
+        "Pipedrive",
+        "Twenty",
+        "Zoho CRM",
+        "Zendesk",
+        "Intercom",
+        "Help Scout",
+        "Gorgias",
+        "Zoho Cliq",
+        "Pumble",
+        "Aircall",
+        "Google Ads",
+        "SendGrid",
+        "DataForSEO",
+        "MrScraper",
+        "Apify",
+        "Firecrawl",
+        "Bright Data",
+        "Waterfall.io",
+        "GitHub",
+        "Vercel",
+        "Netlify",
+        "Sentry",
+        "Linear",
+        "Monday.com",
+        "ClickUp",
+        "Harvest",
+        "Stripe",
+        "Fathom",
+        "Reducto",
+        "higgsfield",
+        "Mermaid CLI",
+        "YouTube Transcript"
+      ]
+    },
+    "standard": {
+      "count": 9,
+      "apps": [
+        "Podio",
+        "WhatsApp Business",
+        "Threads (Meta)",
+        "Magento (Adobe Commerce)",
+        "Squarespace",
+        "Ecwid",
+        "Gumroad",
+        "Xero",
+        "Devin"
+      ]
+    },
+    "gated": {
+      "count": 9,
+      "apps": [
+        "Copper",
+        "Front",
+        "Gladly",
+        "Discord",
+        "LinkedIn Ads",
+        "Brex",
+        "PitchBook",
+        "NotebookLM",
+        "Grain"
+      ]
+    },
+    "needs_investigation": {
+      "count": 8,
+      "apps": [
+        "fanbasis",
+        "Cloudflare",
+        "Datadog",
+        "Airtable",
+        "Binance",
+        "Paygent Connect",
+        "iPayX",
+        "QuickBooks"
+      ]
+    },
+    "difficult": {
+      "count": 4,
+      "apps": [
+        "Salesforce Commerce Cloud",
+        "Amazon Selling Partner",
+        "Sherlock",
+        "Consensus"
+      ]
+    }
+  },
+  "evidence": {
+    "total_evidence_items": 959,
+    "average_evidence_per_app": 9.59,
+    "evidence_per_app": [
+      {
+        "app": "Grain",
+        "evidence_count": 0
+      },
+      {
+        "app": "iPayX",
+        "evidence_count": 1
+      },
+      {
+        "app": "fanbasis",
+        "evidence_count": 2
+      },
+      {
+        "app": "Datadog",
+        "evidence_count": 2
+      },
+      {
+        "app": "Paygent Connect",
+        "evidence_count": 2
+      },
+      {
+        "app": "WhatsApp Business",
+        "evidence_count": 3
+      },
+      {
+        "app": "Clay",
+        "evidence_count": 4
+      },
+      {
+        "app": "Binance",
+        "evidence_count": 4
+      },
+      {
+        "app": "QuickBooks",
+        "evidence_count": 4
+      },
+      {
+        "app": "SE Ranking",
+        "evidence_count": 5
+      },
+      {
+        "app": "Cloudflare",
+        "evidence_count": 5
+      },
+      {
+        "app": "Sentry",
+        "evidence_count": 5
+      },
+      {
+        "app": "Airtable",
+        "evidence_count": 5
+      },
+      {
+        "app": "Coda",
+        "evidence_count": 5
+      },
+      {
+        "app": "Smartsheet",
+        "evidence_count": 5
+      },
+      {
+        "app": "Consensus",
+        "evidence_count": 5
+      },
+      {
+        "app": "Gladly",
+        "evidence_count": 6
+      },
+      {
+        "app": "Telegram",
+        "evidence_count": 6
+      },
+      {
+        "app": "SendGrid",
+        "evidence_count": 6
+      },
+      {
+        "app": "Apify",
+        "evidence_count": 6
+      },
+      {
+        "app": "Waterfall.io",
+        "evidence_count": 6
+      },
+      {
+        "app": "Vercel",
+        "evidence_count": 6
+      },
+      {
+        "app": "Ramp",
+        "evidence_count": 6
+      },
+      {
+        "app": "higgsfield",
+        "evidence_count": 6
+      },
+      {
+        "app": "Meta Ads",
+        "evidence_count": 7
+      },
+      {
+        "app": "Gumroad",
+        "evidence_count": 7
+      },
+      {
+        "app": "MrScraper",
+        "evidence_count": 7
+      },
+      {
+        "app": "Sherlock",
+        "evidence_count": 7
+      },
+      {
+        "app": "Mermaid CLI",
+        "evidence_count": 7
+      },
+      {
+        "app": "Pylon",
+        "evidence_count": 8
+      },
+      {
+        "app": "LiveAgent",
+        "evidence_count": 8
+      },
+      {
+        "app": "Threads (Meta)",
+        "evidence_count": 8
+      },
+      {
+        "app": "WooCommerce",
+        "evidence_count": 8
+      },
+      {
+        "app": "Squarespace",
+        "evidence_count": 8
+      },
+      {
+        "app": "Ecwid",
+        "evidence_count": 8
+      },
+      {
+        "app": "Amazon Selling Partner",
+        "evidence_count": 8
+      },
+      {
+        "app": "DataForSEO",
+        "evidence_count": 8
+      },
+      {
+        "app": "Bright Data",
+        "evidence_count": 8
+      },
+      {
+        "app": "GitHub",
+        "evidence_count": 8
+      },
+      {
+        "app": "Netlify",
+        "evidence_count": 8
+      },
+      {
+        "app": "MongoDB Atlas",
+        "evidence_count": 8
+      },
+      {
+        "app": "Harvest",
+        "evidence_count": 8
+      },
+      {
+        "app": "Xero",
+        "evidence_count": 8
+      },
+      {
+        "app": "NotebookLM",
+        "evidence_count": 8
+      },
+      {
+        "app": "Devin",
+        "evidence_count": 8
+      },
+      {
+        "app": "YouTube Transcript",
+        "evidence_count": 8
+      },
+      {
+        "app": "Podio",
+        "evidence_count": 9
+      },
+      {
+        "app": "Pumble",
+        "evidence_count": 9
+      },
+      {
+        "app": "Magento (Adobe Commerce)",
+        "evidence_count": 9
+      },
+      {
+        "app": "Firecrawl",
+        "evidence_count": 9
+      },
+      {
+        "app": "Supabase",
+        "evidence_count": 9
+      },
+      {
+        "app": "ClickUp",
+        "evidence_count": 9
+      },
+      {
+        "app": "Slack",
+        "evidence_count": 10
+      },
+      {
+        "app": "Lark (Larksuite)",
+        "evidence_count": 10
+      },
+      {
+        "app": "systeme.io",
+        "evidence_count": 10
+      },
+      {
+        "app": "Pinterest",
+        "evidence_count": 10
+      },
+      {
+        "app": "Shopify",
+        "evidence_count": 10
+      },
+      {
+        "app": "BigCommerce",
+        "evidence_count": 10
+      },
+      {
+        "app": "Ahrefs",
+        "evidence_count": 10
+      },
+      {
+        "app": "Neo4j",
+        "evidence_count": 10
+      },
+      {
+        "app": "Linear",
+        "evidence_count": 10
+      },
+      {
+        "app": "Jira",
+        "evidence_count": 10
+      },
+      {
+        "app": "Fathom",
+        "evidence_count": 10
+      },
+      {
+        "app": "Reducto",
+        "evidence_count": 10
+      },
+      {
+        "app": "Close",
+        "evidence_count": 11
+      },
+      {
+        "app": "Copper",
+        "evidence_count": 11
+      },
+      {
+        "app": "Front",
+        "evidence_count": 11
+      },
+      {
+        "app": "Gorgias",
+        "evidence_count": 11
+      },
+      {
+        "app": "Discord",
+        "evidence_count": 11
+      },
+      {
+        "app": "Salesforce Commerce Cloud",
+        "evidence_count": 11
+      },
+      {
+        "app": "Snowflake",
+        "evidence_count": 11
+      },
+      {
+        "app": "Notion",
+        "evidence_count": 11
+      },
+      {
+        "app": "Asana",
+        "evidence_count": 11
+      },
+      {
+        "app": "Monday.com",
+        "evidence_count": 11
+      },
+      {
+        "app": "Stripe",
+        "evidence_count": 11
+      },
+      {
+        "app": "Aircall",
+        "evidence_count": 12
+      },
+      {
+        "app": "Plaid",
+        "evidence_count": 12
+      },
+      {
+        "app": "Brex",
+        "evidence_count": 12
+      },
+      {
+        "app": "PitchBook",
+        "evidence_count": 12
+      },
+      {
+        "app": "Otter AI",
+        "evidence_count": 12
+      },
+      {
+        "app": "Salesforce",
+        "evidence_count": 13
+      },
+      {
+        "app": "Intercom",
+        "evidence_count": 13
+      },
+      {
+        "app": "HubSpot",
+        "evidence_count": 14
+      },
+      {
+        "app": "DealCloud",
+        "evidence_count": 14
+      },
+      {
+        "app": "Zoho CRM",
+        "evidence_count": 15
+      },
+      {
+        "app": "Plain",
+        "evidence_count": 15
+      },
+      {
+        "app": "GoHighLevel",
+        "evidence_count": 15
+      },
+      {
+        "app": "Attio",
+        "evidence_count": 16
+      },
+      {
+        "app": "Vonage",
+        "evidence_count": 16
+      },
+      {
+        "app": "Mailchimp",
+        "evidence_count": 16
+      },
+      {
+        "app": "Klaviyo",
+        "evidence_count": 16
+      },
+      {
+        "app": "Pipedrive",
+        "evidence_count": 17
+      },
+      {
+        "app": "Help Scout",
+        "evidence_count": 17
+      },
+      {
+        "app": "Google Ads",
+        "evidence_count": 17
+      },
+      {
+        "app": "Freshdesk",
+        "evidence_count": 18
+      },
+      {
+        "app": "Twilio",
+        "evidence_count": 18
+      },
+      {
+        "app": "Zoho Cliq",
+        "evidence_count": 18
+      },
+      {
+        "app": "LinkedIn Ads",
+        "evidence_count": 19
+      },
+      {
+        "app": "Twenty",
+        "evidence_count": 20
+      },
+      {
+        "app": "Zendesk",
+        "evidence_count": 21
+      }
+    ],
+    "top_source_domains": [
+      {
+        "domain": "github.com",
+        "count": 53
+      },
+      {
+        "domain": "www.zoho.com",
+        "count": 33
+      },
+      {
+        "domain": "www.twilio.com",
+        "count": 23
+      },
+      {
+        "domain": "developer.salesforce.com",
+        "count": 17
+      },
+      {
+        "domain": "developer.helpscout.com",
+        "count": 16
+      },
+      {
+        "domain": "developer.vonage.com",
+        "count": 16
+      },
+      {
+        "domain": "developers.google.com",
+        "count": 16
+      },
+      {
+        "domain": "mailchimp.com",
+        "count": 16
+      },
+      {
+        "domain": "developers.hubspot.com",
+        "count": 14
+      },
+      {
+        "domain": "api.docs.dealcloud.com",
+        "count": 14
+      },
+      {
+        "domain": "developer.zendesk.com",
+        "count": 14
+      },
+      {
+        "domain": "developers.klaviyo.com",
+        "count": 14
+      },
+      {
+        "domain": "docs.twenty.com",
+        "count": 13
+      },
+      {
+        "domain": "plaid.com",
+        "count": 12
+      },
+      {
+        "domain": "developer.brex.com",
+        "count": 12
+      },
+      {
+        "domain": "pitchbook.com",
+        "count": 12
+      },
+      {
+        "domain": "help.otter.ai",
+        "count": 12
+      },
+      {
+        "domain": "docs.attio.com",
+        "count": 11
+      },
+      {
+        "domain": "developers.intercom.com",
+        "count": 11
+      },
+      {
+        "domain": "developer.aircall.io",
+        "count": 11
+      }
+    ]
+  },
+  "confidence": {
+    "average": 0.861,
+    "minimum": 0.44,
+    "maximum": 0.99
+  },
+  "data_quality": [
+    {
+      "app": "HubSpot",
+      "field": "authentication.methods",
+      "issue": "contains_non_string_value"
+    },
+    {
+      "app": "HubSpot",
+      "field": "authentication.methods",
+      "issue": "contains_non_string_value"
+    },
+    {
+      "app": "HubSpot",
+      "field": "authentication.methods",
+      "issue": "contains_non_string_value"
+    },
+    {
+      "app": "HubSpot",
+      "field": "authentication.token_types",
+      "issue": "contains_non_string_value"
+    },
+    {
+      "app": "HubSpot",
+      "field": "authentication.token_types",
+      "issue": "contains_non_string_value"
+    },
+    {
+      "app": "Apify",
+      "field": "evidence",
+      "issue": "missing_url"
+    },
+    {
+      "app": "Binance",
+      "field": "evidence",
+      "issue": "missing_url"
+    },
+    {
+      "app": "Binance",
+      "field": "evidence",
+      "issue": "missing_url"
+    },
+    {
+      "app": "Grain",
+      "field": "confidence",
+      "issue": "not_numeric"
+    }
+  ],
+  "insights": [
+    "OAuth 2.0 is the dominant authentication pattern, appearing in 52.0% of the researched apps.",
+    "69.0% of the current research set has evidence of MCP availability.",
+    "33.0% of apps are currently classified as easy toolkit opportunities.",
+    "50.0% are classified as moderate buildability opportunities.",
+    "33 apps currently fall into the preliminary easy-win cluster.",
+    "9 apps show preliminary signs of access or commercial gating.",
+    "9 data-quality issues were detected automatically; these should be included in the verification pass rather than silently corrected."
+  ]
+}
